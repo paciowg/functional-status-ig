@@ -99,17 +99,14 @@
 </div>
   <!-- /segment-navbar -->
 
+  <!-- ============BreadCrumb=============== -->
 <div id="segment-breadcrumb" class="segmnt">
     <!-- segment-breadcrumb -->
   <div class="container">
       <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-
-
-      <li title="value sets"><a href="valuesets.html"><b>Value Sets</b></a></li>
-
-      <li><b>GradedAmountVS</b></li>
+      <li><b>Graph Viewer</b></li>
     </ul>
   </div>
     <!-- /container -->
@@ -128,90 +125,33 @@
 
   <!-- ============CONTENT CONTENT=============== -->
 
+<iframe src="graph/index.html" width="100%" id="graph" title="Graph">
+</iframe>
 
-<ul class="nav nav-tabs">
-
-  <li><a href="ValueSet-shr-core-GradedAmountVS.html">Content</a></li>
-
-  <li><a href="ValueSet-shr-core-GradedAmountVS.xml.html">XML</a></li>
-
-  <li class="active"><a href="#">JSON</a></li>
-
-  <li><a href="ValueSet-shr-core-GradedAmountVS.ttl.html">Turtle</a></li>
-
-</ul>
-
-<h2>GradedAmountVS</h2>
-
-<pre class="json">
-{
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "shr-core-GradedAmountVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;\n&lt;p&gt;&lt;b&gt;GradedAmountVS ValueSet&lt;/b&gt;&lt;/p&gt;\n&lt;p&gt;A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.&lt;/p&gt;\n&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/PACIO-functional-status/ValueSet/shr-core-GradedAmountVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "GradedAmountVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Graded Amount VS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2019-12-04T00:00:00+00:00",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/patientcare/"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/homehealth/"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
-    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "260413007",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "None"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "55605001",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Minimal"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "255507004",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Small"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "255508009",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medium"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "255509001",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Large"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "42425007",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Equivocal. Equivocal represents a borderline value, too close to call; for example, a value very close to a cut-off between positive and negative."
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "82334004",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Indeterminate. Indeterminate means the results were uninterpretable, or cannot be determined; technical issues prevented obtaining a valid result."
-          }
-        ]
-      }
-    ]
+  <!-- Script to make the iframe fill the full height available to it -->
+  <!-- Adapted from https://stackoverflow.com/a/330006/489105 -->
+<script>
+//  <!-- [CDATA[
+  var graphFrame = document.getElementById('graph');
+  function pageY(elem) {
+      return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
   }
-}</pre>
-
+  function resizeGraphFrame() {
+    var height = document.documentElement.clientHeight;
+    height -= pageY(graphFrame);
+    height -= document.getElementById('segment-footer').clientHeight;
+    height = (height < 0) ? 0 : height;
+    graphFrame.style.height = height + 'px';
+  }
+  // .onload doesn't work with IE8 and older.
+  if (graphFrame.attachEvent) {
+    graphFrame.attachEvent("onload", resizeGraphFrame);
+  } else {
+    graphFrame.onload = resizeGraphFrame;
+  }
+  window.onresize = resizeGraphFrame;
+//]] -->
+</script>
 
   <!-- ==============END CONTENT END CONTENT=================== -->
 
@@ -240,15 +180,15 @@
         Links:
         <a style="color: #81BEF7" href="index.html">Home</a>
         | <a style="color: #81BEF7" href="qa.html">QA Report</a>
-        | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/PACIO-functional-status/history.html" target="_blank"><a name="775d7e92-bf76-4364-badd-6f5667bf0fdf">​</a>
+        | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/PACIO-functional-status/history.html" target="_blank"><a name="fd8dc5c5-6c63-43fe-b4cb-73fe79bdf3bd">​</a>
           Version History
           <img src="external.png" alt="external" style="text-align: baseline">
         
-        | <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html" target="_blank"><a name="f4f269d6-35ec-4488-8801-438f97a6bc76">​</a>
-          <img src="cc0.png" alt="CC0" style="border-style: none;"><a name="bbf7d3fc-1d9a-4bc2-a827-a51f83b97c6d">​</a>
+        | <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html" target="_blank"><a name="d687225a-df63-4b9f-9099-551c2233b1f8">​</a>
+          <img src="cc0.png" alt="CC0" style="border-style: none;"><a name="c9d80eb3-4565-447e-bf6f-69cce772bb75">​</a>
           <img src="external.png" alt="external" style="text-align: baseline">
         
-        | <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank"><a name="a70a88c7-5aeb-474a-b705-803b5848d67f">​</a>
+        | <a style="color: #81BEF7" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677" target="_blank"><a name="027cf0a8-5f5b-4a66-9a8d-1012b6865f84">​</a>
           Propose a change
           <img src="external.png" alt="external" style="text-align: baseline">
         
@@ -278,4 +218,4 @@
 
 
 
-</img></a></img></img></a></img></a></span></p></div></div></div></body></link></head></html>
+ </img></a></img></img></a></img></a></span></p></div></div></div></body></link></head></html>
