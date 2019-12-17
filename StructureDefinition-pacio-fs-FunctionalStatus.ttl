@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus> a fhir:StructureDefinition;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-fs-FunctionalStatus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain performer to 0..1\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n</pre></p>\n</div>"
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "FunctionalStatus"];
   fhir:StructureDefinition.title [ fhir:value "Functional Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2019-12-04T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-12-17T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -766,6 +766,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "final" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -964,21 +965,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Group";
-           fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Device";
-           fhir:index 2;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Location";
-           fhir:index 3;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1250,7 +1239,7 @@
        fhir:ElementDefinition.definition [ fhir:value "Who was responsible for asserting the observed value as \"true\"." ];
        fhir:ElementDefinition.requirements [ fhir:value "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Observation.performer" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1325,7 +1314,7 @@
        fhir:ElementDefinition.comment [ fhir:value "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below." ];
        fhir:ElementDefinition.requirements [ fhir:value "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.max [ fhir:value "0" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Observation.value[x]" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1435,6 +1424,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -1543,7 +1533,12 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ]
+         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation>
+         ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
@@ -1557,6 +1552,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -2359,29 +2355,21 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/DocumentReference";
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference>
          ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/ImagingStudy";
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media>
          ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Media";
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse";
            fhir:index 2;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse>
          ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse";
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation";
            fhir:index 3;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
-           fhir:index 4;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/MolecularSequence";
-           fhir:index 5;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2396,6 +2384,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -2918,42 +2907,105 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "Observation.status" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.status" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "final" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "Observation.subject" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.subject" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient>
+         ]
+       ]
+     ], [
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Observation.issued" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.issued" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "Observation.performer" ];
-       fhir:ElementDefinition.path [ fhir:value "Observation.performer" ];
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Observation.value[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ]
+       fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "Observation.dataAbsentReason" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.dataAbsentReason" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 4;
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "Observation.note" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.note" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Annotation" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 5;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "Observation.derivedFrom" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.derivedFrom" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference>
+         ], [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media>
+         ], [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse>
+         ], [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus.ttl> .
 
 # -------------------------------------------------------------------------------------
 

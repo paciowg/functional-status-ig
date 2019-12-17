@@ -3,14 +3,14 @@
   "id": "pacio-fs-FunctionalStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain performer to 0..1\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n</pre></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus",
+  "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus",
   "version": "0.1.0",
   "name": "FunctionalStatus",
   "title": "Functional Status",
   "status": "active",
-  "date": "2019-12-04T00:00:00+00:00",
+  "date": "2019-12-17T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -678,6 +678,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "final",
         "constraint": [
           {
             "key": "ele-1",
@@ -868,10 +869,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"
             ]
           }
         ],
@@ -1138,7 +1136,7 @@
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -1196,7 +1194,7 @@
         "comment": "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.",
         "requirements": "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.value[x]",
           "min": 0,
@@ -1303,6 +1301,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
         "binding": {
@@ -1407,7 +1406,10 @@
         },
         "type": [
           {
-            "code": "Annotation"
+            "code": "Annotation",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"
+            ]
           }
         ],
         "constraint": [
@@ -1420,6 +1422,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -2182,12 +2185,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-              "http://hl7.org/fhir/StructureDefinition/Media",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
             ]
           }
         ],
@@ -2201,6 +2202,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -2704,22 +2706,57 @@
         "isSummary": false
       },
       {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.issued",
         "path": "Observation.issued",
         "min": 0,
         "max": "0"
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
         "min": 0,
-        "max": "1"
+        "max": "0"
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
       },
       {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
         "min": 0,
         "max": "0"
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "type": [
+          {
+            "code": "Annotation",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.specimen",
@@ -2732,6 +2769,22 @@
         "path": "Observation.referenceRange",
         "min": 0,
         "max": "0"
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

@@ -8,20 +8,25 @@
   <p>An exchange of functional status information.</p>
   <p><b>Mapping Summary</b></p>
   <p><pre>pacio-fs.FunctionalStatus maps to Observation:
-  constrain performer to 0..1
   constrain issued to 0..0
   constrain interpretation to 0..0
   constrain specimen to 0..0
   constrain referenceRange to 0..0
+  constrain value[x] to 0..0
+  fix status to #final 
+  DataAbsentReason maps to dataAbsentReason
+  Annotation maps to note
+  DerivedFrom maps to derivedFrom
+  Subject maps to subject
 </pre></p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-functional-status/StructureDefinition/pacio-fs-FunctionalStatus"/>
+  <url value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus"/>
   <version value="0.1.0"/>
   <name value="FunctionalStatus"/>
   <title value="Functional Status"/>
   <status value="active"/>
-  <date value="2019-12-04T00:00:00+00:00"/>
+  <date value="2019-12-17T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -576,6 +581,7 @@
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="final"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -734,10 +740,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -958,7 +961,7 @@
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;."/>
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <base>
         <path value="Observation.performer"/>
         <min value="0"/>
@@ -1007,7 +1010,7 @@
       <comment value="An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below."/>
       <requirements value="An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="Observation.value[x]"/>
         <min value="0"/>
@@ -1099,6 +1102,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -1185,6 +1189,7 @@
       </base>
       <type>
         <code value="Annotation"/>
+        <profile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1194,6 +1199,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -1813,12 +1819,10 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1828,6 +1832,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -2244,20 +2249,43 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
+    <element id="Observation.status">
+      <path value="Observation.status"/>
+      <fixedCode value="final"/>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"/>
+      </type>
+    </element>
     <element id="Observation.issued">
       <path value="Observation.issued"/>
       <min value="0"/>
       <max value="0"/>
     </element>
-    <element id="Observation.performer">
-      <path value="Observation.performer"/>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.interpretation">
       <path value="Observation.interpretation"/>
       <min value="0"/>
       <max value="0"/>
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note"/>
+      <type>
+        <code value="Annotation"/>
+        <profile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"/>
+      </type>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.specimen">
       <path value="Observation.specimen"/>
@@ -2268,6 +2296,17 @@
       <path value="Observation.referenceRange"/>
       <min value="0"/>
       <max value="0"/>
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse"/>
+        <targetProfile value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"/>
+      </type>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>
