@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pacio-fs-SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SectionGGFunctionalAbilitiesAndGoals ValueSet</b></p>\n<p>For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code</p>\n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:ValueSet.title [ fhir:value "Section GG Functional Abilities And Goals"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2019-12-19T00:00:00+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare/" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/homehealth/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "GG0100" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/SectionGGFunctionalAbilitiesAndGoals" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "GG0110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prior Device Use" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "GG0130" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self-Care" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "GG0170" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobility" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals.ttl> .
+
+# -------------------------------------------------------------------------------------
+

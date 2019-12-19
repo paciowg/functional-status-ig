@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pacio-fs-SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SectionGGFunctionalAbilitiesAndGoals CodeSystem</b></p>\n<p>For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code</p>\n</div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "SectionGGFunctionalAbilitiesAndGoals"];
+  fhir:CodeSystem.title [ fhir:value "Section GG Functional Abilities And Goals"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2019-12-19T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare/" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/homehealth/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "GG0110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prior Device Use" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prior Device Use" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "GG0130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self-Care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self-Care" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "GG0170" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mobility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mobility" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals.ttl> .
+
+# -------------------------------------------------------------------------------------
+

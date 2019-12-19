@@ -50,7 +50,7 @@ Implementation note: Preference is given to using the National Library of Medici
   <title value="Medication Statement"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-12-17T00:00:00+00:00"/>
+  <date value="2019-12-19T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

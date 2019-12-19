@@ -2,12 +2,13 @@
 =========================================
 
 err = 6, warn = 0, info = 0
-IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.24-SNAPSHOT
-Generated Tue Dec 17 15:00:26 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.29-SNAPSHOT
+Generated Thu Dec 19 14:25:21 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-pacio-fs-SectionGGFunctionalAbilitiesAndGoals : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest : 0 / 0
@@ -106,10 +107,12 @@ Generated Tue Dec 17 15:00:26 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-SectionGGFunctionalAbilitiesAndGoals : 0 / 0
 </table>
 == n/a ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig.xml ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest.json ==
@@ -211,3 +214,4 @@ ERROR: obf-StudyArmTypeVS: Error from server: Unable to provide support for code
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.json ==

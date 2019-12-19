@@ -10,7 +10,7 @@
   "name": "PACIO_Functional_Status",
   "title": "PACIO Functional Status",
   "status": "draft",
-  "date": "2019-12-17T14:57:32+00:00",
+  "date": "2019-12-19T14:22:21+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -1618,6 +1618,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals"
+        },
+        "name": "Section GG Functional Abilities And Goals",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-obf-datatype-SettingVS.html"
           }
         ],
@@ -1710,6 +1727,23 @@
           "reference": "CodeSystem/obf-ResearchSubjectTerminationReasonCS"
         },
         "name": "Research Subject Termination Reason CS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals"
+        },
+        "name": "Section GG Functional Abilities And Goals",
         "exampleBoolean": false
       },
       {

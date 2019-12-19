@@ -55,7 +55,7 @@ SHR does not allow the 'not given' attributes from DSTU2 and STU3, since they ar
   <name value="MedicationAdministration"/>
   <title value="Medication Administration"/>
   <status value="draft"/>
-  <date value="2019-12-17T00:00:00+00:00"/>
+  <date value="2019-12-19T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

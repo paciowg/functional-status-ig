@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "pacio-fs-FunctionalStatus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n  FunctionalStatusCode maps to code\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "FunctionalStatus"];
   fhir:StructureDefinition.title [ fhir:value "Functional Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2019-12-17T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-12-19T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -909,16 +909,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "ObservationCode" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Codes identifying names of simple observations." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/observation-codes";
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-codes>
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals";
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2912,6 +2906,17 @@
        fhir:ElementDefinition.fixedCode [ fhir:value "final" ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "Observation.code" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.code" ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals";
+           fhir:link <http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals>
+         ]
+       ]
+     ], [
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Observation.subject" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.subject" ];
        fhir:ElementDefinition.type [
@@ -2924,30 +2929,30 @@
          ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Observation.issued" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.issued" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Observation.dataAbsentReason" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.dataAbsentReason" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Observation.note" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.note" ];
        fhir:ElementDefinition.type [
@@ -2961,19 +2966,19 @@
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Observation.derivedFrom" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.derivedFrom" ];
        fhir:ElementDefinition.type [

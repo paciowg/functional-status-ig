@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Functional_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-12-17T14:57:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-19T14:22:21+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1625,6 +1625,23 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Section GG Functional Abilities And Goals" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-SettingVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1634,7 +1651,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1651,7 +1668,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Study Arm Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94;
+       fhir:index 95;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1668,7 +1685,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Treatment Intent VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95;
+       fhir:index 96;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1685,7 +1702,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Treatment Termination Reason VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 96;
+       fhir:index 97;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1702,7 +1719,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units Of Length VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 97;
+       fhir:index 98;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1719,7 +1736,24 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Termination Reason CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 98;
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Section GG Functional Abilities And Goals" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1927,6 +1961,8 @@
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-ResearchSubjectTerminationReasonVS> a fhir:us .
 
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals> a fhir:us .
+
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-SettingVS> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-StudyArmTypeVS> a fhir:us .
@@ -1938,6 +1974,8 @@
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-UnitsOfLengthVS> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-ResearchSubjectTerminationReasonCS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-datatype-SettingCS> a fhir:us .
 

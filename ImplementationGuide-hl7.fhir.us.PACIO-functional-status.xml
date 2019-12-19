@@ -10,7 +10,7 @@
   <name value="PACIO_Functional_Status"/>
   <title value="PACIO Functional Status"/>
   <status value="draft"/>
-  <date value="2019-12-17T14:57:32+00:00"/>
+  <date value="2019-12-19T14:22:21+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -1236,6 +1236,19 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pacio-fs-SectionGGFunctionalAbilitiesAndGoals"/>
+      </reference>
+      <name value="Section GG Functional Abilities And Goals"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-obf-datatype-SettingVS.html"/>
       </extension>
       <reference>
@@ -1307,6 +1320,19 @@
         <reference value="CodeSystem/obf-ResearchSubjectTerminationReasonCS"/>
       </reference>
       <name value="Research Subject Termination Reason CS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-pacio-fs-SectionGGFunctionalAbilitiesAndGoals.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pacio-fs-SectionGGFunctionalAbilitiesAndGoals"/>
+      </reference>
+      <name value="Section GG Functional Abilities And Goals"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

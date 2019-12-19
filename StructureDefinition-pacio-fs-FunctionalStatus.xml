@@ -18,6 +18,7 @@
   Annotation maps to note
   DerivedFrom maps to derivedFrom
   Subject maps to subject
+  FunctionalStatusCode maps to code
 </pre></p>
 </div>
   </text>
@@ -26,7 +27,7 @@
   <name value="FunctionalStatus"/>
   <title value="Functional Status"/>
   <status value="active"/>
-  <date value="2019-12-17T00:00:00+00:00"/>
+  <date value="2019-12-19T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -693,12 +694,8 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode"/>
-        </extension>
-        <strength value="example"/>
-        <description value="Codes identifying names of simple observations."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2252,6 +2249,13 @@
     <element id="Observation.status">
       <path value="Observation.status"/>
       <fixedCode value="final"/>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/vs/SectionGGFunctionalAbilitiesAndGoals"/>
+      </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
