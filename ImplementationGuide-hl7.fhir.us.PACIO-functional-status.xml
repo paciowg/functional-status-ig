@@ -10,7 +10,7 @@
   <name value="PACIO_Functional_Status"/>
   <title value="PACIO Functional Status"/>
   <status value="draft"/>
-  <date value="2019-12-19T14:22:21+00:00"/>
+  <date value="2019-12-19T20:41:27+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -98,6 +98,19 @@
         <reference value="StructureDefinition/obf-Appointment"/>
       </reference>
       <name value="Appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-BundledFunctionalStatus.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-BundledFunctionalStatus"/>
+      </reference>
+      <name value="Bundled Functional Status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -761,6 +774,19 @@
         <reference value="StructureDefinition/obf-datatype-Comparator-extension"/>
       </reference>
       <name value="Comparator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-DerivedFrom-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-DerivedFrom-extension"/>
+      </reference>
+      <name value="Derived From"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

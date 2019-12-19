@@ -3,7 +3,7 @@
 
 err = 6, warn = 0, info = 0
 IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.29-SNAPSHOT
-Generated Thu Dec 19 14:25:21 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+Generated Thu Dec 19 20:44:25 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS : 0 / 0
@@ -23,6 +23,7 @@ Generated Thu Dec 19 14:25:21 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DerivedFrom-extension : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport : 0 / 0
@@ -97,6 +98,7 @@ Generated Thu Dec 19 14:25:21 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-BundledFunctionalStatus : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS : 1 / 0
@@ -127,6 +129,7 @@ Generated Thu Dec 19 14:25:21 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DerivedFrom-extension.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport.json ==
@@ -203,6 +206,7 @@ ERROR: StructureDefinition/obf-HealthcareService: StructureDefinition.differenti
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-BundledFunctionalStatus.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS.json ==

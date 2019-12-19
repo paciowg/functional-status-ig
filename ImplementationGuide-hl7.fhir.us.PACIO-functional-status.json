@@ -10,7 +10,7 @@
   "name": "PACIO_Functional_Status",
   "title": "PACIO Functional Status",
   "status": "draft",
-  "date": "2019-12-19T14:22:21+00:00",
+  "date": "2019-12-19T20:41:27+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -129,6 +129,23 @@
           "reference": "StructureDefinition/obf-Appointment"
         },
         "name": "Appointment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-BundledFunctionalStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-BundledFunctionalStatus"
+        },
+        "name": "Bundled Functional Status",
         "exampleBoolean": false
       },
       {
@@ -996,6 +1013,23 @@
           "reference": "StructureDefinition/obf-datatype-Comparator-extension"
         },
         "name": "Comparator",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-DerivedFrom-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-DerivedFrom-extension"
+        },
+        "name": "Derived From",
         "exampleBoolean": false
       },
       {

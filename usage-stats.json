@@ -32,6 +32,66 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DerivedFrom-extension",
+      "title": "Derived From",
+      "types": [
+        "Reference",
+        "Reference",
+        "Reference",
+        "Reference",
+        "uri",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosisCode-extension",
       "title": "Diagnosis Code",
       "types": [
@@ -625,6 +685,10 @@
     ],
     "Observation": [
       {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-BundledFunctionalStatus",
+        "title": "Bundled Functional Status"
+      },
+      {
         "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus",
         "title": "Functional Status"
       }
@@ -763,6 +827,9 @@
     "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-CareContext-extension": [
       "DocumentReference",
       "DomainResource"
+    ],
+    "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DerivedFrom-extension": [
+      "Observation"
     ],
     "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosisCode-extension": [
       "Encounter.diagnosis",

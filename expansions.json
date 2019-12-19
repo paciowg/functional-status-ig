@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "afce8c33-d091-4e24-9f63-31f97afdf2fb",
+  "id" : "d8da584d-fae9-4e98-8a9f-d4253ff00c9c",
   "meta" : {
-    "lastUpdated" : "2019-12-19T14:22:21.497+00:00"
+    "lastUpdated" : "2019-12-19T20:41:27.376+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -37,8 +37,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:a15f65e5-1c4a-4c28-a43a-e4afc140bdc6",
-        "timestamp" : "2019-12-19T14:22:55+00:00",
+        "identifier" : "urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8",
+        "timestamp" : "2019-12-19T20:42:01+00:00",
         "total" : 817,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4172,8 +4172,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:a15f65e5-1c4a-4c28-a43a-e4afc140bdc6",
-        "timestamp" : "2019-12-19T14:22:55+00:00",
+        "identifier" : "urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8",
+        "timestamp" : "2019-12-19T20:42:01+00:00",
         "total" : 817,
         "parameter" : [{
           "name" : "excludeNested",
@@ -8311,8 +8311,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:a6248749-1cf8-4f39-abde-b190a94ad41a",
-        "timestamp" : "2019-12-19T14:23:44+00:00",
+        "identifier" : "urn:uuid:ca313803-a2a6-428b-91f6-208703af3f48",
+        "timestamp" : "2019-12-19T20:42:53+00:00",
         "total" : 1006,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13391,8 +13391,8 @@
       }],
       "description" : "The reason for a research subject leaving a research study.",
       "expansion" : {
-        "identifier" : "urn:uuid:6f10be72-aaa3-40f2-a1ed-05cc51c66948",
-        "timestamp" : "2019-12-19T14:24:42+00:00",
+        "identifier" : "urn:uuid:088ab1e2-ddb3-427d-8c30-ddd717ccca33",
+        "timestamp" : "2019-12-19T20:43:52+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13463,8 +13463,8 @@
       }],
       "description" : "For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code",
       "expansion" : {
-        "identifier" : "urn:uuid:dfe35869-98ce-4840-abbd-78a5f8717474",
-        "timestamp" : "2019-12-19T14:24:42+00:00",
+        "identifier" : "urn:uuid:28cf20de-85a8-498e-b482-a6f392feb842",
+        "timestamp" : "2019-12-19T20:43:52+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13524,8 +13524,8 @@
       }],
       "description" : "What type of place is found at a given location. More than one descriptor may be applicable.",
       "expansion" : {
-        "identifier" : "urn:uuid:a8f906f8-1e9a-4cb6-a981-452df38ca12b",
-        "timestamp" : "2019-12-19T14:24:43+00:00",
+        "identifier" : "urn:uuid:f6157350-b57a-4e7f-b667-0c4f8e88d3e9",
+        "timestamp" : "2019-12-19T20:43:52+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13736,8 +13736,8 @@
       }],
       "description" : "The purpose of a treatment. The value set includes 'curative' and 'palliative'. Curative is defined as any treatment meant to reduce or control a disease process, even if a 'cure' is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics.",
       "expansion" : {
-        "identifier" : "urn:uuid:90cdb8f2-4bc1-491a-b10b-8b1665b2cc66",
-        "timestamp" : "2019-12-19T14:24:43+00:00",
+        "identifier" : "urn:uuid:2847a745-51ec-4bbb-bfd6-a28b7c098bac",
+        "timestamp" : "2019-12-19T20:43:52+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13792,8 +13792,8 @@
       }],
       "description" : "Values used to describe the reasons for stopping a treatment. Includes code for 'treatment completed' as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments.",
       "expansion" : {
-        "identifier" : "urn:uuid:439edf61-87ea-4cc5-a8e0-ffde77bdcf69",
-        "timestamp" : "2019-12-19T14:24:43+00:00",
+        "identifier" : "urn:uuid:69a3025b-f2d2-4caa-ac22-e7dd92a535ca",
+        "timestamp" : "2019-12-19T20:43:53+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13873,8 +13873,8 @@
       }],
       "description" : "Units of measure related to length or distance.",
       "expansion" : {
-        "identifier" : "urn:uuid:b2ebb8da-1ce4-427a-9c6b-cfab674cf97b",
-        "timestamp" : "2019-12-19T14:24:43+00:00",
+        "identifier" : "urn:uuid:79ffa792-deb1-483a-90c5-c88fb712fad3",
+        "timestamp" : "2019-12-19T20:43:53+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
