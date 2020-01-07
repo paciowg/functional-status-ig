@@ -3,7 +3,7 @@
 
 err = 6, warn = 0, info = 0
 IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.37-SNAPSHOT
-Generated Tue Jan 07 16:38:58 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+Generated Tue Jan 07 17:02:54 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS : 0 / 0
