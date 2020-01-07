@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "pacio-fs-BundledFunctionalStatus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BundledFunctionalStatus Profile</b></p>\n  <p>An bundled point in time package of functional status observations.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.BundledFunctionalStatus maps to Observation:\n  constrain performer to 0..1\n  constrain issued to 0..0\n  fix status to #final \n  Subject maps to subject\n  fix code to #10158-4\n  BundledSummary maps to value[x]\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>BundledFunctionalStatus Profile</b></p>\n  <p>An bundled point in time package of functional status observations.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.BundledFunctionalStatus maps to Observation:\n  constrain performer to 0..1\n  constrain issued to 0..0\n  fix status to #final\n  Subject maps to subject\n  fix code to #10158-4\n  BundledSummary maps to value[x]\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-BundledFunctionalStatus"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "BundledFunctionalStatus"];
   fhir:StructureDefinition.title [ fhir:value "Bundled Functional Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2019-12-19T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-01-07T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

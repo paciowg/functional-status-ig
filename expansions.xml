@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d8da584d-fae9-4e98-8a9f-d4253ff00c9c"/>
+  <id value="45976f40-bf9a-485e-9a5a-e3d044a118e3"/>
   <meta>
-    <lastUpdated value="2019-12-19T20:41:27.376+00:00"/>
+    <lastUpdated value="2020-01-07T16:34:50.639+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -6577,7 +6577,7 @@
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -6594,8 +6594,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8"/>
-          <timestamp value="2019-12-19T20:42:01+00:00"/>
+          <identifier value="urn:uuid:fb650220-2954-40f0-9823-5c6c97bae3c4"/>
+          <timestamp value="2020-01-07T16:35:23+00:00"/>
           <total value="817"/>
           <parameter>
             <name value="excludeNested"/>
@@ -17269,7 +17269,7 @@
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -17286,8 +17286,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8"/>
-          <timestamp value="2019-12-19T20:42:01+00:00"/>
+          <identifier value="urn:uuid:fb650220-2954-40f0-9823-5c6c97bae3c4"/>
+          <timestamp value="2020-01-07T16:35:23+00:00"/>
           <total value="817"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29473,7 +29473,7 @@
         <name value="LandmarkTypeVS"/>
         <title value="Landmark Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29493,8 +29493,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:ca313803-a2a6-428b-91f6-208703af3f48"/>
-          <timestamp value="2019-12-19T20:42:53+00:00"/>
+          <identifier value="urn:uuid:49ba0af4-3ee7-4fd4-a596-d5bd814d0c61"/>
+          <timestamp value="2020-01-07T16:36:41+00:00"/>
           <total value="1006"/>
           <parameter>
             <name value="excludeNested"/>
@@ -34629,7 +34629,7 @@
         <name value="ResearchSubjectTerminationReasonVS"/>
         <title value="Research Subject Termination Reason VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -34643,8 +34643,8 @@
         </contact>
         <description value="The reason for a research subject leaving a research study."/>
         <expansion>
-          <identifier value="urn:uuid:088ab1e2-ddb3-427d-8c30-ddd717ccca33"/>
-          <timestamp value="2019-12-19T20:43:52+00:00"/>
+          <identifier value="urn:uuid:430dbbca-6c5d-4c49-b839-f1ff635fafd1"/>
+          <timestamp value="2020-01-07T16:38:17+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -34747,7 +34747,7 @@
         <name value="SectionGGFunctionalAbilitiesAndGoals"/>
         <title value="Section GG Functional Abilities And Goals"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -34761,8 +34761,8 @@
         </contact>
         <description value="For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"/>
         <expansion>
-          <identifier value="urn:uuid:28cf20de-85a8-498e-b482-a6f392feb842"/>
-          <timestamp value="2019-12-19T20:43:52+00:00"/>
+          <identifier value="urn:uuid:e4ee39a1-34bf-4883-a1d5-7b1676fe6231"/>
+          <timestamp value="2020-01-07T16:38:18+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35102,7 +35102,7 @@
         <name value="SettingVS"/>
         <title value="Setting VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -35116,8 +35116,8 @@
         </contact>
         <description value="What type of place is found at a given location. More than one descriptor may be applicable."/>
         <expansion>
-          <identifier value="urn:uuid:f6157350-b57a-4e7f-b667-0c4f8e88d3e9"/>
-          <timestamp value="2019-12-19T20:43:52+00:00"/>
+          <identifier value="urn:uuid:2b9f6e0c-ca52-4922-89f6-9fffe9557a08"/>
+          <timestamp value="2020-01-07T16:38:18+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35352,7 +35352,7 @@
         <name value="TreatmentIntentVS"/>
         <title value="Treatment Intent VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -35366,8 +35366,8 @@
         </contact>
         <description value="The purpose of a treatment. The value set includes &#39;curative&#39; and &#39;palliative&#39;. Curative is defined as any treatment meant to reduce or control a disease process, even if a &#39;cure&#39; is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics."/>
         <expansion>
-          <identifier value="urn:uuid:2847a745-51ec-4bbb-bfd6-a28b7c098bac"/>
-          <timestamp value="2019-12-19T20:43:52+00:00"/>
+          <identifier value="urn:uuid:1a45183a-0a6a-4260-ac60-59d588089186"/>
+          <timestamp value="2020-01-07T16:38:19+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35486,7 +35486,7 @@
         <name value="TreatmentTerminationReasonVS"/>
         <title value="Treatment Termination Reason VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -35500,8 +35500,8 @@
         </contact>
         <description value="Values used to describe the reasons for stopping a treatment. Includes code for &#39;treatment completed&#39; as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments."/>
         <expansion>
-          <identifier value="urn:uuid:69a3025b-f2d2-4caa-ac22-e7dd92a535ca"/>
-          <timestamp value="2019-12-19T20:43:53+00:00"/>
+          <identifier value="urn:uuid:b13165d8-f67c-4235-a546-c010f1ff4454"/>
+          <timestamp value="2020-01-07T16:38:19+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35626,7 +35626,7 @@
         <name value="UnitsOfLengthVS"/>
         <title value="Units Of Length VS"/>
         <status value="draft"/>
-        <date value="2019-12-19T00:00:00+00:00"/>
+        <date value="2020-01-07T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -35640,8 +35640,8 @@
         </contact>
         <description value="Units of measure related to length or distance."/>
         <expansion>
-          <identifier value="urn:uuid:79ffa792-deb1-483a-90c5-c88fb712fad3"/>
-          <timestamp value="2019-12-19T20:43:53+00:00"/>
+          <identifier value="urn:uuid:bccdc67e-7f4c-430f-82f0-26e8271c966e"/>
+          <timestamp value="2020-01-07T16:38:19+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

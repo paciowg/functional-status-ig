@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d8da584d-fae9-4e98-8a9f-d4253ff00c9c",
+  "id" : "45976f40-bf9a-485e-9a5a-e3d044a118e3",
   "meta" : {
-    "lastUpdated" : "2019-12-19T20:41:27.376+00:00"
+    "lastUpdated" : "2020-01-07T16:34:50.639+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AnatomicalDirectionVS",
       "title" : "Anatomical Direction VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -37,8 +37,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8",
-        "timestamp" : "2019-12-19T20:42:01+00:00",
+        "identifier" : "urn:uuid:fb650220-2954-40f0-9823-5c6c97bae3c4",
+        "timestamp" : "2020-01-07T16:35:23+00:00",
         "total" : 817,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4154,7 +4154,7 @@
       "name" : "AnatomicalDirectionVS",
       "title" : "Anatomical Direction VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -4172,8 +4172,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:d4f17baa-6dbf-4655-8980-509035033ea8",
-        "timestamp" : "2019-12-19T20:42:01+00:00",
+        "identifier" : "urn:uuid:fb650220-2954-40f0-9823-5c6c97bae3c4",
+        "timestamp" : "2020-01-07T16:35:23+00:00",
         "total" : 817,
         "parameter" : [{
           "name" : "excludeNested",
@@ -8289,7 +8289,7 @@
       "name" : "LandmarkTypeVS",
       "title" : "Landmark Type VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -8311,8 +8311,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:ca313803-a2a6-428b-91f6-208703af3f48",
-        "timestamp" : "2019-12-19T20:42:53+00:00",
+        "identifier" : "urn:uuid:49ba0af4-3ee7-4fd4-a596-d5bd814d0c61",
+        "timestamp" : "2020-01-07T16:36:41+00:00",
         "total" : 1006,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13377,7 +13377,7 @@
       "name" : "ResearchSubjectTerminationReasonVS",
       "title" : "Research Subject Termination Reason VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13391,8 +13391,8 @@
       }],
       "description" : "The reason for a research subject leaving a research study.",
       "expansion" : {
-        "identifier" : "urn:uuid:088ab1e2-ddb3-427d-8c30-ddd717ccca33",
-        "timestamp" : "2019-12-19T20:43:52+00:00",
+        "identifier" : "urn:uuid:430dbbca-6c5d-4c49-b839-f1ff635fafd1",
+        "timestamp" : "2020-01-07T16:38:17+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13449,7 +13449,7 @@
       "name" : "SectionGGFunctionalAbilitiesAndGoals",
       "title" : "Section GG Functional Abilities And Goals",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13463,8 +13463,8 @@
       }],
       "description" : "For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code",
       "expansion" : {
-        "identifier" : "urn:uuid:28cf20de-85a8-498e-b482-a6f392feb842",
-        "timestamp" : "2019-12-19T20:43:52+00:00",
+        "identifier" : "urn:uuid:e4ee39a1-34bf-4883-a1d5-7b1676fe6231",
+        "timestamp" : "2020-01-07T16:38:18+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13510,7 +13510,7 @@
       "name" : "SettingVS",
       "title" : "Setting VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13524,8 +13524,8 @@
       }],
       "description" : "What type of place is found at a given location. More than one descriptor may be applicable.",
       "expansion" : {
-        "identifier" : "urn:uuid:f6157350-b57a-4e7f-b667-0c4f8e88d3e9",
-        "timestamp" : "2019-12-19T20:43:52+00:00",
+        "identifier" : "urn:uuid:2b9f6e0c-ca52-4922-89f6-9fffe9557a08",
+        "timestamp" : "2020-01-07T16:38:18+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13722,7 +13722,7 @@
       "name" : "TreatmentIntentVS",
       "title" : "Treatment Intent VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13736,8 +13736,8 @@
       }],
       "description" : "The purpose of a treatment. The value set includes 'curative' and 'palliative'. Curative is defined as any treatment meant to reduce or control a disease process, even if a 'cure' is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics.",
       "expansion" : {
-        "identifier" : "urn:uuid:2847a745-51ec-4bbb-bfd6-a28b7c098bac",
-        "timestamp" : "2019-12-19T20:43:52+00:00",
+        "identifier" : "urn:uuid:1a45183a-0a6a-4260-ac60-59d588089186",
+        "timestamp" : "2020-01-07T16:38:19+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13778,7 +13778,7 @@
       "name" : "TreatmentTerminationReasonVS",
       "title" : "Treatment Termination Reason VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13792,8 +13792,8 @@
       }],
       "description" : "Values used to describe the reasons for stopping a treatment. Includes code for 'treatment completed' as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments.",
       "expansion" : {
-        "identifier" : "urn:uuid:69a3025b-f2d2-4caa-ac22-e7dd92a535ca",
-        "timestamp" : "2019-12-19T20:43:53+00:00",
+        "identifier" : "urn:uuid:b13165d8-f67c-4235-a546-c010f1ff4454",
+        "timestamp" : "2020-01-07T16:38:19+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -13859,7 +13859,7 @@
       "name" : "UnitsOfLengthVS",
       "title" : "Units Of Length VS",
       "status" : "draft",
-      "date" : "2019-12-19T00:00:00+00:00",
+      "date" : "2020-01-07T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -13873,8 +13873,8 @@
       }],
       "description" : "Units of measure related to length or distance.",
       "expansion" : {
-        "identifier" : "urn:uuid:79ffa792-deb1-483a-90c5-c88fb712fad3",
-        "timestamp" : "2019-12-19T20:43:53+00:00",
+        "identifier" : "urn:uuid:bccdc67e-7f4c-430f-82f0-26e8271c966e",
+        "timestamp" : "2020-01-07T16:38:19+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

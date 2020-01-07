@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "pacio-fs-FunctionalStatus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n  FunctionalStatusCode maps to code\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final\n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n  FunctionalStatusCode maps to code\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "FunctionalStatus"];
   fhir:StructureDefinition.title [ fhir:value "Functional Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2019-12-19T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-01-07T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

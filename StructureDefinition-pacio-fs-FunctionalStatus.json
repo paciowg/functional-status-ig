@@ -3,14 +3,14 @@
   "id": "pacio-fs-FunctionalStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final \n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n  FunctionalStatusCode maps to code\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>FunctionalStatus Profile</b></p>\n  <p>An exchange of functional status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-fs.FunctionalStatus maps to Observation:\n  constrain issued to 0..0\n  constrain interpretation to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain value[x] to 0..0\n  fix status to #final\n  DataAbsentReason maps to dataAbsentReason\n  Annotation maps to note\n  DerivedFrom maps to derivedFrom\n  Subject maps to subject\n  FunctionalStatusCode maps to code\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus",
   "version": "0.1.0",
   "name": "FunctionalStatus",
   "title": "Functional Status",
   "status": "active",
-  "date": "2019-12-19T00:00:00+00:00",
+  "date": "2020-01-07T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {

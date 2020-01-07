@@ -13,7 +13,7 @@
   constrain specimen to 0..0
   constrain referenceRange to 0..0
   constrain value[x] to 0..0
-  fix status to #final 
+  fix status to #final
   DataAbsentReason maps to dataAbsentReason
   Annotation maps to note
   DerivedFrom maps to derivedFrom
@@ -27,7 +27,7 @@
   <name value="FunctionalStatus"/>
   <title value="Functional Status"/>
   <status value="active"/>
-  <date value="2019-12-19T00:00:00+00:00"/>
+  <date value="2020-01-07T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
