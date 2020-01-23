@@ -3,7 +3,7 @@
   "name": "PACIO_Functional_Status",
   "package-id": "hl7.fhir.us.PACIO-functional-status",
   "ig-ver": "0.1.0",
-  "date": "Tue, 07 Jan, 2020 16:58:57 +0000",
+  "date": "Thu, 23 Jan, 2020 19:49:19 +0000",
   "errs": 6,
   "warnings": 0,
   "hints": 0,
