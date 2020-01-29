@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "SectionGGFunctionalAbilitiesAndGoals"];
   fhir:CodeSystem.title [ fhir:value "Section GG Functional Abilities And Goals"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2020-01-23T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-01-29T00:00:00+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;
