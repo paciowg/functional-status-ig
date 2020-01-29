@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2ab33121-2fbc-4917-be4d-50ea78483473"/>
+  <id value="61af55c1-d2df-4888-90b6-7a332058e024"/>
   <meta>
-    <lastUpdated value="2020-01-29T13:35:50.069+00:00"/>
+    <lastUpdated value="2020-01-29T14:58:04.820+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -6594,8 +6594,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d19249e6-8163-4388-a093-61741b1551b1"/>
-          <timestamp value="2020-01-29T13:36:13+00:00"/>
+          <identifier value="urn:uuid:6f5124bf-13c9-4c46-b5d7-dcfbe6a8a5ad"/>
+          <timestamp value="2020-01-29T14:58:27+00:00"/>
           <total value="817"/>
           <parameter>
             <name value="excludeNested"/>
@@ -17286,8 +17286,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d19249e6-8163-4388-a093-61741b1551b1"/>
-          <timestamp value="2020-01-29T13:36:13+00:00"/>
+          <identifier value="urn:uuid:6f5124bf-13c9-4c46-b5d7-dcfbe6a8a5ad"/>
+          <timestamp value="2020-01-29T14:58:27+00:00"/>
           <total value="817"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29493,8 +29493,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:033d7038-1eab-43ff-843f-31b4a3236983"/>
-          <timestamp value="2020-01-29T13:37:05+00:00"/>
+          <identifier value="urn:uuid:5a5d9841-f506-49b3-ae8e-573a9a8eb8c2"/>
+          <timestamp value="2020-01-29T14:59:35+00:00"/>
           <total value="1006"/>
           <parameter>
             <name value="excludeNested"/>
@@ -34643,8 +34643,8 @@
         </contact>
         <description value="The reason for a research subject leaving a research study."/>
         <expansion>
-          <identifier value="urn:uuid:30da97aa-2ec2-4989-91c0-a4844773eae4"/>
-          <timestamp value="2020-01-29T13:38:19+00:00"/>
+          <identifier value="urn:uuid:a9ea19cb-d41c-445e-88d3-06ba2101bc78"/>
+          <timestamp value="2020-01-29T15:00:39+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -34761,8 +34761,8 @@
         </contact>
         <description value="For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"/>
         <expansion>
-          <identifier value="urn:uuid:fb58db3a-ab4b-4115-9dec-f8b360ed83ae"/>
-          <timestamp value="2020-01-29T13:38:19+00:00"/>
+          <identifier value="urn:uuid:196c1dff-d5a0-45dd-a426-cd9f006fa254"/>
+          <timestamp value="2020-01-29T15:00:39+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35116,8 +35116,8 @@
         </contact>
         <description value="What type of place is found at a given location. More than one descriptor may be applicable."/>
         <expansion>
-          <identifier value="urn:uuid:9b6612f6-9588-492c-8446-1943668f8dc2"/>
-          <timestamp value="2020-01-29T13:38:19+00:00"/>
+          <identifier value="urn:uuid:0eeaac06-d064-49bc-bd83-210e19b6adaa"/>
+          <timestamp value="2020-01-29T15:00:39+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35366,8 +35366,8 @@
         </contact>
         <description value="The purpose of a treatment. The value set includes &#39;curative&#39; and &#39;palliative&#39;. Curative is defined as any treatment meant to reduce or control a disease process, even if a &#39;cure&#39; is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics."/>
         <expansion>
-          <identifier value="urn:uuid:8383aac0-b849-4356-967c-c03e68974b1e"/>
-          <timestamp value="2020-01-29T13:38:20+00:00"/>
+          <identifier value="urn:uuid:8b262678-d038-4a51-941b-f94f1869652a"/>
+          <timestamp value="2020-01-29T15:00:40+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35500,8 +35500,8 @@
         </contact>
         <description value="Values used to describe the reasons for stopping a treatment. Includes code for &#39;treatment completed&#39; as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments."/>
         <expansion>
-          <identifier value="urn:uuid:571ee8b0-615b-461c-ae2a-695deaaaafb8"/>
-          <timestamp value="2020-01-29T13:38:20+00:00"/>
+          <identifier value="urn:uuid:8fdab9fe-941f-448e-86e9-bd00972d219d"/>
+          <timestamp value="2020-01-29T15:00:40+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -35640,8 +35640,8 @@
         </contact>
         <description value="Units of measure related to length or distance."/>
         <expansion>
-          <identifier value="urn:uuid:49da7607-4d02-443c-b159-41ba3734ab73"/>
-          <timestamp value="2020-01-29T13:38:20+00:00"/>
+          <identifier value="urn:uuid:f47c185e-ee64-4229-8295-a625b9cd7fbc"/>
+          <timestamp value="2020-01-29T15:00:40+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
