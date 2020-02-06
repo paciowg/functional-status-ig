@@ -10,7 +10,7 @@
   <name value="PACIO_Functional_Status"/>
   <title value="PACIO Functional Status"/>
   <status value="draft"/>
-  <date value="2020-01-29T19:03:32+00:00"/>
+  <date value="2020-02-06T14:20:59+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -40,12 +40,90 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatus.html"/>
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusAdmissionPerformance.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pacio-fs-FunctionalStatus"/>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance"/>
       </reference>
-      <name value="Functional Status"/>
+      <name value="Functional Status Admission Performance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusDischargeGoalorPerformance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance"/>
+      </reference>
+      <name value="Functional Status Discharge Goalor Performance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusOASISSelfCareAndMobility.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility"/>
+      </reference>
+      <name value="Functional Status OASIS Self Care And Mobility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusPriorDeviceUse.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse"/>
+      </reference>
+      <name value="Functional Status Prior Device Use"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusPriorFunctioning.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning"/>
+      </reference>
+      <name value="Functional Status Prior Functioning"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusWheelchair.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusWheelchair"/>
+      </reference>
+      <name value="Functional Status Wheelchair"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-fs-FunctionalStatusWheelchairType.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-fs-FunctionalStatusWheelchairType"/>
+      </reference>
+      <name value="Functional Status Wheelchair Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

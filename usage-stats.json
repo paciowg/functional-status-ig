@@ -24,8 +24,32 @@
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus",
-        "title": "Functional Status"
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance",
+        "title": "Functional Status Admission Performance"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance",
+        "title": "Functional Status Discharge Goalor Performance"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility",
+        "title": "Functional Status OASIS Self Care And Mobility"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse",
+        "title": "Functional Status Prior Device Use"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning",
+        "title": "Functional Status Prior Functioning"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchair",
+        "title": "Functional Status Wheelchair"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchairType",
+        "title": "Functional Status Wheelchair Type"
       }
     ]
   },

@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 0, info = 0
-IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.51-SNAPSHOT
-Generated Wed Jan 29 19:03:45 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.61-SNAPSHOT
+Generated Thu Feb 06 14:21:19 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig : 0 / 0
@@ -12,7 +12,13 @@ Generated Wed Jan 29 19:03:45 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber : 0 / 0
- /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusAdmissionPerformance : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusDischargeGoalorPerformance : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusOASISSelfCareAndMobility : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusPriorDeviceUse : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusPriorFunctioning : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusWheelchair : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusWheelchairType : 0 / 0
 </table>
 == n/a ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig.xml ==
@@ -21,4 +27,10 @@ Generated Wed Jan 29 19:03:45 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber.json ==
-== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusAdmissionPerformance.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusDischargeGoalorPerformance.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusOASISSelfCareAndMobility.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusPriorDeviceUse.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusPriorFunctioning.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusWheelchair.json ==
+== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatusWheelchairType.json ==

@@ -10,7 +10,7 @@
   "name": "PACIO_Functional_Status",
   "title": "PACIO Functional Status",
   "status": "draft",
-  "date": "2020-01-29T19:03:32+00:00",
+  "date": "2020-02-06T14:20:59+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -54,13 +54,115 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatus.html"
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusAdmissionPerformance.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pacio-fs-FunctionalStatus"
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance"
         },
-        "name": "Functional Status",
+        "name": "Functional Status Admission Performance",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusDischargeGoalorPerformance.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance"
+        },
+        "name": "Functional Status Discharge Goalor Performance",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusOASISSelfCareAndMobility.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility"
+        },
+        "name": "Functional Status OASIS Self Care And Mobility",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusPriorDeviceUse.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse"
+        },
+        "name": "Functional Status Prior Device Use",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusPriorFunctioning.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning"
+        },
+        "name": "Functional Status Prior Functioning",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusWheelchair.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusWheelchair"
+        },
+        "name": "Functional Status Wheelchair",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-fs-FunctionalStatusWheelchairType.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-fs-FunctionalStatusWheelchairType"
+        },
+        "name": "Functional Status Wheelchair Type",
         "exampleBoolean": false
       },
       {

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Functional_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-01-29T19:03:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-02-06T14:20:59+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -61,16 +61,118 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatus.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusAdmissionPerformance.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatus" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Admission Performance" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusDischargeGoalorPerformance.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Discharge Goalor Performance" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusOASISSelfCareAndMobility.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status OASIS Self Care And Mobility" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusPriorDeviceUse.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Prior Device Use" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusPriorFunctioning.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Prior Functioning" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusWheelchair.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchair>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusWheelchair" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Wheelchair" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs-FunctionalStatusWheelchairType.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchairType>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs-FunctionalStatusWheelchairType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Wheelchair Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -87,7 +189,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Provider Identifier" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -104,7 +206,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -121,7 +223,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -138,7 +240,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -162,7 +264,19 @@
      ]
   ] .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatus> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusAdmissionPerformance> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusDischargeGoalorPerformance> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusOASISSelfCareAndMobility> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorDeviceUse> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusPriorFunctioning> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchair> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-fs-FunctionalStatusWheelchairType> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-NationalProviderIdentifier> a fhir:us .
 
