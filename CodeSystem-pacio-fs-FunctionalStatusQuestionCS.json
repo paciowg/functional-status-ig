@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pacio-fs-FunctionalStatusQuestionCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>FunctionalStatusQuestionCS CodeSystem</b></p>\n<p>For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/FunctionalStatusQuestionCS",
+  "version": "0.1.0",
+  "name": "FunctionalStatusQuestionCS",
+  "title": "Functional Status Question CS",
+  "status": "draft",
+  "date": "2020-02-13T00:00:00+00:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "description": "For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "LA11539-6",
+      "display": "Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.",
+      "definition": "Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."
+    },
+    {
+      "code": "LA26832-8",
+      "display": "Needed some help - Patient needed partial assistance from another person to complete activities.",
+      "definition": "Needed some help - Patient needed partial assistance from another person to complete activities."
+    },
+    {
+      "code": "LA11541-2",
+      "display": "Dependent - A helper completed the activities for the patient.",
+      "definition": "Dependent - A helper completed the activities for the patient."
+    },
+    {
+      "code": "LA4489-6",
+      "display": "Unknown",
+      "definition": "Unknown"
+    },
+    {
+      "code": "LA4720-4",
+      "display": "Not Applicable",
+      "definition": "Not Applicable"
+    }
+  ]
+}

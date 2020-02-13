@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pacio-fs-FunctionalStatusQuestionCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>FunctionalStatusQuestionCS CodeSystem</b></p>
+<p>For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code</p>
+</div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/FunctionalStatusQuestionCS"/>
+  <version value="0.1.0"/>
+  <name value="FunctionalStatusQuestionCS"/>
+  <title value="Functional Status Question CS"/>
+  <status value="draft"/>
+  <date value="2020-02-13T00:00:00+00:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <description value="For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="LA11539-6"/>
+    <display value="Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."/>
+    <definition value="Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."/>
+  </concept>
+  <concept>
+    <code value="LA26832-8"/>
+    <display value="Needed some help - Patient needed partial assistance from another person to complete activities."/>
+    <definition value="Needed some help - Patient needed partial assistance from another person to complete activities."/>
+  </concept>
+  <concept>
+    <code value="LA11541-2"/>
+    <display value="Dependent - A helper completed the activities for the patient."/>
+    <definition value="Dependent - A helper completed the activities for the patient."/>
+  </concept>
+  <concept>
+    <code value="LA4489-6"/>
+    <display value="Unknown"/>
+    <definition value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="LA4720-4"/>
+    <display value="Not Applicable"/>
+    <definition value="Not Applicable"/>
+  </concept>
+</CodeSystem>
