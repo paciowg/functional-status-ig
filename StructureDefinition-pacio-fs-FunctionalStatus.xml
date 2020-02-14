@@ -69,7 +69,7 @@
   <name value="FunctionalStatus"/>
   <title value="Functional Status"/>
   <status value="active"/>
-  <date value="2020-02-13T00:00:00+00:00"/>
+  <date value="2020-02-14T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -478,7 +478,7 @@
       <short value="Business Identifier for observation"/>
       <definition value="A unique identifier assigned to this observation."/>
       <requirements value="Allows observations to be distinguished and referenced."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="*"/>
       <base>
         <path value="Observation.identifier"/>
@@ -2567,6 +2567,11 @@
       <definition value="An exchange of functional status information."/>
       <isModifier value="false"/>
       <isSummary value="false"/>
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier"/>
+      <min value="1"/>
+      <max value="*"/>
     </element>
     <element id="Observation.basedOn">
       <path value="Observation.basedOn"/>

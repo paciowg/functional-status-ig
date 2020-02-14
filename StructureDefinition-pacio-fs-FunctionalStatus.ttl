@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "FunctionalStatus"];
   fhir:StructureDefinition.title [ fhir:value "Functional Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-02-13T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-02-14T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -552,7 +552,7 @@
        fhir:ElementDefinition.short [ fhir:value "Business Identifier for observation" ];
        fhir:ElementDefinition.definition [ fhir:value "A unique identifier assigned to this observation." ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows observations to be distinguished and referenced." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Observation.identifier" ];
@@ -3262,6 +3262,12 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "Observation.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ]
+     ], [
+       fhir:index 2;
        fhir:Element.id [ fhir:value "Observation.basedOn" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.basedOn" ];
        fhir:ElementDefinition.type [
@@ -3286,7 +3292,7 @@
          ]
        ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Observation.partOf" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.partOf" ];
        fhir:ElementDefinition.short [ fhir:value "A larger event of which this particular Observation is a component or step. For example, an observation as part of a procedure." ];
@@ -3309,7 +3315,7 @@
          ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Observation.category" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.category" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -3328,7 +3334,7 @@
          ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Observation.code" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.code" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
@@ -3340,7 +3346,7 @@
          ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Observation.subject" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.subject" ];
        fhir:ElementDefinition.short [ fhir:value "The subject of an observation" ];
@@ -3357,13 +3363,13 @@
          ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Observation.focus" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.focus" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Observation.encounter" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.encounter" ];
        fhir:ElementDefinition.type [
@@ -3376,7 +3382,7 @@
          ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Observation.effectiveDateTime" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.effectiveDateTime" ];
        fhir:ElementDefinition.type [
@@ -3384,7 +3390,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "Observation.performer" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.performer" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -3411,7 +3417,7 @@
          ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Observation.valueCodeableConcept" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.valueCodeableConcept" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -3421,13 +3427,13 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.interpretation" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "Observation.note" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.note" ];
        fhir:ElementDefinition.type [
@@ -3440,7 +3446,7 @@
          ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Observation.bodySite" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.bodySite" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -3459,7 +3465,7 @@
          ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.specimen" ];
        fhir:ElementDefinition.type [
@@ -3472,7 +3478,7 @@
          ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Observation.device" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.device" ];
        fhir:ElementDefinition.type [
@@ -3485,13 +3491,13 @@
          ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.referenceRange" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Observation.referenceRange.type" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.referenceRange.type" ];
        fhir:ElementDefinition.binding [
@@ -3508,7 +3514,7 @@
          ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Observation.referenceRange.appliesTo" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.referenceRange.appliesTo" ];
        fhir:ElementDefinition.binding [
@@ -3525,7 +3531,7 @@
          ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Observation.hasMember" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.hasMember" ];
        fhir:ElementDefinition.type [
@@ -3538,7 +3544,7 @@
          ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Observation.derivedFrom" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.derivedFrom" ];
        fhir:ElementDefinition.type [
@@ -3563,13 +3569,13 @@
          ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Observation.component" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.component" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "0" ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Observation.component.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.component.value[x]" ];
        fhir:ElementDefinition.type [
@@ -3606,11 +3612,11 @@
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Observation.component.referenceRange" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.component.referenceRange" ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Observation.component.referenceRange.type" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.component.referenceRange.type" ];
        fhir:ElementDefinition.binding [
@@ -3627,7 +3633,7 @@
          ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Observation.component.referenceRange.appliesTo" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.component.referenceRange.appliesTo" ];
        fhir:ElementDefinition.binding [

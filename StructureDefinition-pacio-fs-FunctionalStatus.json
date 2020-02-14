@@ -10,7 +10,7 @@
   "name": "FunctionalStatus",
   "title": "Functional Status",
   "status": "active",
-  "date": "2020-02-13T00:00:00+00:00",
+  "date": "2020-02-14T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -498,7 +498,7 @@
         "short": "Business Identifier for observation",
         "definition": "A unique identifier assigned to this observation.",
         "requirements": "Allows observations to be distinguished and referenced.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Observation.identifier",
@@ -3065,6 +3065,12 @@
         "definition": "An exchange of functional status information.",
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "min": 1,
+        "max": "*"
       },
       {
         "id": "Observation.basedOn",

@@ -13,7 +13,7 @@
   <name value="FunctionalStatusQuestionVS"/>
   <title value="Functional Status Question VS"/>
   <status value="draft"/>
-  <date value="2020-02-13T00:00:00+00:00"/>
+  <date value="2020-02-14T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -28,27 +28,7 @@
   <description value="For Post-Acute Care Settings, the MDS/OASIS Self Care or Mobility question code"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/FunctionalStatusQuestionCS"/>
-      <concept>
-        <code value="LA11539-6"/>
-        <display value="Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."/>
-      </concept>
-      <concept>
-        <code value="LA26832-8"/>
-        <display value="Needed some help - Patient needed partial assistance from another person to complete activities."/>
-      </concept>
-      <concept>
-        <code value="LA11541-2"/>
-        <display value="Dependent - A helper completed the activities for the patient."/>
-      </concept>
-      <concept>
-        <code value="LA4489-6"/>
-        <display value="Unknown"/>
-      </concept>
-      <concept>
-        <code value="LA4720-4"/>
-        <display value="Not Applicable"/>
-      </concept>
+      <system value="https://loinc.org/LL4153-4"/>
     </include>
   </compose>
 </ValueSet>

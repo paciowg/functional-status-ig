@@ -10,7 +10,7 @@
   "name": "PACIO_Functional_Status",
   "title": "PACIO Functional Status",
   "status": "draft",
-  "date": "2020-02-13T21:06:34+00:00",
+  "date": "2020-02-14T19:13:09+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -1727,23 +1727,6 @@
           "reference": "ValueSet/obf-datatype-UnitsOfLengthVS"
         },
         "name": "Units Of Length VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-pacio-fs-FunctionalStatusQuestionCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/pacio-fs-FunctionalStatusQuestionCS"
-        },
-        "name": "Functional Status Question CS",
         "exampleBoolean": false
       },
       {

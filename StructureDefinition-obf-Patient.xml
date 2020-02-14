@@ -55,7 +55,7 @@ Compatibility: Lies at the intersection of Argonaut and US Core Patient. Marital
   <title value="Patient"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-02-13T00:00:00+00:00"/>
+  <date value="2020-02-14T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

@@ -10,7 +10,7 @@
   "name": "FunctionalStatusQuestionVS",
   "title": "Functional Status Question VS",
   "status": "draft",
-  "date": "2020-02-13T00:00:00+00:00",
+  "date": "2020-02-14T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -30,29 +30,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/PACIO-functional-status/pacio-fs/cs/FunctionalStatusQuestionCS",
-        "concept": [
-          {
-            "code": "LA11539-6",
-            "display": "Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."
-          },
-          {
-            "code": "LA26832-8",
-            "display": "Needed some help - Patient needed partial assistance from another person to complete activities."
-          },
-          {
-            "code": "LA11541-2",
-            "display": "Dependent - A helper completed the activities for the patient."
-          },
-          {
-            "code": "LA4489-6",
-            "display": "Unknown"
-          },
-          {
-            "code": "LA4720-4",
-            "display": "Not Applicable"
-          }
-        ]
+        "system": "https://loinc.org/LL4153-4"
       }
     ]
   }

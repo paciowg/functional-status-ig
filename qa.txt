@@ -1,14 +1,13 @@
 ﻿PACIO_Functional_Status : Validation Results
 =========================================
 
-err = 6, warn = 0, info = 0
+err = 8, warn = 0, info = 0
 IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.64-SNAPSHOT
-Generated Thu Feb 13 21:09:26 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+Generated Fri Feb 14 19:16:35 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS : 0 / 0
- /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-pacio-fs-FunctionalStatusQuestionCS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest : 0 / 0
@@ -108,12 +107,11 @@ Generated Thu Feb 13 21:09:26 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS : 0 / 0
  /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS : 0 / 0
- /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-FunctionalStatusQuestionVS : 0 / 0
+ /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-FunctionalStatusQuestionVS : 1 / 0
 </table>
 == n/a ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS.json ==
-== /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-pacio-fs-FunctionalStatusQuestionCS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig.xml ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest.json ==
@@ -217,3 +215,4 @@ ERROR: obf-StudyArmTypeVS: Error from server: Unable to provide support for code
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS.json ==
 == /home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-FunctionalStatusQuestionVS.json ==
+ERROR: pacio-fs-FunctionalStatusQuestionVS: Error from server: Unable to provide support for code system https://loinc.org/LL4153-4

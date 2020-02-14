@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Functional_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-02-13T21:06:34+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-02-14T19:13:09+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1744,23 +1744,6 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-pacio-fs-FunctionalStatusQuestionCS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-FunctionalStatusQuestionCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/pacio-fs-FunctionalStatusQuestionCS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status Question CS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 100;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CodeSystem-obf-ResearchSubjectTerminationReasonCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1770,7 +1753,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Termination Reason CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 101;
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1991,8 +1974,6 @@
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-TreatmentTerminationReasonVS> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-UnitsOfLengthVS> a fhir:us .
-
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/pacio-fs-FunctionalStatusQuestionCS> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-ResearchSubjectTerminationReasonCS> a fhir:us .
 
