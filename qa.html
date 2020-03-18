@@ -1,1166 +1,316 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 4, warn = 0, info = 0 -->
+<!-- broken links = 55, errors = 6, warn = 4, info = 0 -->
 <head>
-  <title>PACIO_Functional_Status : Validation Results</title>
+  <title>FishImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for PACIO_Functional_Status</h1>
- <p>Generated Fri Feb 14 19:16:34 UTC 2020, FHIR version 4.0.1 for hl7.fhir.us.PACIO-functional-status#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/PACIO-functional-cognitive-status">http://hl7.org/fhir/us/PACIO-functional-cognitive-status</a> (<a href="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v1.0.9-SNAPSHOT, which is out of date. The current version is v1.0.64-SNAPSHOT <a hhef="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+ <h1>Validation Results for FishImplementationGuide</h1>
+ <p>Generated Wed Mar 18 14:04:45 UTC 2020, FHIR version 4.0.1 for fish#0.1.0 (canonical = <a href="http://example.org/fhir/fish">http://example.org/fhir/fish</a> (<a href="http://example.org/fhir/fish/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.72-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
- <p>HL7 Publication check:</p> <ul>
-  <li>History Page 'http://hl7.org/fhir/us/PACIO-functional-status/history.html' is wrong (ig.json#paths/history) - must be 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.html' or 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.cfml'</li>
-  <li>package-list.json: canonical is wrong - is 'http://hl7.org/fhir/us/PACIO-functional-status' should be 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status'</li>
-  <li>package-list.json: No entry found for version 0.1.0</li>
-</ul>
+ <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>52</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_codesystem-obf-ResearchSubjectTerminationReasonCS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_codesystem-obf-datatype-SettingCS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_ig"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-AccessionIdentifier"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionRequest"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionStatement"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Appointment"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-AppointmentReasonReference-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-BasedOn-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-CareContext-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-CarePlan"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Composition"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Condition"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Coverage"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Device"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosisCode-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosticReport"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DocumentReference"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DoseSequenceNumber-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Encounter"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Endpoint"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-EpisodeOfCare"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformanceTime-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformer-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformerType-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Group"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-HandlingRisk-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-fish"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-fish</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-HealthcareService"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService</b></a></td><td><b>2</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Indication-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Location"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Media"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Medication"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationAdministration"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationCodeOrReference-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationDispense"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationRequest"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationStatement"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Method-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-NationalProviderIdentifier"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Observation"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-OnBehalfOf-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Organization"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PartOf-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Participation-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Patient"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PatientInstruction-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Practitioner"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PractitionerRole"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Procedure"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ProcedureRequest"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-QuestionnaireResponse"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonCode-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonReference-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReferralRequest"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-RelatedPerson"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-RequestIntent-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Requester-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchStudy"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchSubject"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ServiceRequest"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecialHandling-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Specimen"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecimenTreatment-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-StatementDateTime-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Status-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SubjectOfRecord-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Substance"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TaxIdentificationNumber"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TerminationReason-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TreatmentIntent-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-AnatomicalOrientation-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Category-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Code-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-CommentOrDescription-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Comparator-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Duration"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Identifier-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Laterality-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Money"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Number-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-PriorityCode-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-RelationToLandmark-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-SampledData"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Timing"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Units-extension"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-pacio-fs-BundledFunctionalStatus"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-BundledFunctionalStatus</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-pacio-fs-FunctionalStatus"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-ResearchSubjectTerminationReasonVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmith"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmith</b></a></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-StudyArmTypeVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS</b></a></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentIntentVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentTerminationReasonVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalDirectionVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalOrientationVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-LandmarkTypeVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-SettingVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-UnitsOfLengthVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEating"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEating</b></a></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-pacio-fs-FunctionalStatusQuestionVS"><b>/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-FunctionalStatusQuestionVS</b></a></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygiene"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygiene</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-bfs"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-bfs</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-fs"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-fs</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-qr"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-qr</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSEating.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSOralHygiene.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#d3f9ec16-0d90-4baa-92d6-6ad0669359a7">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 464</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#a03091f2-8a0d-4e9a-9457-f65fa6f3d4e0">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 526</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#870e1a94-5882-43e7-988d-de0fec7b4736">Observation-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.json.html#388a67c2-5bbb-440c-b7f9-d5fa0195e17d">Observation-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 166, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.ttl.html#af983e3e-39cd-40f6-9130-799d0baedca6">Observation-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.xml.html#4abd9bac-7b84-4f5a-9004-c6c54a7dbbd9">Observation-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.html#122c4d9e-4b34-4e6f-8db2-0eb0c33e4968">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 457</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.html#240a2981-6a7c-4ff4-861f-e2ea1d40f541">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 519</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.html#bf0f7c3d-276f-4f49-b1df-9091ab0b41b5">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.json.html#403c1102-e791-432d-ba92-9aed020a90e5">Observation-BetsySmithMDSEating.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.ttl.html#9fbc0770-ef5a-47ec-a4b2-1208ff2ae804">Observation-BetsySmithMDSEating.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSEating.xml.html#5f6b5a2d-43d7-4012-b31f-a9fc04e00028">Observation-BetsySmithMDSEating.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#0d807f18-43a5-4bf5-b345-1e7669ddfd85">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 474</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#85ef1521-d3f6-4d0c-aa9a-1035be8103d4">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 536</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#1b2d5d51-692f-4504-b29a-71af9036a360">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.json.html#66ea1452-8fe8-4bd8-8da8-6ef4318453a9">Observation-BetsySmithMDSOralHygiene.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.ttl.html#83f55dd9-9050-4d3e-93d6-e0dabf377f22">Observation-BetsySmithMDSOralHygiene.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.xml.html#cb35b697-1f2c-40a3-b1d2-2d45a1f59fcb">Observation-BetsySmithMDSOralHygiene.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-definitions.html#2075514a-74d6-494b-8183-9d1264b57687">StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-examples.html#da77ad3d-ad04-4150-8c06-222b865afc33">StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-mappings.html#78e17b23-853f-41ca-b301-04bab41c62f2">StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.html#d6cfa3fe-3a3b-42d2-bf10-cbbadd7d5273">StructureDefinition-pacio-bfs.html#/html/body/div/div/div/p/a at Line 673, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.json.html#98fbf207-af5d-49f5-ad8b-7f4b596e2a2b">StructureDefinition-pacio-bfs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.json.html#cfe2dd11-03a9-48df-a144-7aae8e7ab967">StructureDefinition-pacio-bfs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.ttl.html#c8f1783b-1c21-4069-bd92-32f1b257cce5">StructureDefinition-pacio-bfs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.xml.html#9bc808bf-aa7b-41c4-a87d-1762904be3fe">StructureDefinition-pacio-bfs.profile.xml.html#/html/body/div/div/div/p/a at Line 2633, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.ttl.html#23458079-8a53-4922-8ed1-602f5ede36cb">StructureDefinition-pacio-bfs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.xml.html#3c15184a-99f5-45f4-bf30-e6e93e75a1b0">StructureDefinition-pacio-bfs.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-definitions.html#fc2902e3-19f8-4eb4-a618-38d293c31c45">StructureDefinition-pacio-fs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-examples.html#792ff517-655e-40cd-9c99-45b9fda9462b">StructureDefinition-pacio-fs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-mappings.html#8f670818-9d16-4138-b133-8eeb04bc53fe">StructureDefinition-pacio-fs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.html#873d3e4c-bd95-43a2-8f98-1652532b1417">StructureDefinition-pacio-fs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.json.html#fa83a6e0-629d-48c2-9f74-3decc61ecc75">StructureDefinition-pacio-fs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.json.html#548f8def-eb5c-4781-b4b7-ccdbdf14e43b">StructureDefinition-pacio-fs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.ttl.html#ed453d77-08ad-499f-aa35-41ad3a36e9f9">StructureDefinition-pacio-fs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.xml.html#59624f58-c917-4a13-9d03-6509f282676f">StructureDefinition-pacio-fs.profile.xml.html#/html/body/div/div/div/p/a at Line 2630, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.ttl.html#87dc46e6-ff0e-4995-a4ad-0270c015caba">StructureDefinition-pacio-fs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.xml.html#c21fb8f1-5dd1-46ff-8c6f-ff75cd025b2b">StructureDefinition-pacio-fs.xml.html#/html/body/div/div/div/p/a at Line 2577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#e634e199-a04b-4031-9871-5c9edb43e21a">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-examples.html#31bc240e-19c7-454e-ae3b-adc7758ddfc1">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#1dd0b7d1-274d-4990-af43-ab0951b3be25">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.html#4b2451dd-e7d8-44fe-8d04-99b52ebccf96">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.json.html#a2a11311-4127-4341-9871-23c0624a8b90">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#924d1db4-900a-4770-9117-4951d2a83f54">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#2b22c37f-f0b2-43fe-9408-f45da8b542fb">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#188df6d6-3199-4aee-b342-083dc5e49c92">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#67eba8d0-65bb-41e8-b78a-a63aa34a2f53">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.xml.html#f105c914-6235-4f63-bc37-f36dcb51aea0">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#f0192aae-bc43-4651-8821-d6f9cf3c3fe1">artifacts.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/home/runner/work/functional-status-cli/functional-status-cli/build/output/index.html#b94dfe22-2bc3-47f3-8793-0a06b647057b">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#93771a64-c672-4b72-ad03-210815846508">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#83aac592-26f7-4207-a063-c77a82b0f76f">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_codesystem-obf-ResearchSubjectTerminationReasonCS"> </a>
-<h2><a href="CodeSystem-obf-ResearchSubjectTerminationReasonCS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-fish"> </a>
+<h2><a href="ImplementationGuide-fish.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-fish.json</a></h2>
  <table class="grid">
    <tr>
      <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_codesystem-obf-datatype-SettingCS"> </a>
-<h2><a href="CodeSystem-obf-datatype-SettingCS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_ig"> </a>
-<h2><a href="ImplementationGuide-hl7.fhir.us.PACIO-functional-status.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/ig.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-AccessionIdentifier"> </a>
-<h2><a href="StructureDefinition-obf-AccessionIdentifier.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionRequest"> </a>
-<h2><a href="StructureDefinition-obf-ActionRequest.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionStatement"> </a>
-<h2><a href="StructureDefinition-obf-ActionStatement.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation"> </a>
-<h2><a href="StructureDefinition-obf-Annotation.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation-extension"> </a>
-<h2><a href="StructureDefinition-obf-Annotation-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Appointment"> </a>
-<h2><a href="StructureDefinition-obf-Appointment.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-AppointmentReasonReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-AppointmentReasonReference-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-BasedOn-extension"> </a>
-<h2><a href="StructureDefinition-obf-BasedOn-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-CareContext-extension"> </a>
-<h2><a href="StructureDefinition-obf-CareContext-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-CarePlan"> </a>
-<h2><a href="StructureDefinition-obf-CarePlan.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Composition"> </a>
-<h2><a href="StructureDefinition-obf-Composition.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Condition"> </a>
-<h2><a href="StructureDefinition-obf-Condition.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Coverage"> </a>
-<h2><a href="StructureDefinition-obf-Coverage.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Device"> </a>
-<h2><a href="StructureDefinition-obf-Device.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosisCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-DiagnosisCode-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosticReport"> </a>
-<h2><a href="StructureDefinition-obf-DiagnosticReport.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DocumentReference"> </a>
-<h2><a href="StructureDefinition-obf-DocumentReference.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage"> </a>
-<h2><a href="StructureDefinition-obf-Dosage.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage-extension"> </a>
-<h2><a href="StructureDefinition-obf-Dosage-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-DoseSequenceNumber-extension"> </a>
-<h2><a href="StructureDefinition-obf-DoseSequenceNumber-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Encounter"> </a>
-<h2><a href="StructureDefinition-obf-Encounter.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Endpoint"> </a>
-<h2><a href="StructureDefinition-obf-Endpoint.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-EpisodeOfCare"> </a>
-<h2><a href="StructureDefinition-obf-EpisodeOfCare.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformanceTime-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformanceTime-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformer-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformer-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformerType-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformerType-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Group"> </a>
-<h2><a href="StructureDefinition-obf-Group.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-HandlingRisk-extension"> </a>
-<h2><a href="StructureDefinition-obf-HandlingRisk-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-HealthcareService"> </a>
-<h2><a href="StructureDefinition-obf-HealthcareService.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmith"> </a>
+<h2><a href="Observation-BetsySmith.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmith.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/obf-HealthcareService: StructureDefinition.snapshot.element[31].binding.valueSet</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmith: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/obf-HealthcareService: StructureDefinition.differential.element[9].binding.valueSet</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve</b></td>
+     <td><b>Observation/BetsySmith: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Indication-extension"> </a>
-<h2><a href="StructureDefinition-obf-Indication-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Location"> </a>
-<h2><a href="StructureDefinition-obf-Location.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Media"> </a>
-<h2><a href="StructureDefinition-obf-Media.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Medication"> </a>
-<h2><a href="StructureDefinition-obf-Medication.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationAdministration"> </a>
-<h2><a href="StructureDefinition-obf-MedicationAdministration.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationCodeOrReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-MedicationCodeOrReference-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationDispense"> </a>
-<h2><a href="StructureDefinition-obf-MedicationDispense.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationRequest"> </a>
-<h2><a href="StructureDefinition-obf-MedicationRequest.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationStatement"> </a>
-<h2><a href="StructureDefinition-obf-MedicationStatement.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Method-extension"> </a>
-<h2><a href="StructureDefinition-obf-Method-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-NationalProviderIdentifier"> </a>
-<h2><a href="StructureDefinition-obf-NationalProviderIdentifier.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Observation"> </a>
-<h2><a href="StructureDefinition-obf-Observation.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-OnBehalfOf-extension"> </a>
-<h2><a href="StructureDefinition-obf-OnBehalfOf-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Organization"> </a>
-<h2><a href="StructureDefinition-obf-Organization.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PartOf-extension"> </a>
-<h2><a href="StructureDefinition-obf-PartOf-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Participation-extension"> </a>
-<h2><a href="StructureDefinition-obf-Participation-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Patient"> </a>
-<h2><a href="StructureDefinition-obf-Patient.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PatientInstruction-extension"> </a>
-<h2><a href="StructureDefinition-obf-PatientInstruction-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Practitioner"> </a>
-<h2><a href="StructureDefinition-obf-Practitioner.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-PractitionerRole"> </a>
-<h2><a href="StructureDefinition-obf-PractitionerRole.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Procedure"> </a>
-<h2><a href="StructureDefinition-obf-Procedure.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ProcedureRequest"> </a>
-<h2><a href="StructureDefinition-obf-ProcedureRequest.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-QuestionnaireResponse"> </a>
-<h2><a href="StructureDefinition-obf-QuestionnaireResponse.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-ReasonCode-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-ReasonReference-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReferralRequest"> </a>
-<h2><a href="StructureDefinition-obf-ReferralRequest.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-RelatedPerson"> </a>
-<h2><a href="StructureDefinition-obf-RelatedPerson.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-RequestIntent-extension"> </a>
-<h2><a href="StructureDefinition-obf-RequestIntent-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Requester-extension"> </a>
-<h2><a href="StructureDefinition-obf-Requester-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchStudy"> </a>
-<h2><a href="StructureDefinition-obf-ResearchStudy.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchSubject"> </a>
-<h2><a href="StructureDefinition-obf-ResearchSubject.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-ServiceRequest"> </a>
-<h2><a href="StructureDefinition-obf-ServiceRequest.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecialHandling-extension"> </a>
-<h2><a href="StructureDefinition-obf-SpecialHandling-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Specimen"> </a>
-<h2><a href="StructureDefinition-obf-Specimen.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecimenTreatment-extension"> </a>
-<h2><a href="StructureDefinition-obf-SpecimenTreatment-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-StatementDateTime-extension"> </a>
-<h2><a href="StructureDefinition-obf-StatementDateTime-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Status-extension"> </a>
-<h2><a href="StructureDefinition-obf-Status-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-SubjectOfRecord-extension"> </a>
-<h2><a href="StructureDefinition-obf-SubjectOfRecord-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-Substance"> </a>
-<h2><a href="StructureDefinition-obf-Substance.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TaxIdentificationNumber"> </a>
-<h2><a href="StructureDefinition-obf-TaxIdentificationNumber.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TerminationReason-extension"> </a>
-<h2><a href="StructureDefinition-obf-TerminationReason-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-TreatmentIntent-extension"> </a>
-<h2><a href="StructureDefinition-obf-TreatmentIntent-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-AnatomicalOrientation-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Category-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Category-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Code-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Code-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-CommentOrDescription-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-CommentOrDescription-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Comparator-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Comparator-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Duration"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Duration.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Identifier-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Identifier-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Laterality-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Laterality-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Money"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Money.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Number-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Number-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-PriorityCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-PriorityCode-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-RelationToLandmark-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-RelationToLandmark-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-SampledData"> </a>
-<h2><a href="StructureDefinition-obf-datatype-SampledData.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Timing"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Timing.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Units-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Units-extension.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-pacio-fs-BundledFunctionalStatus"> </a>
-<h2><a href="StructureDefinition-pacio-fs-BundledFunctionalStatus.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-BundledFunctionalStatus.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_structuredefinition-pacio-fs-FunctionalStatus"> </a>
-<h2><a href="StructureDefinition-pacio-fs-FunctionalStatus.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/structuredefinition-pacio-fs-FunctionalStatus.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-ResearchSubjectTerminationReasonVS"> </a>
-<h2><a href="ValueSet-obf-ResearchSubjectTerminationReasonVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-StudyArmTypeVS"> </a>
-<h2><a href="ValueSet-obf-StudyArmTypeVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEating"> </a>
+<h2><a href="Observation-BetsySmithMDSEating.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEating.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSEating: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>obf-StudyArmTypeVS</b></td><td><b>error</b></td><td><b>Error from server: Unable to provide support for code system https://ncit.nci.nih.gov</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Observation/BetsySmithMDSEating: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSEating: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentIntentVS"> </a>
-<h2><a href="ValueSet-obf-TreatmentIntentVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentTerminationReasonVS"> </a>
-<h2><a href="ValueSet-obf-TreatmentTerminationReasonVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalDirectionVS"> </a>
-<h2><a href="ValueSet-obf-datatype-AnatomicalDirectionVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalOrientationVS"> </a>
-<h2><a href="ValueSet-obf-datatype-AnatomicalOrientationVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-LandmarkTypeVS"> </a>
-<h2><a href="ValueSet-obf-datatype-LandmarkTypeVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-SettingVS"> </a>
-<h2><a href="ValueSet-obf-datatype-SettingVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-obf-datatype-UnitsOfLengthVS"> </a>
-<h2><a href="ValueSet-obf-datatype-UnitsOfLengthVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_out_fhir_guide_resources_valueset-pacio-fs-FunctionalStatusQuestionVS"> </a>
-<h2><a href="ValueSet-pacio-fs-FunctionalStatusQuestionVS.html">/home/runner/work/functional-status-cli/functional-status-cli/out/fhir/guide/resources/valueset-pacio-fs-FunctionalStatusQuestionVS.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygiene"> </a>
+<h2><a href="Observation-BetsySmithMDSOralHygiene.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygiene.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>pacio-fs-FunctionalStatusQuestionVS</b></td><td><b>error</b></td><td><b>Error from server: Unable to provide support for code system https://loinc.org/LL4153-4</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-bfs"> </a>
+<h2><a href="StructureDefinition-pacio-bfs.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-bfs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-fs"> </a>
+<h2><a href="StructureDefinition-pacio-fs.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-fs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-qr"> </a>
+<h2><a href="StructureDefinition-pacio-qr.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-qr.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://example.org/fhir/fish/StructureDefinition/pacio-qr</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 </body>
