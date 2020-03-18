@@ -3,7 +3,7 @@
 
 err = 12, warn = 8, info = 0
 IG Publisher Version: v1.0.72-SNAPSHOT
-Generated Wed Mar 18 14:04:45 UTC 2020. FHIR version 4.0.1 for fish#0.1.0 (canonical = http://example.org/fhir/fish)
+Generated Wed Mar 18 15:40:56 UTC 2020. FHIR version 4.0.1 for fish#0.1.0 (canonical = http://example.org/fhir/fish)
 
  Build Errors : 52 / 3
  /home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-fish : 0 / 0

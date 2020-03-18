@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FishImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Fish Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-03-18T14:04:33+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-03-18T15:40:43+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "James Tuna"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
