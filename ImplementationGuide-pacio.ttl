@@ -5,31 +5,31 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/fhir/fish/ImplementationGuide/fish> a fhir:ImplementationGuide;
+<http://pacioproject.org/ImplementationGuide/pacio> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fish"];
+  fhir:Resource.id [ fhir:value "pacio"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FishImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/fish</pre><div><p>An example of how FSH can be used to create an IG about fish</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FunctionalStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://pacioproject.org//ImplementationGuide/pacio</pre><div><p>TO advance interoperable health data exchange between post-acute care (PAC) and other providers, patients, and key stakeholders</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://example.org/fhir/fish/ImplementationGuide/fish"];
+  fhir:ImplementationGuide.url [ fhir:value "http://pacioproject.org//ImplementationGuide/pacio"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
-  fhir:ImplementationGuide.name [ fhir:value "FishImplementationGuide"];
-  fhir:ImplementationGuide.title [ fhir:value "Fish Implementation Guide"];
+  fhir:ImplementationGuide.name [ fhir:value "FunctionalStatusImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "Functional Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-03-18T15:40:43+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "James Tuna"];
+  fhir:ImplementationGuide.date [ fhir:value "2020-03-18T19:43:33+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Sean Mahoney"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Bill Cod" ];
+     fhir:ContactDetail.name [ fhir:value "Sean Mahoney" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "cod@reef.gov" ]
+       fhir:ContactPoint.value [ fhir:value "smahoney@mitre.org" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "An example of how FSH can be used to create an IG about fish"];
-  fhir:ImplementationGuide.packageId [ fhir:value "fish"];
+  fhir:ImplementationGuide.description [ fhir:value "TO advance interoperable health data exchange between post-acute care (PAC) and other providers, patients, and key stakeholders"];
+  fhir:ImplementationGuide.packageId [ fhir:value "pacio"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -262,7 +262,7 @@
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-bfs.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-bfs>;
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bfs>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-bfs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundled Functional Status" ];
@@ -280,7 +280,7 @@
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-fs.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-fs>;
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-fs>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-fs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Functional Status" ];
@@ -298,7 +298,7 @@
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-qr.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-qr>;
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-qr>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-qr" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Questionaire Response" ];
@@ -316,13 +316,13 @@
          fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/Observation/BetsySmith>;
+         fhir:link <http://pacioproject.org/Observation/BetsySmith>;
          fhir:Reference.reference [ fhir:value "Observation/BetsySmith" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.org/fhir/fish/StructureDefinition/pacio-bfs";
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-bfs>
+         fhir:value "http://pacioproject.org//StructureDefinition/pacio-bfs";
+         fhir:link <http://pacioproject.org//StructureDefinition/pacio-bfs>
        ]
      ], [
        fhir:index 4;
@@ -336,13 +336,13 @@
          fhir:Extension.valueUri [ fhir:value "Observation-BetsySmithMDSEating.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/Observation/BetsySmithMDSEating>;
+         fhir:link <http://pacioproject.org/Observation/BetsySmithMDSEating>;
          fhir:Reference.reference [ fhir:value "Observation/BetsySmithMDSEating" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmithMDSEating" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.org/fhir/fish/StructureDefinition/pacio-fs";
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-fs>
+         fhir:value "http://pacioproject.org//StructureDefinition/pacio-fs";
+         fhir:link <http://pacioproject.org//StructureDefinition/pacio-fs>
        ]
      ], [
        fhir:index 5;
@@ -356,13 +356,33 @@
          fhir:Extension.valueUri [ fhir:value "Observation-BetsySmithMDSOralHygiene.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/fish/Observation/BetsySmithMDSOralHygiene>;
+         fhir:link <http://pacioproject.org/Observation/BetsySmithMDSOralHygiene>;
          fhir:Reference.reference [ fhir:value "Observation/BetsySmithMDSOralHygiene" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmithMDSOralHygiene" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://example.org/fhir/fish/StructureDefinition/pacio-fs";
-         fhir:link <http://example.org/fhir/fish/StructureDefinition/pacio-fs>
+         fhir:value "http://pacioproject.org//StructureDefinition/pacio-fs";
+         fhir:link <http://pacioproject.org//StructureDefinition/pacio-fs>
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmithMDSRespons.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmithMDSRespons>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmithMDSRespons" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmithMDSRespons" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org//StructureDefinition/pacio-qr";
+         fhir:link <http://pacioproject.org//StructureDefinition/pacio-qr>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -425,7 +445,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/fhir/fish/ImplementationGuide/fish.ttl> a owl:Ontology;
+<http://pacioproject.org/ImplementationGuide/pacio.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

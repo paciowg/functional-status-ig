@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 55, errors = 6, warn = 4, info = 0 -->
+<!-- broken links = 61, errors = 8, warn = 3, info = 1 -->
 <head>
-  <title>FishImplementationGuide : Validation Results</title>
+  <title>FunctionalStatusImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
@@ -22,8 +22,8 @@
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for FishImplementationGuide</h1>
- <p>Generated Wed Mar 18 15:40:56 UTC 2020, FHIR version 4.0.1 for fish#0.1.0 (canonical = <a href="http://example.org/fhir/fish">http://example.org/fhir/fish</a> (<a href="http://example.org/fhir/fish/history.html">history</a>))</p>
+ <h1>Validation Results for FunctionalStatusImplementationGuide</h1>
+ <p>Generated Wed Mar 18 19:43:44 UTC 2020, FHIR version 4.0.1 for pacio#0.1.0 (canonical = <a href="http://pacioproject.org/">http://pacioproject.org/</a> (<a href="http://pacioproject.org//history.html">history</a>))</p>
 <p>IG Publisher Version: v1.0.72-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -33,10 +33,10 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>52</b></td><td><b>3</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>57</b></td><td><b>4</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-fish"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-fish</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-pacio"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-pacio</b></a></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmith"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmith</b></a></td><td><b>2</b></td><td><b>1</b></td>
@@ -47,6 +47,9 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygiene"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygiene</b></a></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSRespons"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSRespons</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-bfs"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-bfs</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
@@ -54,7 +57,7 @@
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-fs"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-fs</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-qr"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-qr</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-qr"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-qr</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -70,169 +73,190 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSOralHygiene.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#3d98e926-4e8d-4570-af61-e9d50ae014a7">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 464</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource QuestionnaireResponse/BetsySmithMDSRespons.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#125fab1c-4b34-4128-b51d-58911b60dfc8">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 526</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.html#b77d1314-8343-448d-ae34-efac919478f6">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 464</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#1562e21a-2ea7-4017-832b-1100c220ca12">Observation-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.html#be6389de-b789-400d-9926-6f3daf56e20c">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 526</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.json.html#5ed1b5f0-61f7-4868-85c5-53bc20d8ce07">Observation-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 166, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.html#0144f93c-1bd1-4a66-a0cd-8255d28b31d3">Observation-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.ttl.html#3d51a2fd-9277-4819-9333-c0fef414b37a">Observation-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.json.html#918b9e63-9037-4db3-b4ca-12877a902fac">Observation-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.xml.html#20c8b3ce-2c1a-4cb4-8673-77b9bcacfad4">Observation-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.ttl.html#34e803df-3699-4338-865a-16eda4b79598">Observation-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#9285dbdd-a434-4590-a7c2-630c3877f544">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 457</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmith.xml.html#9ab986a1-3083-44f7-a10e-d0f4e911add7">Observation-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#6c10c279-785d-49c1-b658-a27b3533c3ec">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 519</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.html#0ca90f43-6a3a-4962-acfa-ac6631462076">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 457</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#926c2eed-dfad-4fcb-af4a-0c3dbdafe47f">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.html#cb15f9ba-284d-42d2-9e6e-22f5b9d310e5">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 519</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.json.html#c847dff1-92c9-4d76-89a1-ebdc700124e4">Observation-BetsySmithMDSEating.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.html#c80cd17c-49bd-4ff1-9546-4f55ee6f1d1c">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.ttl.html#83860e2e-d729-4133-ba1b-07c3cda000c6">Observation-BetsySmithMDSEating.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.json.html#faccb792-c04b-4961-b99d-45d134db9dd5">Observation-BetsySmithMDSEating.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.xml.html#0c7d9d5d-cf39-4972-9a4a-23e8c0bb5279">Observation-BetsySmithMDSEating.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.ttl.html#cf07defb-ca98-4d7f-a4ec-3213a3379825">Observation-BetsySmithMDSEating.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#46c0bd2b-c795-4d75-bfe3-117eeb9328c0">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 474</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEating.xml.html#747f992c-f754-4c11-9e4e-af6fa524fccc">Observation-BetsySmithMDSEating.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#40db361e-8896-4853-8898-62a8ce6340ff">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 536</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#782183be-00ea-48a6-99a5-9119082eb487">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 474</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#1b1da80d-9a40-4bf1-b15e-f718bf294e98">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#fd19c6f0-e8b5-4a9f-9dd2-f3e1ae774474">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 536</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.json.html#da5f597d-d004-4be5-b598-7fe3db988ba6">Observation-BetsySmithMDSOralHygiene.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#38af7f85-ec4d-4997-b69e-ea89ad90467c">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.ttl.html#5f9b8fe2-265a-46ce-8c48-a13ff3dd18e3">Observation-BetsySmithMDSOralHygiene.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.json.html#ce28b1ca-27c3-443d-8a7b-aafc78c1ad21">Observation-BetsySmithMDSOralHygiene.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.xml.html#6cbeb11c-f249-4421-8a36-2b17fce5990e">Observation-BetsySmithMDSOralHygiene.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.ttl.html#0ca2c028-ef34-41f6-8bb0-dd2e32b563e3">Observation-BetsySmithMDSOralHygiene.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-definitions.html#36879baa-f4c6-4078-894a-badbdb479018">StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygiene.xml.html#37103378-596c-4f38-bd61-2865a053e036">Observation-BetsySmithMDSOralHygiene.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-examples.html#c929b6c6-e285-4e96-b2c8-0f9d97f04fcc">StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.html#154309ed-05ae-4baf-a02f-6a6ed4c56f1a">QuestionnaireResponse-BetsySmithMDSRespons.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 200</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-mappings.html#c519f974-e5d2-4a20-a427-07dd0f12f0b4">StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.html#4551a990-4615-4322-ae3d-0cad4b35ffe1">QuestionnaireResponse-BetsySmithMDSRespons.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.html#92ae48fe-7d44-4eed-be82-f564c8290b2e">StructureDefinition-pacio-bfs.html#/html/body/div/div/div/p/a at Line 673, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.json.html#97905bac-9e9f-4c44-b326-2459cfdb55da">QuestionnaireResponse-BetsySmithMDSRespons.json.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.json.html#a29dce7c-1b0b-4c35-930a-7ddadba90580">StructureDefinition-pacio-bfs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.ttl.html#30869a26-cca2-4f52-87f0-f43486c4dfe6">QuestionnaireResponse-BetsySmithMDSRespons.ttl.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.json.html#d784fab9-1ce0-40d8-87d6-04528b158ff4">StructureDefinition-pacio-bfs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.xml.html#87e305a4-ae8a-4083-8095-56c4885fe032">QuestionnaireResponse-BetsySmithMDSRespons.xml.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.ttl.html#ff04cedd-9972-4535-bce3-a59ab013d8fb">StructureDefinition-pacio-bfs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs-definitions.html#5bc9ffa1-b1e1-487c-a084-7a7b41b01493">StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.xml.html#1a1234b0-7379-43d1-b826-a652a21a2e95">StructureDefinition-pacio-bfs.profile.xml.html#/html/body/div/div/div/p/a at Line 2633, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs-examples.html#190fed77-8293-4997-8b2e-46e60848c994">StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.ttl.html#4ed75022-3371-463f-8258-f503fb116a56">StructureDefinition-pacio-bfs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs-mappings.html#ed3229ca-5d2c-4b23-8df0-7381ca93b267">StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.xml.html#2f4c9367-307a-48db-ab82-bc61ba3676d1">StructureDefinition-pacio-bfs.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.html#7968e3bf-6cf5-4fd6-9502-356c8ffd9117">StructureDefinition-pacio-bfs.html#/html/body/div/div/div/p/a at Line 673, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-definitions.html#fc7a7af9-c6f0-4cfa-99ac-5398b2d4bb87">StructureDefinition-pacio-fs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.json.html#3c6c626c-dae1-4bd9-9e77-2e1e6b08cb1f">StructureDefinition-pacio-bfs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-examples.html#a4f3f8f0-7e94-4ddc-87ce-35a5f303ebe8">StructureDefinition-pacio-fs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.json.html#09e7f6a2-63c0-4e8c-b5dd-1a1f13da9c46">StructureDefinition-pacio-bfs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-mappings.html#5a73ae73-216f-4de5-92ce-e1b300ef99e8">StructureDefinition-pacio-fs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.ttl.html#72cb2afa-5aaa-488e-b7b6-b5bbf1e09c8f">StructureDefinition-pacio-bfs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.html#f426361c-af62-418b-890b-4976b2de21d6">StructureDefinition-pacio-fs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.xml.html#a930551a-fdbc-46c1-8b43-a85c7d6da141">StructureDefinition-pacio-bfs.profile.xml.html#/html/body/div/div/div/p/a at Line 2633, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.json.html#c5ceb019-a184-4007-a38c-17d8e198f809">StructureDefinition-pacio-fs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.ttl.html#70a136ca-e0df-4dd2-b001-4885ccf8a4a5">StructureDefinition-pacio-bfs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.json.html#cc3739bb-102a-4e10-b0a0-3acd64acb3b4">StructureDefinition-pacio-fs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bfs.xml.html#b1583633-04a1-4c28-bde2-f9ab3e59551e">StructureDefinition-pacio-bfs.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.ttl.html#7159598f-65ad-4d06-90a8-991363fa9075">StructureDefinition-pacio-fs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs-definitions.html#1b2a0c3a-ffae-4ded-9863-aac99d34b3f0">StructureDefinition-pacio-fs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.xml.html#4995aff2-9bce-4eaa-b07d-5ae97398d0e9">StructureDefinition-pacio-fs.profile.xml.html#/html/body/div/div/div/p/a at Line 2630, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs-examples.html#0a057d16-0a44-493c-83fd-e3931dbd4ebf">StructureDefinition-pacio-fs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.ttl.html#3ac16377-07b6-419f-9794-68525b4efe8b">StructureDefinition-pacio-fs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs-mappings.html#c7e45049-46a5-4575-a829-befb29d89339">StructureDefinition-pacio-fs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.xml.html#650cfb41-9a40-485d-86c4-61f5dc9a3988">StructureDefinition-pacio-fs.xml.html#/html/body/div/div/div/p/a at Line 2577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.html#d02b4df8-f54a-4b3b-895c-cb5992c7b384">StructureDefinition-pacio-fs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#cc0fa1c2-0de8-4948-915f-f0a27eddbefa">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.json.html#96784ddb-65de-4bf7-a7e9-66284c1a8226">StructureDefinition-pacio-fs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-examples.html#d97a17c4-721e-498f-a8aa-05f816e12ca3">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.profile.json.html#d91a7c10-252e-49d0-94a7-305a2377c813">StructureDefinition-pacio-fs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#cb0718aa-0bde-4f1c-85ae-6ad86d6a371e">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.profile.ttl.html#a329cade-d1e8-4754-aab4-eac2a2af217c">StructureDefinition-pacio-fs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.html#80d5b7e5-026d-466b-9a58-39605ab01bc3">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.profile.xml.html#a910e255-8e08-488c-91c2-d11bdfd3473d">StructureDefinition-pacio-fs.profile.xml.html#/html/body/div/div/div/p/a at Line 2630, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.json.html#f32d18ce-530a-446b-bbf3-eb4e4abd0332">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.ttl.html#c30879ab-cbb2-4002-8937-0b883035d484">StructureDefinition-pacio-fs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#1892ae51-ce85-496b-a116-9e3779a5d0f4">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-fs.xml.html#49d00180-a9bd-4bfb-8293-8f85e3c23e17">StructureDefinition-pacio-fs.xml.html#/html/body/div/div/div/p/a at Line 2577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#5fdaeb6b-162c-4375-87da-ed4d27e6424e">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#029b4336-09eb-4ff1-ab06-52487079bd49">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#514b9835-f1a0-462e-a45b-0eb31e1083c8">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr-examples.html#77e17d04-54c1-4da1-bdf3-4ca47906a068">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#9ea38ec4-ffc8-4c8f-94ac-04edfedb4ec6">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#d252fdba-8835-4661-a23b-32dba82f7fc4">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.xml.html#88d7d85a-c677-4d36-88b1-e2401803cc9b">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr.html#99268d16-be0c-4f0b-9bb6-9a66ee4f2ac6">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#4ca85512-aa1a-46e5-852d-f4513117b541">artifacts.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr.json.html#ef336637-31cb-497b-8d29-ef28bb6d510d">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/home/runner/work/functional-status-cli/functional-status-cli/build/output/index.html#0db70078-5995-4426-8f77-f044755f4f25">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#423d30b7-b448-47db-b91f-1dc47098b572">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#53b56541-703d-4127-8cf0-f80469e0d8d0">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#26486c1b-7f8d-4542-8b33-e16b2a2078f1">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#ebc92ea5-e13b-42f5-aded-14665c0f20dc">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#19acbe20-a537-4d0e-8be1-300ba856d0de">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#592b8292-3860-4d7b-ab36-5430a2de46ec">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.xml.html#48b38f3f-04a1-4d33-ab59-06e4c31e23ba">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#9f68e078-97a7-43a5-bf26-23a022b70357">artifacts.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/home/runner/work/functional-status-cli/functional-status-cli/build/output/index.html#8437ebe1-80c2-4a8d-b12e-38a069ebb024">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#d939a28e-6396-47eb-8d83-5ae6de2bf270">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#db94d34a-cbf8-42e1-81e9-5832f78c0998">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-fish"> </a>
-<h2><a href="ImplementationGuide-fish.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-fish.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-pacio"> </a>
+<h2><a href="ImplementationGuide-pacio.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-pacio.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://pacioproject.org//ImplementationGuide/pacio</b></td><td><b>error</b></td><td><b>Conformance resource /home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-pacio.json - the canonical URL (http://pacioproject.org/ImplementationGuide/pacio) does not match the URL (http://pacioproject.org//ImplementationGuide/pacio)</b></td>
    </tr>
 </table>
 <hr/>
@@ -287,6 +311,20 @@
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSRespons"> </a>
+<h2><a href="QuestionnaireResponse-BetsySmithMDSRespons.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSRespons.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse/BetsySmithMDSRespons: QuestionnaireResponse.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse/BetsySmithMDSRespons: QuestionnaireResponse</b></td><td><b>information</b></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-bfs"> </a>
 <h2><a href="StructureDefinition-pacio-bfs.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-bfs.json</a></h2>
  <table class="grid">
@@ -307,10 +345,7 @@
 <h2><a href="StructureDefinition-pacio-qr.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-qr.json</a></h2>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>http://example.org/fhir/fish/StructureDefinition/pacio-qr</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 </body>

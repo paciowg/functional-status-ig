@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>PACIO\BetsySmithMDSEating - FHIR v4.0.1</title>
+    <title>PACIO\BetsySmithMDSRespons - TTL Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"2.5"}
-    h3,h4,h5,h6{--heading-prefix:"2.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.7"}
+    h3,h4,h5,h6{--heading-prefix:"2.7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -86,7 +86,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>BetsySmithMDSEating</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>BetsySmithMDSRespons</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -95,41 +95,66 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://pacioproject.org//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
-  <h2 id="root">BetsySmithMDSEating</h2>
+  <h2 id="root">BetsySmithMDSRespons - TTL Representation</h2>
   <p>
-    Format(s):
+    <a href="QuestionnaireResponse-BetsySmithMDSRespons.html">(back to description)</a>
   </p>
-  <ul>
-
-    <li>
-      <a href="Observation-BetsySmithMDSEating.xml.html">XML</a>
-    </li>
-
-
-    <li>
-      <a href="Observation-BetsySmithMDSEating.json.html">JSON</a> 
-    </li>
-
-
-    <li>
-      <a href="Observation-BetsySmithMDSEating.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-
+  <p>
+    <a href="QuestionnaireResponse-BetsySmithMDSRespons.ttl">Raw ttl</a>
+  </p>
   
   
-
+  
   <p>
-    <b>Narrative view</b>
+    <b>Source view</b>
   </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmithMDSEating</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Eating - functional ability during 3 day assessment period [CMS Assessment] <span style="background: LightGoldenRodYellow">(Details : {LOINC code '83232-9' = 'Eating - functional ability during 3 day assessment period [CMS Assessment])</span></p><p><a name="0ca90f43-6a3a-4962-acfa-ac6631462076">​</a><b>subject</b>: <a href="Betsy Smith">Betsy Smith</a></p><p><a name="cb15f9ba-284d-42d2-9e6e-22f5b9d310e5">​</a><b>performer</b>: <a href="CMS Provider">CMS Provider</a></p><p><b>value</b>: Setup or clean-up assistance - Helper sets up or cleans up; patient completes activity. Helper assists only prior to or following the activity. <span style="background: LightGoldenRodYellow">(Details : {LOINC code 'LA10073-7' = 'Setup or clean-up assistance - Helper sets up or cleans up; patient completes activity. Helper assists only prior to or following the activity.)</span></p></div>
+  
+  <pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:QuestionnaireResponse;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "BetsySmithMDSRespons"];
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> "http://pacioproject.org//StructureDefinition/pacio-qr";
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://pacioproject.org//StructureDefinition/pacio-qr&gt;     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: BetsySmithMDSRespons&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Betsy Smith\"&gt;Betsy Smith&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: BetsySmith&lt;/p&gt;&lt;h3&gt;Answers&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"QuestionnaireResponse-BetsySmithMDSRespons.html\"&gt;Generated Summary: id: BetsySmithMDSOralHygiene; &lt;span title=\"Codes: {http://loinc.org 83230-3}\"&gt;Oral hygiene - functional ability during 3 day assessment period [CMS Assessment]&lt;/span&gt;; &lt;span title=\"Codes: {http://loinc.org LA11757-4}\"&gt;Supervision or touching assistance - Helper provides verbal cues or touching/steadying assistance as patient completes activity. Assistance may be provided throughout the activity or intermittently.&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+  ];
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">fhir:QuestionnaireResponse.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "completed"];
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">fhir:QuestionnaireResponse.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Betsy Smith" ]
+  ];
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">fhir:QuestionnaireResponse.item</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:QuestionnaireResponse.item.linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1" ];
+     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">fhir:QuestionnaireResponse.item.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "BetsySmith" ];
+     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:QuestionnaireResponse.item.answer</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:QuestionnaireResponse.item.answer.valueReference</a> [
+         <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Observation/BetsySmithMDSOralHygiene" ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+
 
   
   
@@ -143,7 +168,7 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c80cd17c-49bd-4ff1-9546-4f55ee6f1d1c">​</a>
+        <p><a name="30869a26-cca2-4f52-87f0-f43486c4dfe6">​</a>
           IG &copy; 2020+ <a style="color: #81BEF7" href="smahoney@mitre.org">Sean Mahoney</a>.  Package pacio#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 18, 2020 19:43+0000">2020-03-18</span>
           <br/>
           <span style="color: #FFFF77">

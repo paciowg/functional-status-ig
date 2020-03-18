@@ -1,0 +1,30 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "BetsySmithMDSRespons",
+  "meta": {
+    "profile": [
+      "http://pacioproject.org//StructureDefinition/pacio-qr"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmithMDSRespons</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Betsy Smith\">Betsy Smith</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: 1</p><p><b>text</b>: BetsySmith</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: BetsySmithMDSOralHygiene; <span title=\"Codes: {http://loinc.org 83230-3}\">Oral hygiene - functional ability during 3 day assessment period [CMS Assessment]</span>; <span title=\"Codes: {http://loinc.org LA11757-4}\">Supervision or touching assistance - Helper provides verbal cues or touching/steadying assistance as patient completes activity. Assistance may be provided throughout the activity or intermittently.</span></a></td></tr></table></blockquote></div>"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Betsy Smith"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "BetsySmith",
+      "answer": [
+        {
+          "valueReference": {
+            "reference": "Observation/BetsySmithMDSOralHygiene"
+          }
+        }
+      ]
+    }
+  ]
+}

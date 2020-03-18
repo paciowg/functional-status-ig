@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="fish"/>
+  <id value="pacio"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FishImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/fish/ImplementationGuide/fish</pre><div><p>An example of how FSH can be used to create an IG about fish</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FunctionalStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://pacioproject.org//ImplementationGuide/pacio</pre><div><p>TO advance interoperable health data exchange between post-acute care (PAC) and other providers, patients, and key stakeholders</p>
 </div></div>
   </text>
-  <url value="http://example.org/fhir/fish/ImplementationGuide/fish"/>
+  <url value="http://pacioproject.org//ImplementationGuide/pacio"/>
   <version value="0.1.0"/>
-  <name value="FishImplementationGuide"/>
-  <title value="Fish Implementation Guide"/>
+  <name value="FunctionalStatusImplementationGuide"/>
+  <title value="Functional Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-03-18T15:40:43+00:00"/>
-  <publisher value="James Tuna"/>
+  <date value="2020-03-18T19:43:33+00:00"/>
+  <publisher value="Sean Mahoney"/>
   <contact>
-    <name value="Bill Cod"/>
+    <name value="Sean Mahoney"/>
     <telecom>
       <system value="email"/>
-      <value value="cod@reef.gov"/>
+      <value value="smahoney@mitre.org"/>
     </telecom>
   </contact>
-  <description value="An example of how FSH can be used to create an IG about fish"/>
-  <packageId value="fish"/>
+  <description value="TO advance interoperable health data exchange between post-acute care (PAC) and other providers, patients, and key stakeholders"/>
+  <packageId value="pacio"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn>
@@ -219,7 +219,7 @@
         <reference value="Observation/BetsySmith"/>
       </reference>
       <name value="BetsySmith"/>
-      <exampleCanonical value="http://example.org/fhir/fish/StructureDefinition/pacio-bfs"/>
+      <exampleCanonical value="http://pacioproject.org//StructureDefinition/pacio-bfs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -232,7 +232,7 @@
         <reference value="Observation/BetsySmithMDSEating"/>
       </reference>
       <name value="BetsySmithMDSEating"/>
-      <exampleCanonical value="http://example.org/fhir/fish/StructureDefinition/pacio-fs"/>
+      <exampleCanonical value="http://pacioproject.org//StructureDefinition/pacio-fs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -245,7 +245,20 @@
         <reference value="Observation/BetsySmithMDSOralHygiene"/>
       </reference>
       <name value="BetsySmithMDSOralHygiene"/>
-      <exampleCanonical value="http://example.org/fhir/fish/StructureDefinition/pacio-fs"/>
+      <exampleCanonical value="http://pacioproject.org//StructureDefinition/pacio-fs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-BetsySmithMDSRespons.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/BetsySmithMDSRespons"/>
+      </reference>
+      <name value="BetsySmithMDSRespons"/>
+      <exampleCanonical value="http://pacioproject.org//StructureDefinition/pacio-qr"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
