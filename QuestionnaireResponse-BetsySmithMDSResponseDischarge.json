@@ -35,12 +35,12 @@
               ]
             },
             {
-              "linkId": "Section-37/GG0130A3",
-              "text": "Eating: The ability to use suitable utensils to bring food and/or liquid to the mouth and swallow food and/or liquid once the meal is placed before the {patient/resident}. - Discharge Performance",
+              "linkId": "Section-37/GG0130A1",
+              "text": "Eating: The ability to use suitable utensils to bring food and/or liquid to the mouth and swallow food and/or liquid once the meal is placed before the {patient/resident}. - Admission Performance",
               "answer": [
                 {
                   "valueReference": {
-                    "reference": "Observation/BetsySmithMDSEatingDischargePerformance"
+                    "reference": "Observation/BetsySmithMDSEatingDischargeAdmissionPerformance"
                   }
                 }
               ]
@@ -52,6 +52,17 @@
                 {
                   "valueReference": {
                     "reference": "Observation/BetsySmithMDSToiletingHygieneDischarge"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "Section-37/GG0130A3",
+              "text": "Eating: The ability to use suitable utensils to bring food and/or liquid to the mouth and swallow food and/or liquid once the meal is placed before the {patient/resident}. - Discharge Performance",
+              "answer": [
+                {
+                  "valueReference": {
+                    "reference": "Observation/BetsySmithMDSEatingDischargePerformance"
                   }
                 }
               ]

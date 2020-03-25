@@ -3,7 +3,7 @@
 
 err = 64, warn = 60, info = 4
 IG Publisher Version: v1.0.72-SNAPSHOT
-Generated Wed Mar 25 15:34:23 UTC 2020. FHIR version 4.0.1 for pacio#0.1.0 (canonical = http://pacioproject.org/)
+Generated Wed Mar 25 15:46:53 UTC 2020. FHIR version 4.0.1 for pacio#0.1.0 (canonical = http://pacioproject.org/)
 
  Build Errors : 189 / 31
  /home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-pacio : 1 / 0
@@ -226,9 +226,9 @@ ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/outpu
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseAdmission.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 210: The link 'Betsy Smith' for "Betsy Smith" cannot be resolved
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
-ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.json.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
-ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
-ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.xml.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
+ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.json.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
+ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.ttl.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
+ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/QuestionnaireResponse-BetsySmithMDSResponseDischarge.xml.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
 ERROR: /home/runner/work/functional-status-cli/functional-status-cli/build/output/StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28: The link 'smahoney@mitre.org' for "Sean Mahoney" cannot be resolved
