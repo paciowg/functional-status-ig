@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 61, errors = 8, warn = 3, info = 1 -->
+<!-- broken links = 220, errors = 32, warn = 30, info = 2 -->
 <head>
   <title>FunctionalStatusImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for FunctionalStatusImplementationGuide</h1>
- <p>Generated Wed Mar 18 19:43:44 UTC 2020, FHIR version 4.0.1 for pacio#0.1.0 (canonical = <a href="http://pacioproject.org/">http://pacioproject.org/</a> (<a href="http://pacioproject.org//history.html">history</a>))</p>
+ <p>Generated Wed Mar 25 15:34:23 UTC 2020, FHIR version 4.0.1 for pacio#0.1.0 (canonical = <a href="http://pacioproject.org/">http://pacioproject.org/</a> (<a href="http://pacioproject.org//history.html">history</a>))</p>
 <p>IG Publisher Version: v1.0.72-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -33,22 +33,103 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>57</b></td><td><b>4</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>189</b></td><td><b>31</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_ImplementationGuide-pacio"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/ImplementationGuide-pacio</b></a></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmith"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmith</b></a></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithBundleSNFAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithBundleSNFAdmission</b></a></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEating"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEating</b></a></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithBundleSNFDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithBundleSNFDischarge</b></a></td><td><b>2</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygiene"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygiene</b></a></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedMobilityAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedMobilityAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSRespons"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSRespons</b></a></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedToChairAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedToChairAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedToChairDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedToChairDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingDischargeAdmissionPerformance"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingDischargeAdmissionPerformance</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingDischargePerformance"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingDischargePerformance</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSLyingToSittingAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSLyingToSittingAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSLyingToSittingDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSLyingToSittingDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygieneAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygieneAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygieneDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygieneDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToLyingAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToLyingAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToLyingDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToLyingDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToStandAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToStandAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToStandDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToStandDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletTransferAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletTransferAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletTransferDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletTransferDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletingHygieneAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletingHygieneAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletingHygieneDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletingHygieneDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSTransferAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSTransferAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk10feetAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk10feetAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk10feetDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk10feetDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk150feetAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk150feetAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk150feetDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk150feetDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk50feetAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk50feetAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk50feetDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk50feetDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalkInRoomAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalkInRoomAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Patient-BetsySmith"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Patient-BetsySmith</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSResponseAdmission"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSResponseAdmission</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSResponseDischarge"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSResponseDischarge</b></a></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_functional-status-cli_functional-status-cli_build_input_profiles_StructureDefinition-pacio-bfs"><b>/home/runner/work/functional-status-cli/functional-status-cli/build/input/profiles/StructureDefinition-pacio-bfs</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -65,187 +146,664 @@
 <h2><a href="">n/a</a></h2>
  <table class="grid">
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Patient/BetsySmith.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSEating.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithBundleSNFAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSOralHygiene.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithBundleSNFDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource QuestionnaireResponse/BetsySmithMDSRespons.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSBedMobilityAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSBedToChairAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSBedToChairDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSEatingAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSEatingDischargeAdmissionPerformance.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSEatingDischargePerformance.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSLyingToSittingAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSLyingToSittingDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSOralHygieneAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSOralHygieneDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource QuestionnaireResponse/BetsySmithMDSResponseAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource QuestionnaireResponse/BetsySmithMDSResponseDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSSitToLyingAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSSitToLyingDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSSitToStandAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSSitToStandDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSToiletTransferAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSToiletTransferDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSToiletingHygieneAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSToiletingHygieneDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSTransferAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk10feetAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk10feetDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk150feetAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk150feetDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk50feetAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalk50feetDischarge.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmithMDSWalkInRoomAdmission.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#b77d1314-8343-448d-ae34-efac919478f6">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 464</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFAdmission.html#38d23d93-df26-47dd-b7b8-3b497c96b1bc">Observation-BetsySmithBundleSNFAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 883</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#be6389de-b789-400d-9926-6f3daf56e20c">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 526</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFAdmission.html#b6f0a87c-8b41-45cf-aa88-ac8d85b24cb6">Observation-BetsySmithBundleSNFAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.html#0144f93c-1bd1-4a66-a0cd-8255d28b31d3">Observation-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFAdmission.json.html#791a5c1b-3372-4e22-90c9-429e11811ac3">Observation-BetsySmithBundleSNFAdmission.json.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.json.html#918b9e63-9037-4db3-b4ca-12877a902fac">Observation-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFAdmission.ttl.html#8247e0dc-9b75-4043-b5a4-4c2ea32d275d">Observation-BetsySmithBundleSNFAdmission.ttl.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.ttl.html#34e803df-3699-4338-865a-16eda4b79598">Observation-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFAdmission.xml.html#a54120c2-584a-4383-a241-47d1067e186e">Observation-BetsySmithBundleSNFAdmission.xml.html#/html/body/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmith.xml.html#9ab986a1-3083-44f7-a10e-d0f4e911add7">Observation-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.html#ed329756-5f03-4219-a328-6876ad1ed043">Observation-BetsySmithBundleSNFDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 883</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#0ca90f43-6a3a-4962-acfa-ac6631462076">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 457</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.html#9e4977e6-790a-4bdc-b532-9744cbe56f90">Observation-BetsySmithBundleSNFDischarge.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 132, column 961</a></b></td><td><b>error</b></td><td><b>The link 'BetsySmithMDSEatingDischarge' for &quot;BetsySmithMDSEatingDischarge&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#cb15f9ba-284d-42d2-9e6e-22f5b9d310e5">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 519</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.html#74986b46-9457-4a30-ad06-7c9f8690f19b">Observation-BetsySmithBundleSNFDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.html#c80cd17c-49bd-4ff1-9546-4f55ee6f1d1c">Observation-BetsySmithMDSEating.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.json.html#2cd8dce7-18e6-47f6-a019-6585767a1734">Observation-BetsySmithBundleSNFDischarge.json.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.json.html#faccb792-c04b-4961-b99d-45d134db9dd5">Observation-BetsySmithMDSEating.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.ttl.html#48595143-f3dc-476d-8f52-66bb5a488c1c">Observation-BetsySmithBundleSNFDischarge.ttl.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.ttl.html#cf07defb-ca98-4d7f-a4ec-3213a3379825">Observation-BetsySmithMDSEating.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithBundleSNFDischarge.xml.html#82805962-4ef8-4405-8bf2-f8d39b658582">Observation-BetsySmithBundleSNFDischarge.xml.html#/html/body/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSEating.xml.html#747f992c-f754-4c11-9e4e-af6fa524fccc">Observation-BetsySmithMDSEating.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedMobilityAdmission.html#34c9c0b7-c4e6-45b1-aadc-88e226a4d3dc">Observation-BetsySmithMDSBedMobilityAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 704</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#782183be-00ea-48a6-99a5-9119082eb487">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 474</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedMobilityAdmission.html#624f0240-0e91-4f9e-b20c-9ca4625a95ff">Observation-BetsySmithMDSBedMobilityAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#fd19c6f0-e8b5-4a9f-9dd2-f3e1ae774474">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 536</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedMobilityAdmission.json.html#961d3096-7864-4a89-961d-e3a5a6541a2f">Observation-BetsySmithMDSBedMobilityAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.html#38af7f85-ec4d-4997-b69e-ea89ad90467c">Observation-BetsySmithMDSOralHygiene.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedMobilityAdmission.ttl.html#8ff08a6a-feb7-436c-9a44-3cac46315471">Observation-BetsySmithMDSBedMobilityAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.json.html#ce28b1ca-27c3-443d-8a7b-aafc78c1ad21">Observation-BetsySmithMDSOralHygiene.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedMobilityAdmission.xml.html#20cc559d-5a78-4fa3-ba7f-2111262e26eb">Observation-BetsySmithMDSBedMobilityAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.ttl.html#0ca2c028-ef34-41f6-8bb0-dd2e32b563e3">Observation-BetsySmithMDSOralHygiene.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairAdmission.html#79ffd722-e995-4f9a-8163-b0340eaa10d5">Observation-BetsySmithMDSBedToChairAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 725</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Observation-BetsySmithMDSOralHygiene.xml.html#37103378-596c-4f38-bd61-2865a053e036">Observation-BetsySmithMDSOralHygiene.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairAdmission.html#09e44407-0aad-4a1b-b3f4-c2a7f110ac46">Observation-BetsySmithMDSBedToChairAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.html#154309ed-05ae-4baf-a02f-6a6ed4c56f1a">QuestionnaireResponse-BetsySmithMDSRespons.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 200</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairAdmission.json.html#3fea809b-85eb-42c0-9a2d-ee9df687ecb3">Observation-BetsySmithMDSBedToChairAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.html#4551a990-4615-4322-ae3d-0cad4b35ffe1">QuestionnaireResponse-BetsySmithMDSRespons.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairAdmission.ttl.html#3fe91b84-7014-4b8e-93c3-545cfc166024">Observation-BetsySmithMDSBedToChairAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.json.html#97905bac-9e9f-4c44-b326-2459cfdb55da">QuestionnaireResponse-BetsySmithMDSRespons.json.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairAdmission.xml.html#69be3c14-7b4d-4389-8407-3ec3acd32ec5">Observation-BetsySmithMDSBedToChairAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.ttl.html#30869a26-cca2-4f52-87f0-f43486c4dfe6">QuestionnaireResponse-BetsySmithMDSRespons.ttl.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairDischarge.html#03c65116-2d78-4849-8485-f0f4a301f1b7">Observation-BetsySmithMDSBedToChairDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 725</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-BetsySmithMDSRespons.xml.html#87e305a4-ae8a-4083-8095-56c4885fe032">QuestionnaireResponse-BetsySmithMDSRespons.xml.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairDischarge.html#e5ebf3db-12bc-4def-bf50-dc60605f18c1">Observation-BetsySmithMDSBedToChairDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-definitions.html#5bc9ffa1-b1e1-487c-a084-7a7b41b01493">StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairDischarge.json.html#b702d8cd-23fe-4675-9315-0f98d28ba9d5">Observation-BetsySmithMDSBedToChairDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-examples.html#190fed77-8293-4997-8b2e-46e60848c994">StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairDischarge.ttl.html#5ff03b1c-c6ef-4c90-b240-83fd50eaf853">Observation-BetsySmithMDSBedToChairDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs-mappings.html#ed3229ca-5d2c-4b23-8df0-7381ca93b267">StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSBedToChairDischarge.xml.html#f5e3c806-b119-4d4b-8c67-0c9b4df9aa0f">Observation-BetsySmithMDSBedToChairDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.html#7968e3bf-6cf5-4fd6-9502-356c8ffd9117">StructureDefinition-pacio-bfs.html#/html/body/div/div/div/p/a at Line 673, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingAdmission.html#44390915-bcf9-43dd-bb93-d955e0263024">Observation-BetsySmithMDSEatingAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 687</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.json.html#3c6c626c-dae1-4bd9-9e77-2e1e6b08cb1f">StructureDefinition-pacio-bfs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingAdmission.html#8fcc7986-6eaa-4426-879a-5811a53dcbe6">Observation-BetsySmithMDSEatingAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.json.html#09e7f6a2-63c0-4e8c-b5dd-1a1f13da9c46">StructureDefinition-pacio-bfs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingAdmission.json.html#d513c900-5f10-477b-892e-f2c83afe782c">Observation-BetsySmithMDSEatingAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.ttl.html#72cb2afa-5aaa-488e-b7b6-b5bbf1e09c8f">StructureDefinition-pacio-bfs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingAdmission.ttl.html#c67b378f-5234-433e-8bc4-f88e1f5deeea">Observation-BetsySmithMDSEatingAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.profile.xml.html#a930551a-fdbc-46c1-8b43-a85c7d6da141">StructureDefinition-pacio-bfs.profile.xml.html#/html/body/div/div/div/p/a at Line 2633, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingAdmission.xml.html#4c400175-bc03-4315-a30c-14174dd2610e">Observation-BetsySmithMDSEatingAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.ttl.html#70a136ca-e0df-4dd2-b001-4885ccf8a4a5">StructureDefinition-pacio-bfs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.html#576daf47-c6b9-4819-8ce2-edd9e3690ca1">Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 727</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bfs.xml.html#b1583633-04a1-4c28-bde2-f9ab3e59551e">StructureDefinition-pacio-bfs.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.html#dda793d2-5a1e-411c-a8e8-e7bb2128aa65">Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-definitions.html#1b2a0c3a-ffae-4ded-9863-aac99d34b3f0">StructureDefinition-pacio-fs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.json.html#75e7e565-9fb2-48b3-a4d1-94cf12d70bd7">Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-examples.html#0a057d16-0a44-493c-83fd-e3931dbd4ebf">StructureDefinition-pacio-fs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.ttl.html#a74d5b38-ff1d-42cd-a0c0-31193bd381f0">Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs-mappings.html#c7e45049-46a5-4575-a829-befb29d89339">StructureDefinition-pacio-fs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.xml.html#990e2237-4d9f-4816-ad37-247416958c51">Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.html#d02b4df8-f54a-4b3b-895c-cb5992c7b384">StructureDefinition-pacio-fs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargePerformance.html#c8eba42a-37dc-4e47-9dec-2b203bf68bfe">Observation-BetsySmithMDSEatingDischargePerformance.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 709</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.json.html#96784ddb-65de-4bf7-a7e9-66284c1a8226">StructureDefinition-pacio-fs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargePerformance.html#ce82344e-2796-4263-b32d-d2b6e07df40b">Observation-BetsySmithMDSEatingDischargePerformance.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.json.html#d91a7c10-252e-49d0-94a7-305a2377c813">StructureDefinition-pacio-fs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargePerformance.json.html#4fe740db-3577-44b1-9810-0341ca4c9dd9">Observation-BetsySmithMDSEatingDischargePerformance.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.ttl.html#a329cade-d1e8-4754-aab4-eac2a2af217c">StructureDefinition-pacio-fs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargePerformance.ttl.html#2247fac8-b436-4dab-9689-d96c4bdfea16">Observation-BetsySmithMDSEatingDischargePerformance.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.profile.xml.html#a910e255-8e08-488c-91c2-d11bdfd3473d">StructureDefinition-pacio-fs.profile.xml.html#/html/body/div/div/div/p/a at Line 2630, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSEatingDischargePerformance.xml.html#78eb2cbe-7921-45f7-a075-73a8ea138d6d">Observation-BetsySmithMDSEatingDischargePerformance.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.ttl.html#c30879ab-cbb2-4002-8937-0b883035d484">StructureDefinition-pacio-fs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingAdmission.html#c8f8d32b-1e0a-4798-bf38-6eced98366f1">Observation-BetsySmithMDSLyingToSittingAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 753</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-fs.xml.html#49d00180-a9bd-4bfb-8293-8f85e3c23e17">StructureDefinition-pacio-fs.xml.html#/html/body/div/div/div/p/a at Line 2577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingAdmission.html#bbf21c92-d8d6-4288-8238-36f74e9fe006">Observation-BetsySmithMDSLyingToSittingAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#029b4336-09eb-4ff1-ab06-52487079bd49">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingAdmission.json.html#256c59c6-a65e-4bef-8baa-9ba2f9638146">Observation-BetsySmithMDSLyingToSittingAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-examples.html#77e17d04-54c1-4da1-bdf3-4ca47906a068">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingAdmission.ttl.html#53df24f9-5011-4557-a481-b0aae9d723dd">Observation-BetsySmithMDSLyingToSittingAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#d252fdba-8835-4661-a23b-32dba82f7fc4">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingAdmission.xml.html#a36c6b3a-ae0d-43ae-8382-4ab29ed303da">Observation-BetsySmithMDSLyingToSittingAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.html#99268d16-be0c-4f0b-9bb6-9a66ee4f2ac6">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingDischarge.html#6fe5fd4f-2054-43a0-a1c6-334eb12ae0d5">Observation-BetsySmithMDSLyingToSittingDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 753</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.json.html#ef336637-31cb-497b-8d29-ef28bb6d510d">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingDischarge.html#b690d67d-ac8a-42d7-b261-fc645e197d91">Observation-BetsySmithMDSLyingToSittingDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#423d30b7-b448-47db-b91f-1dc47098b572">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingDischarge.json.html#cf54fd21-fd32-4ab9-9010-7e0fffa3e108">Observation-BetsySmithMDSLyingToSittingDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#26486c1b-7f8d-4542-8b33-e16b2a2078f1">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingDischarge.ttl.html#7be2d022-a435-4cf1-9afe-fad0b8c2e13e">Observation-BetsySmithMDSLyingToSittingDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#19acbe20-a537-4d0e-8be1-300ba856d0de">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSLyingToSittingDischarge.xml.html#fca80d4d-8c73-4ea4-863f-21c3b6ab12e9">Observation-BetsySmithMDSLyingToSittingDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#592b8292-3860-4d7b-ab36-5430a2de46ec">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneAdmission.html#fb03be8f-d09d-455b-8bed-d6ce3abc595b">Observation-BetsySmithMDSOralHygieneAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 709</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-qr.xml.html#48b38f3f-04a1-4d33-ab59-06e4c31e23ba">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneAdmission.html#f3b3ace2-2bac-4934-969a-2da9dd8d932c">Observation-BetsySmithMDSOralHygieneAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#9f68e078-97a7-43a5-bf26-23a022b70357">artifacts.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneAdmission.json.html#a69a5904-1e42-4a25-a3d2-686d7f58b582">Observation-BetsySmithMDSOralHygieneAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="/home/runner/work/functional-status-cli/functional-status-cli/build/output/index.html#8437ebe1-80c2-4a8d-b12e-38a069ebb024">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneAdmission.ttl.html#c8b8096d-c242-446e-973b-23bd66c3c9a1">Observation-BetsySmithMDSOralHygieneAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#d939a28e-6396-47eb-8d83-5ae6de2bf270">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneAdmission.xml.html#e7fb09bc-d799-46a5-8863-622b7bad9db3">Observation-BetsySmithMDSOralHygieneAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#db94d34a-cbf8-42e1-81e9-5832f78c0998">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneDischarge.html#22405c82-4c80-4501-9e8e-83c737ff439f">Observation-BetsySmithMDSOralHygieneDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 709</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneDischarge.html#0f26a3c0-cea7-49f6-a9ea-e0c23f4a83af">Observation-BetsySmithMDSOralHygieneDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneDischarge.json.html#a361dffd-1933-4dbe-b926-c153ab617cd1">Observation-BetsySmithMDSOralHygieneDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneDischarge.ttl.html#5a0a51cb-b982-42e0-aab2-99c4b819a13b">Observation-BetsySmithMDSOralHygieneDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSOralHygieneDischarge.xml.html#f8c6e241-c4aa-481a-b2ea-39b8dffe8752">Observation-BetsySmithMDSOralHygieneDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingAdmission.html#afc51b79-ce6d-42b3-88b8-ba77a64739ed">Observation-BetsySmithMDSSitToLyingAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 707</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingAdmission.html#42ca85d0-74e3-409c-bb65-232c69fdb905">Observation-BetsySmithMDSSitToLyingAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingAdmission.json.html#c825faab-b960-4ee2-b217-02dd9d346aa3">Observation-BetsySmithMDSSitToLyingAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingAdmission.ttl.html#b2f6665e-4335-46b3-865b-a9714394a7ff">Observation-BetsySmithMDSSitToLyingAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingAdmission.xml.html#b911d8b3-8216-4de0-b5d4-7ed676796cdd">Observation-BetsySmithMDSSitToLyingAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingDischarge.html#73b3e3fd-6827-4e84-9f39-afe03bed6605">Observation-BetsySmithMDSSitToLyingDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 707</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingDischarge.html#53aafef1-e0a3-490b-a960-89a58e857990">Observation-BetsySmithMDSSitToLyingDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingDischarge.json.html#eee81ea2-e8f4-4ab1-bd7e-5cbc45c572be">Observation-BetsySmithMDSSitToLyingDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingDischarge.ttl.html#bc7b4647-af31-44e1-83db-549171ee3c4b">Observation-BetsySmithMDSSitToLyingDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToLyingDischarge.xml.html#d63449b0-5096-4d71-b90f-892cafd16095">Observation-BetsySmithMDSSitToLyingDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandAdmission.html#3bc0884e-ead9-40b3-9d8b-2a19e45a0a51">Observation-BetsySmithMDSSitToStandAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 707</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandAdmission.html#b798acdb-744d-4abd-845d-11001ae7d214">Observation-BetsySmithMDSSitToStandAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandAdmission.json.html#49b9995a-b2b5-4fd1-bd16-7ea0a4f614b2">Observation-BetsySmithMDSSitToStandAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandAdmission.ttl.html#08fe9978-984d-4029-a91d-1411d2ac6d2f">Observation-BetsySmithMDSSitToStandAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandAdmission.xml.html#3f3af570-0f73-4e3d-b999-5535efa13e8b">Observation-BetsySmithMDSSitToStandAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandDischarge.html#5854b6a0-9ebf-4e2f-b1db-a0f67ca6dbe1">Observation-BetsySmithMDSSitToStandDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 707</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandDischarge.html#e316ee22-6862-460f-8e70-f575f060a636">Observation-BetsySmithMDSSitToStandDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandDischarge.json.html#bfa801e3-9793-41a2-b46f-4501aa25b55b">Observation-BetsySmithMDSSitToStandDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandDischarge.ttl.html#a163bd40-8216-436b-b61f-6c2ae4d8e631">Observation-BetsySmithMDSSitToStandDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSSitToStandDischarge.xml.html#8af5136c-fb2c-4ab4-a9a2-828c957d6638">Observation-BetsySmithMDSSitToStandDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferAdmission.html#1efe33ab-6de2-430b-a342-e6a783a696df">Observation-BetsySmithMDSToiletTransferAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 721</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferAdmission.html#747f7e19-a00d-459d-8081-b7049b06eb6d">Observation-BetsySmithMDSToiletTransferAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferAdmission.json.html#a5c6a3f4-7441-40fa-a8b6-74ec23e6c68a">Observation-BetsySmithMDSToiletTransferAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferAdmission.ttl.html#beb36e2d-e614-4269-9a19-c85ea35c6821">Observation-BetsySmithMDSToiletTransferAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferAdmission.xml.html#797e7535-298c-4ced-987d-ba068c4c0319">Observation-BetsySmithMDSToiletTransferAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferDischarge.html#0884e8a9-143f-4e4d-872d-6257537f69d3">Observation-BetsySmithMDSToiletTransferDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 721</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferDischarge.html#fadc8d0d-6a97-4e80-8788-63034a890de2">Observation-BetsySmithMDSToiletTransferDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferDischarge.json.html#26bb9f81-08ea-4cc8-a3f4-dedb1f6b66af">Observation-BetsySmithMDSToiletTransferDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferDischarge.ttl.html#0a812d33-98e4-428f-ae74-48bc642c837c">Observation-BetsySmithMDSToiletTransferDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletTransferDischarge.xml.html#deba79f2-ea2b-44c7-a3f2-0062801fba8b">Observation-BetsySmithMDSToiletTransferDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.html#85af95ee-10f8-4201-9bb6-e1cdb2cb6161">Observation-BetsySmithMDSToiletingHygieneAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 729</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.html#e2769dfa-f0c7-4d86-8f68-62523b04c5af">Observation-BetsySmithMDSToiletingHygieneAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.json.html#df1a19bb-d0e1-4f62-b815-d5806d369a48">Observation-BetsySmithMDSToiletingHygieneAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.ttl.html#20044417-c1ff-48d4-9f68-c369e5e2953b">Observation-BetsySmithMDSToiletingHygieneAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.xml.html#fd3f9bae-24df-4fcd-aa80-48b1624b9ce6">Observation-BetsySmithMDSToiletingHygieneAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.html#53f17550-3b81-47b8-b95e-257094f89fab">Observation-BetsySmithMDSToiletingHygieneDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 729</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.html#265b249b-0cea-40b4-8406-e85b2514b91e">Observation-BetsySmithMDSToiletingHygieneDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.json.html#59178b4b-92e3-4d65-aaaf-0093fe8116ad">Observation-BetsySmithMDSToiletingHygieneDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.ttl.html#ead4de58-6d89-4b07-9a67-f80f87cb48a1">Observation-BetsySmithMDSToiletingHygieneDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.xml.html#bdd9795f-ecc2-4186-9c46-6b4e8a6c9ef8">Observation-BetsySmithMDSToiletingHygieneDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSTransferAdmission.html#3adf89cd-50b7-415a-9c5d-7dd130fb25de">Observation-BetsySmithMDSTransferAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 690</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSTransferAdmission.html#15d16819-2437-4431-9aa1-c58b271e079b">Observation-BetsySmithMDSTransferAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSTransferAdmission.json.html#fbcf3fa1-48ba-4afc-aaa6-92c2dbcd3f7f">Observation-BetsySmithMDSTransferAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSTransferAdmission.ttl.html#c9a31a21-0dab-4751-a94e-98931424f32c">Observation-BetsySmithMDSTransferAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSTransferAdmission.xml.html#b6ebfed8-88ad-4cfa-9f96-155086069814">Observation-BetsySmithMDSTransferAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetAdmission.html#a2d5c97c-ab53-419e-8a19-dc03287a9898">Observation-BetsySmithMDSWalk10feetAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 713</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetAdmission.html#1e309235-246e-4a80-88c6-9681916cab6b">Observation-BetsySmithMDSWalk10feetAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetAdmission.json.html#0ada20c1-f2ef-41d5-b10e-27ff71b2d276">Observation-BetsySmithMDSWalk10feetAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetAdmission.ttl.html#1e3b772e-9ee4-42e5-9f9e-43ec5a678db9">Observation-BetsySmithMDSWalk10feetAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetAdmission.xml.html#0de817a3-ac4f-4118-b191-1b7582fb7ff6">Observation-BetsySmithMDSWalk10feetAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetDischarge.html#f82dde72-075e-4756-b57a-864b679a5ad2">Observation-BetsySmithMDSWalk10feetDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 713</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetDischarge.html#7f1abf01-7077-408e-83e8-d72e00ca4e3b">Observation-BetsySmithMDSWalk10feetDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetDischarge.json.html#4894511c-e722-45da-bec4-5b2c3994ce77">Observation-BetsySmithMDSWalk10feetDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetDischarge.ttl.html#f2296acf-9437-4a54-8e62-d083b3254959">Observation-BetsySmithMDSWalk10feetDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk10feetDischarge.xml.html#aa52e50e-3290-4966-af12-7ff9a9d9a03f">Observation-BetsySmithMDSWalk10feetDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetAdmission.html#6029164b-0bc0-4754-a4a0-81e3b6407708">Observation-BetsySmithMDSWalk150feetAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 711</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetAdmission.html#77f72091-33a7-412d-ac3b-f5946acdcf37">Observation-BetsySmithMDSWalk150feetAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetAdmission.json.html#8a5ea9a2-f521-45d3-aaf8-70d511405bcb">Observation-BetsySmithMDSWalk150feetAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetAdmission.ttl.html#e82ebd03-20d6-4990-85f6-3b6357518493">Observation-BetsySmithMDSWalk150feetAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetAdmission.xml.html#48d18259-4c00-41f2-a474-4d9fc7555023">Observation-BetsySmithMDSWalk150feetAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetDischarge.html#f7cf9680-30e4-4baa-a00d-55547a43c5cd">Observation-BetsySmithMDSWalk150feetDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 711</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetDischarge.html#ac688262-1bf0-4d9c-b977-4e65eae2a540">Observation-BetsySmithMDSWalk150feetDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetDischarge.json.html#95fdbfc7-ba26-4765-948d-f78165fae127">Observation-BetsySmithMDSWalk150feetDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetDischarge.ttl.html#271204fc-7507-4ade-8a8a-3a6350c74c41">Observation-BetsySmithMDSWalk150feetDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk150feetDischarge.xml.html#271b3aae-585e-4fcd-bfe6-ed74e62b3002">Observation-BetsySmithMDSWalk150feetDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetAdmission.html#dc28b73e-ebc5-44b2-a4db-3842b9d80805">Observation-BetsySmithMDSWalk50feetAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 737</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetAdmission.html#e528634f-2e11-4f07-bb39-2372118570ee">Observation-BetsySmithMDSWalk50feetAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetAdmission.json.html#7b728c3b-67d0-4a63-a231-96a232b39064">Observation-BetsySmithMDSWalk50feetAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetAdmission.ttl.html#4c6fa055-197c-40cc-9421-10b3d8d29931">Observation-BetsySmithMDSWalk50feetAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetAdmission.xml.html#5d2d1f80-7491-4d56-b8a6-ea3b0d247664">Observation-BetsySmithMDSWalk50feetAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetDischarge.html#bfc7fc2f-69a3-44d1-857a-07517d0a3f52">Observation-BetsySmithMDSWalk50feetDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 737</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetDischarge.html#691aa694-d5ed-494d-b689-5e03613f8abb">Observation-BetsySmithMDSWalk50feetDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetDischarge.json.html#739b95d1-ee57-4f63-b8c9-7df35265fea9">Observation-BetsySmithMDSWalk50feetDischarge.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetDischarge.ttl.html#50f20a52-223d-433b-877a-8225dd336b8c">Observation-BetsySmithMDSWalk50feetDischarge.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalk50feetDischarge.xml.html#d6abc71d-002d-4ba9-a42e-189ac0adb7a6">Observation-BetsySmithMDSWalk50feetDischarge.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalkInRoomAdmission.html#4f1f6523-4a35-4dcc-9a7a-877953d096de">Observation-BetsySmithMDSWalkInRoomAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 694</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalkInRoomAdmission.html#7f4d580a-6f30-45f4-9f1d-3c9466c83791">Observation-BetsySmithMDSWalkInRoomAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalkInRoomAdmission.json.html#d794dc89-137c-4fc8-991a-47cadaed1da6">Observation-BetsySmithMDSWalkInRoomAdmission.json.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalkInRoomAdmission.ttl.html#e00e3e60-b7f4-401d-a803-6c9bd66a1fbf">Observation-BetsySmithMDSWalkInRoomAdmission.ttl.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmithMDSWalkInRoomAdmission.xml.html#42a17340-de86-41b2-b49b-30f6f4bf59d6">Observation-BetsySmithMDSWalkInRoomAdmission.xml.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-BetsySmith.html#86a3e7d2-7df0-40c9-9275-651300f5fa6e">Patient-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-BetsySmith.json.html#43cc17ca-6510-4dcd-9797-e4a65fe60163">Patient-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 149, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-BetsySmith.ttl.html#a0b75685-5255-4fea-9e3b-ad7c295c6649">Patient-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-BetsySmith.xml.html#beb06831-3aa3-4612-b6ec-620a8f57daae">Patient-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 145, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.html#c8e61245-8831-4130-88d1-dc037ae532ab">QuestionnaireResponse-BetsySmithMDSResponseAdmission.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 210</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.html#571a0c97-e9c6-4753-b885-2432ebbb7c37">QuestionnaireResponse-BetsySmithMDSResponseAdmission.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.json.html#4deb198d-e81a-487d-95cf-4b0967788362">QuestionnaireResponse-BetsySmithMDSResponseAdmission.json.html#/html/body/div/div/div/p/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.ttl.html#43833099-a350-4aff-91cd-68024cd8f334">QuestionnaireResponse-BetsySmithMDSResponseAdmission.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.xml.html#de2d58d2-298c-4dff-a0a0-a22c7ee39a8a">QuestionnaireResponse-BetsySmithMDSResponseAdmission.xml.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#84e9f159-12d1-4dcf-9a5c-87b2e37b773e">QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 210</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#b0fc527c-38a5-4dc1-9752-67e0a72ea0bb">QuestionnaireResponse-BetsySmithMDSResponseDischarge.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.json.html#da929def-9efb-420a-a16a-8335b6dca41a">QuestionnaireResponse-BetsySmithMDSResponseDischarge.json.html#/html/body/div/div/div/p/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.ttl.html#97722e56-36a4-4393-9b27-32b4774dc9bb">QuestionnaireResponse-BetsySmithMDSResponseDischarge.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.xml.html#ff2294ad-26c1-4ef3-9acf-b33b64e30e43">QuestionnaireResponse-BetsySmithMDSResponseDischarge.xml.html#/html/body/div/div/div/p/a at Line 272, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-definitions.html#76fd07fb-f366-4cf8-a534-aff5c7f5b212">StructureDefinition-pacio-bfs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-examples.html#44b4e04e-a4e7-44e7-96da-d1b7e075aeb4">StructureDefinition-pacio-bfs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs-mappings.html#dc5bda13-1da2-405a-8dd9-34beed113844">StructureDefinition-pacio-bfs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.html#e2f5d046-acc2-4f08-852d-460d8afa207e">StructureDefinition-pacio-bfs.html#/html/body/div/div/div/p/a at Line 675, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.json.html#49e1c647-c1fd-4187-b6a2-9d24cc545b21">StructureDefinition-pacio-bfs.json.html#/html/body/div/div/div/p/a at Line 2834, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.json.html#4299b1b8-a380-4791-9817-a31ed5416d55">StructureDefinition-pacio-bfs.profile.json.html#/html/body/div/div/div/p/a at Line 2883, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.ttl.html#936dd4d9-6214-4e9a-a1cb-53d1a5ed9cd2">StructureDefinition-pacio-bfs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2560, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.profile.xml.html#ddfdd6e7-907e-4c58-aacb-76c6eda71dc9">StructureDefinition-pacio-bfs.profile.xml.html#/html/body/div/div/div/p/a at Line 2640, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.ttl.html#83ceb830-5a63-48cb-86d0-d2d0254fc15b">StructureDefinition-pacio-bfs.ttl.html#/html/body/div/div/div/p/a at Line 2510, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bfs.xml.html#2470c619-6f4f-44b2-b48e-684fda51d8c2">StructureDefinition-pacio-bfs.xml.html#/html/body/div/div/div/p/a at Line 2587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-definitions.html#2998f561-bbd5-42a5-a3b4-abfd8d7aa28e">StructureDefinition-pacio-fs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-examples.html#e5d606d2-dd43-4008-9e6c-ae62a950db3c">StructureDefinition-pacio-fs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 345, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs-mappings.html#823b9617-2984-4fe8-a238-625c86381541">StructureDefinition-pacio-fs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.html#9af5105f-de99-46a0-8514-ab7cee168a84">StructureDefinition-pacio-fs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.json.html#9b9f6679-7471-4830-bf0e-2b42e26a6509">StructureDefinition-pacio-fs.json.html#/html/body/div/div/div/p/a at Line 2831, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.json.html#c6132d40-8c52-452b-b95d-0521bb6cabe3">StructureDefinition-pacio-fs.profile.json.html#/html/body/div/div/div/p/a at Line 2880, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.ttl.html#9bc74c0b-eb8b-4ded-aa50-28241078d1c2">StructureDefinition-pacio-fs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.profile.xml.html#8c7537f7-948c-4a65-b56e-fd0b071aa980">StructureDefinition-pacio-fs.profile.xml.html#/html/body/div/div/div/p/a at Line 2630, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.ttl.html#ec25f7db-cda6-430e-9b38-23df72fb0bf6">StructureDefinition-pacio-fs.ttl.html#/html/body/div/div/div/p/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-fs.xml.html#1d4e0335-3613-4d5e-a438-a853f0d1cf3c">StructureDefinition-pacio-fs.xml.html#/html/body/div/div/div/p/a at Line 2577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#869f5056-0d82-40de-bcfb-07af0e7cde0f">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-examples.html#6509767f-c03b-4820-8f8c-18e0fef61c1e">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#238085a0-b3ea-44c0-94f7-835696494402">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.html#586ee66b-2930-4594-9858-34965fda6c82">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.json.html#f166af3c-fa9c-4980-b1dc-71b37af715f2">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#5fa8000c-a8f1-4913-9686-8074c623c02c">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#21f39da8-32c9-4da3-968a-1ff5602545c1">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#4841192e-b433-4d39-aa2f-76388b4af2ca">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#763473e7-1e36-437d-a016-024ff3b12b70">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.xml.html#3dcffa92-c5b4-41a3-930f-107c23318e77">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#9de8b7c7-1388-451e-8f0f-ee4242050266">artifacts.html#/html/body/div/div/div/p/a at Line 397, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/home/runner/work/functional-status-cli/functional-status-cli/build/output/index.html#262b97bf-265f-4f19-961b-f3eec565a375">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#d256303d-693a-453d-8add-72706260c50d">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#e7f6d767-b38f-4eab-b58c-afdcc6916f83">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'smahoney@mitre.org' for &quot;Sean Mahoney&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -260,68 +818,440 @@
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmith"> </a>
-<h2><a href="Observation-BetsySmith.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmith.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithBundleSNFAdmission"> </a>
+<h2><a href="Observation-BetsySmithBundleSNFAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithBundleSNFAdmission.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation/BetsySmith: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+     <td><b>Observation/BetsySmithBundleSNFAdmission: Observation.category[0]</b></td><td><b>warning</b></td><td><b>ValueSet http://terminology.hl7.org/CodeSystem/observation-category not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithBundleSNFAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmith: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmith: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+     <td><b>Observation/BetsySmithBundleSNFAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEating"> </a>
-<h2><a href="Observation-BetsySmithMDSEating.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEating.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithBundleSNFDischarge"> </a>
+<h2><a href="Observation-BetsySmithBundleSNFDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithBundleSNFDischarge.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation/BetsySmithMDSEating: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+     <td><b>Observation/BetsySmithBundleSNFDischarge: Observation.category[0]</b></td><td><b>warning</b></td><td><b>ValueSet http://terminology.hl7.org/CodeSystem/observation-category not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithBundleSNFDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmithMDSEating: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+     <td><b>Observation/BetsySmithBundleSNFDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmithMDSEating: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+     <td><b>Observation/BetsySmithBundleSNFDischarge: Observation.derivedFrom[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;BetsySmithMDSEatingDischarge&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygiene"> </a>
-<h2><a href="Observation-BetsySmithMDSOralHygiene.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygiene.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedMobilityAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSBedMobilityAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedMobilityAdmission.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+     <td><b>Observation/BetsySmithMDSBedMobilityAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/BetsySmithMDSOralHygiene: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+     <td><b>Observation/BetsySmithMDSBedMobilityAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSRespons"> </a>
-<h2><a href="QuestionnaireResponse-BetsySmithMDSRespons.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSRespons.json</a></h2>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedToChairAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSBedToChairAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedToChairAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSBedToChairAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSBedToChairAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSBedToChairDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSBedToChairDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSBedToChairDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSBedToChairDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSBedToChairDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSEatingAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSEatingAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSEatingAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingDischargeAdmissionPerformance"> </a>
+<h2><a href="Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingDischargeAdmissionPerformance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSEatingDischargeAdmissionPerformance: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSEatingDischargeAdmissionPerformance: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSEatingDischargePerformance"> </a>
+<h2><a href="Observation-BetsySmithMDSEatingDischargePerformance.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSEatingDischargePerformance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSEatingDischargePerformance: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSEatingDischargePerformance: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSLyingToSittingAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSLyingToSittingAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSLyingToSittingAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSLyingToSittingAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSLyingToSittingAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSLyingToSittingDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSLyingToSittingDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSLyingToSittingDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSLyingToSittingDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSLyingToSittingDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygieneAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSOralHygieneAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygieneAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSOralHygieneAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSOralHygieneAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSOralHygieneDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSOralHygieneDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSOralHygieneDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSOralHygieneDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSOralHygieneDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToLyingAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSSitToLyingAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToLyingAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSSitToLyingAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSSitToLyingAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToLyingDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSSitToLyingDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToLyingDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSSitToLyingDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSSitToLyingDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToStandAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSSitToStandAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToStandAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSSitToStandAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSSitToStandAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSSitToStandDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSSitToStandDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSSitToStandDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSSitToStandDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSSitToStandDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletTransferAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSToiletTransferAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletTransferAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSToiletTransferAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSToiletTransferAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletTransferDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSToiletTransferDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletTransferDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSToiletTransferDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSToiletTransferDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletingHygieneAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSToiletingHygieneAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletingHygieneAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSToiletingHygieneAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSToiletingHygieneAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSToiletingHygieneDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSToiletingHygieneDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSToiletingHygieneDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSToiletingHygieneDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSToiletingHygieneDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSTransferAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSTransferAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSTransferAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSTransferAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSTransferAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk10feetAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk10feetAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk10feetAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk10feetAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk10feetAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk10feetDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk10feetDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk10feetDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk10feetDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk10feetDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk150feetAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk150feetAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk150feetAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk150feetAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk150feetAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk150feetDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk150feetDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk150feetDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk150feetDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk150feetDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk50feetAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk50feetAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk50feetAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk50feetAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk50feetAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalk50feetDischarge"> </a>
+<h2><a href="Observation-BetsySmithMDSWalk50feetDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalk50feetDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalk50feetDischarge: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalk50feetDischarge: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Observation-BetsySmithMDSWalkInRoomAdmission"> </a>
+<h2><a href="Observation-BetsySmithMDSWalkInRoomAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Observation-BetsySmithMDSWalkInRoomAdmission.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmithMDSWalkInRoomAdmission: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmithMDSWalkInRoomAdmission: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_Patient-BetsySmith"> </a>
+<h2><a href="Patient-BetsySmith.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/Patient-BetsySmith.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSResponseAdmission"> </a>
+<h2><a href="QuestionnaireResponse-BetsySmithMDSResponseAdmission.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSResponseAdmission.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>QuestionnaireResponse/BetsySmithMDSRespons: QuestionnaireResponse.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+     <td><b>QuestionnaireResponse/BetsySmithMDSResponseAdmission: QuestionnaireResponse.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>QuestionnaireResponse/BetsySmithMDSRespons: QuestionnaireResponse</b></td><td><b>information</b></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+     <td><b>QuestionnaireResponse/BetsySmithMDSResponseAdmission: QuestionnaireResponse</b></td><td><b>information</b></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_functional-status-cli_functional-status-cli_build_input_examples_QuestionnaireResponse-BetsySmithMDSResponseDischarge"> </a>
+<h2><a href="QuestionnaireResponse-BetsySmithMDSResponseDischarge.html">/home/runner/work/functional-status-cli/functional-status-cli/build/input/examples/QuestionnaireResponse-BetsySmithMDSResponseDischarge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse/BetsySmithMDSResponseDischarge: QuestionnaireResponse.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse/BetsySmithMDSResponseDischarge: QuestionnaireResponse</b></td><td><b>information</b></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
    </tr>
 </table>
 <hr/>
