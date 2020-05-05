@@ -3,9 +3,9 @@
   "name": "FunctionalStatusImplementationGuide",
   "package-id": "pacio",
   "ig-ver": "0.1.0",
-  "date": "Thu, 30 Apr, 2020 17:48:17 +0000",
-  "errs": 18,
-  "warnings": 220,
+  "date": "Thu, 23 Apr, 2020 15:08:05 -0400",
+  "errs": 108,
+  "warnings": 150,
   "hints": 0,
   "version": "4.0.1",
   "tool": "4.2.0 (3)"
