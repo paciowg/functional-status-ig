@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/Connectathon-QuestResponse-FS-4-Last3DSNFStay> a fhir:QuestionnaireResponse;
+<https://paciowg.github.io/functional-status-ig/QuestionnaireResponse/Connectathon-QuestResponse-FS-4-Last3DSNFStay> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Connectathon-QuestResponse-FS-4-Last3DSNFStay"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://pacioproject.org/StructureDefinition/pacio-qr";
+       fhir:value "https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-qr";
        fhir:index 0;
-       fhir:link <http://pacioproject.org/StructureDefinition/pacio-qr>
+       fhir:link <https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-qr>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-QuestResponse-FS-4-Last3DSNFStay</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 23, 2020 6:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 88483-3</p><p><b>linkId</b>: Section GG</p><p><b>text</b>: Functional Abilities and Goals - Discharge</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-QuestResponse-FS-4-Last3DSNFStay</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 23, 2020, 2:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 88483-3</p><p><b>linkId</b>: Section GG</p><p><b>text</b>: Functional Abilities and Goals - Discharge</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.questionnaire [
      fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
@@ -25,7 +25,7 @@
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:link <https://paciowg.github.io/functional-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-23T13:00:00-05:00"^^xsd:dateTime];
@@ -47,7 +47,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-4>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-4>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-4" ]
            ]
          ]
@@ -59,7 +59,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-10>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-10>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-10" ]
            ]
          ]
@@ -71,7 +71,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-16>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-16>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-16" ]
            ]
          ]
@@ -83,7 +83,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-22>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-22>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-22" ]
            ]
          ]
@@ -95,7 +95,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-28>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-28>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-28" ]
            ]
          ]
@@ -107,7 +107,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-34>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-34>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-34" ]
            ]
          ]
@@ -119,7 +119,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-40>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-40>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-40" ]
            ]
          ]
@@ -131,7 +131,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-46>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-46>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-46" ]
            ]
          ]
@@ -143,7 +143,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-52>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-52>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-52" ]
            ]
          ]
@@ -155,7 +155,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-58>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-58>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-58" ]
            ]
          ]
@@ -167,7 +167,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-64>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-64>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-64" ]
            ]
          ]
@@ -179,7 +179,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-70>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-70>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-70" ]
            ]
          ]
@@ -191,7 +191,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-76>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-76>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-76" ]
            ]
          ]
@@ -203,7 +203,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-82>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-82>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-82" ]
            ]
          ]
@@ -215,7 +215,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-88>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-88>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-88" ]
            ]
          ]
@@ -227,7 +227,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-94>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-94>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-94" ]
            ]
          ]
@@ -239,7 +239,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-100>;
+             fhir:link <https://paciowg.github.io/functional-status-ig/Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-100>;
              fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-FS-4-Last3DSNFStay-Ob-100" ]
            ]
          ]
@@ -249,7 +249,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/Connectathon-QuestResponse-FS-4-Last3DSNFStay.ttl> a owl:Ontology;
+<https://paciowg.github.io/functional-status-ig/QuestionnaireResponse/Connectathon-QuestResponse-FS-4-Last3DSNFStay.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

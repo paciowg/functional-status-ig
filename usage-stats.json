@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://pacioproject.org/StructureDefinition/device-patient-used",
+      "url": "https://paciowg.github.io/functional-status-ig/StructureDefinition/device-patient-used",
       "title": "DevicePatientUsed",
       "types": [
         "Reference"
@@ -14,24 +14,28 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-fs",
+        "url": "https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-fs",
         "title": "Functional Status"
       }
     ],
     "DeviceUseStatement": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-dev",
+        "url": "https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev",
         "title": "UseOfDevice"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-qr",
+        "url": "https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-qr",
         "title": "PACIO Questionaire Response"
       }
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.searchParam"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -65,7 +69,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://pacioproject.org/StructureDefinition/device-patient-used": [
+    "https://paciowg.github.io/functional-status-ig/StructureDefinition/device-patient-used": [
       "Observation"
     ]
   }

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/Device/CMS-Device-1> a fhir:Device;
+<https://paciowg.github.io/functional-status-ig/Device/CMS-Device-1> a fhir:Device;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CMS-Device-1"];
   fhir:DomainResource.text [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/Device/CMS-Device-1.ttl> a owl:Ontology;
+<https://paciowg.github.io/functional-status-ig/Device/CMS-Device-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
