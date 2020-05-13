@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/Location/Connectathon-Org-Loc-03> a fhir:Location;
+<http://pacioproject.org/Location/Connectathon-Org-Loc-03> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Connectathon-Org-Loc-03"];
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/Location/Connectathon-Org-Loc-03.ttl> a owl:Ontology;
+<http://pacioproject.org/Location/Connectathon-Org-Loc-03.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

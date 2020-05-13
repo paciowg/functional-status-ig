@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/Practitioner/Connectathon-Practitioner-JenCadbury> a fhir:Practitioner;
+<http://pacioproject.org/Practitioner/Connectathon-Practitioner-JenCadbury> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Connectathon-Practitioner-JenCadbury"];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/Practitioner/Connectathon-Practitioner-JenCadbury.ttl> a owl:Ontology;
+<http://pacioproject.org/Practitioner/Connectathon-Practitioner-JenCadbury.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
