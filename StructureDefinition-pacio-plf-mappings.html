@@ -66,7 +66,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - STU Ballot</p>
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -87,37 +87,21 @@
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
-
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
-    <a href="index.html">IG Home</a>
-  </li>
-  <li>
-    <a href="toc.html">Table Of Contents</a>
-  </li>
-  <li>
-    <a href="underlying_technologies.html">Underlying Technologies</a>
-  </li>
-  <li>
-    <a href="functional_status_use_case.html">Use Case Example</a>
-  </li>
-  <li>
-    <a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a>
-  </li>
-  <li>
-    <a href="artifacts.html">Artifacts Summary</a>
-  </li>
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="functional_status_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
-      <b class="caret"></b>
-    </a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
-      </li>
+      <li><a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
     </ul>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -139,7 +123,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="https://paciowg.github.io/functional-status-ig//history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://paciowg.github.io/functional-status-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -220,19 +204,7 @@
 
 
 
-  <a name="argonaut-dq-dstu2"> </a><h3>Mappings for Argonaut-DQ-DSTU2 (http://unknown.org/Argonaut-DQ-DSTU2)</h3><table class="grid">
- <tr><td colspan="3"><b>PriorLevelOfFunction</b></td></tr>
- <tr><td>Observation</td><td>Observation</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Observation.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>Observation.category</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>Observation.category</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Observation.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Observation.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>Observation.effective[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>Observation.value[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>Observation.dataAbsentReason</td> </tr>
-</table>
-<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PriorLevelOfFunction</b></td></tr>
  <tr><td>Observation</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (event-location)</td><td>Event.location</td> </tr>
@@ -257,23 +229,10 @@
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>&lt; 123038009 |Specimen|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;device</td><td>&lt; 49062001 |Device|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;referenceRange</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>&lt; 260245000 |Findings values| OR  
-&lt; 365860008 |General clinical state finding| 
-OR 
-&lt; 250171008 |Clinical history or observation findings| OR  
-&lt; 415229000 |Racial group| OR 
-&lt; 365400002 |Finding of puberty stage| OR
-&lt; 443938003 |Procedure carried out on subject|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>&lt; 260245000 |Findings values| OR  
-&lt; 365860008 |General clinical state finding| 
-OR 
-&lt; 250171008 |Clinical history or observation findings| OR  
-&lt; 415229000 |Racial group| OR 
-&lt; 365400002 |Finding of puberty stage| OR
-&lt; 443938003 |Procedure carried out on subject|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>&lt; 260245000 |Findings values| OR  &lt; 365860008 |General clinical state finding| OR &lt; 250171008 |Clinical history or observation findings| OR  &lt; 415229000 |Racial group| OR &lt; 365400002 |Finding of puberty stage| OR&lt; 443938003 |Procedure carried out on subject|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appliesTo</td><td>&lt; 260245000 |Findings values| OR  &lt; 365860008 |General clinical state finding| OR &lt; 250171008 |Clinical history or observation findings| OR  &lt; 415229000 |Racial group| OR &lt; 365400002 |Finding of puberty stage| OR&lt; 443938003 |Procedure carried out on subject|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;component</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR 
-&lt; 386053000 |Evaluation procedure|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets| &lt; 441742003 |Evaluation finding|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>&lt; 260245000 |Findings values|</td> </tr>
 </table>
@@ -330,7 +289,6 @@ OR
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=FLFS].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status  Amended &amp; Final are differentiated by whether it is the subject of a ControlAct event with a type of &quot;revise&quot;</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -378,7 +336,6 @@ OR
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
@@ -453,12 +410,12 @@ OR
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 30, 2020 13:20-0500">2020-12-30</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare/"></a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 3, 2021 22:27-0800">2021-01-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" target="_blank" href="https://paciowg.github.io/functional-status-ig//history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="http://paciowg.github.io/functional-status-ig/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

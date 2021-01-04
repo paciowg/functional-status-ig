@@ -64,7 +64,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - STU Ballot</p>
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -85,37 +85,21 @@
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
-
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li>
-    <a href="index.html">IG Home</a>
-  </li>
-  <li>
-    <a href="toc.html">Table Of Contents</a>
-  </li>
-  <li>
-    <a href="underlying_technologies.html">Underlying Technologies</a>
-  </li>
-  <li>
-    <a href="functional_status_use_case.html">Use Case Example</a>
-  </li>
-  <li>
-    <a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a>
-  </li>
-  <li>
-    <a href="artifacts.html">Artifacts Summary</a>
-  </li>
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="functional_status_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
-      <b class="caret"></b>
-    </a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
-      </li>
+      <li><a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
     </ul>
   </li>
 </ul>
+
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -137,7 +121,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="https://paciowg.github.io/functional-status-ig//history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://paciowg.github.io/functional-status-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,13 +173,13 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre class="json"><code>
 {
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "pacio-fs",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;PACIO_FunctionalStatus_CapabilityStatement&lt;/h2&gt;&lt;div&gt;&lt;p&gt;This Capability Statement defines the expected capabilities of a PACIO Functional Status FHIR server conforming to the PACIO functional Status Implementation Guide.&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET past versions of resources (vread interaction)\&quot;&gt;V-Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET changes to a resource (history interaction on instance)\&quot;&gt;Updates&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET changes for all resources of the type (history interaction on type)\&quot;&gt;History&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html\&quot;&gt;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html\&quot;&gt;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html\&quot;&gt;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;QuestionnaireResponse&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html\&quot;&gt;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DeviceUseStatement&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html\&quot;&gt;https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;PACIO_FunctionalStatus_CapabilityStatement&lt;/h2&gt;&lt;div&gt;&lt;p&gt;This Capability Statement defines the expected capabilities of a PACIO Functional Status FHIR server conforming to the PACIO functional Status Implementation Guide.&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET past versions of resources (vread interaction)\&quot;&gt;V-Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET changes to a resource (history interaction on instance)\&quot;&gt;Updates&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET changes for all resources of the type (history interaction on type)\&quot;&gt;History&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html\&quot;&gt;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;QuestionnaireResponse&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html\&quot;&gt;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DeviceUseStatement&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html\&quot;&gt;https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "/CapabilityStatement-pacio-fs.html",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.1.0",
@@ -203,23 +187,9 @@
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a>" : "PACIO Functional Status Capability Statement",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2020-05-08T00:00:00+00:00",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "HL7 Patient Care Work Group",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 Patient Care Work Group",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/patientcare"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "patientcare@lists.HL7.org"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "PACIO  project",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "PACIO project",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
@@ -227,7 +197,7 @@
         },
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "patientcare@lists.HL7.org"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "info@pacioproject.org"
         }
       ]
     }
@@ -250,7 +220,7 @@
     "json"
   ],
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementationGuide">implementationGuide</a>" : [
-    "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/index.html"
+    "https://paciowg.github.io/functional-status-ig"
   ],
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
     {
@@ -258,503 +228,7 @@
       "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-instance",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">conditionalCreate</a>" : true,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : true,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalDelete">conditionalDelete</a>" : "multiple",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
-            "literal",
-            "logical"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
-            "Observation.subject",
-            "Observation.based-on",
-            "Observation.patient",
-            "Observation.specimen",
-            "Observation.context",
-            "Observation.performer",
-            "Observation.encounter",
-            "Observation.related-target",
-            "Observation.device"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
-            "ChargeItem.service",
-            "ClinicalImpression.finding-ref",
-            "ClinicalImpression.investigation",
-            "DiagnosticReport.result",
-            "Immunization.reaction",
-            "ImmunizationRecommendation.information",
-            "MedicationStatement.part-of",
-            "Observation.related-target",
-            "Procedure.part-of",
-            "QuestionnaireResponse.parent"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Obtained date/time. If the obtained element is a period, a date that falls in the period"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The code of the observation type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and quantity value parameter pair, including in components"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "subject",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The subject that the observation is about"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.component.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a date or period of time"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and string value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Component code and component quantity value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "based-on",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Reference to the test or procedure request."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Related Observations - search on related-type and related-target together"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and date/time value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "patient",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The subject that the observation is about (if patient)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "specimen",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Specimen used for this observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The component code of the observation type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and quantity value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "context",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Healthcare event  (Episode-of-care or Encounter) related to the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and coded value parameter pair, including in components"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a string, and also searches in CodeableConcept.text"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The unique id for a particular observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "performer",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Who performed the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The code of the observation type or component type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "method",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The method used for the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "encounter",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Encounter related to the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related-target",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Resource that is related to this one"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and coded value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Component code and component coded value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the component observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "category",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The classification of the type of observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "device",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The Device that generated the observation data."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value or component value of the observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "status",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The status of the observation"
-            }
-          ]
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-instance",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "history-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.documentation">documentation</a>" : "Implemented per the specification (or Insert other doco here)"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">conditionalCreate</a>" : true,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : true,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalDelete">conditionalDelete</a>" : "multiple",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a>" : [
-            "literal",
-            "logical"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
-            "Observation.subject",
-            "Observation.based-on",
-            "Observation.patient",
-            "Observation.specimen",
-            "Observation.context",
-            "Observation.performer",
-            "Observation.encounter",
-            "Observation.related-target",
-            "Observation.device"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchRevInclude">searchRevInclude</a>" : [
-            "ChargeItem.service",
-            "ClinicalImpression.finding-ref",
-            "ClinicalImpression.investigation",
-            "DiagnosticReport.result",
-            "Immunization.reaction",
-            "ImmunizationRecommendation.information",
-            "MedicationStatement.part-of",
-            "Observation.related-target",
-            "Procedure.part-of",
-            "QuestionnaireResponse.parent"
-          ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Obtained date/time. If the obtained element is a period, a date that falls in the period"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The code of the observation type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and quantity value parameter pair, including in components"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "subject",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The subject that the observation is about"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.component.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a date or period of time"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and string value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Component code and component quantity value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "based-on",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Reference to the test or procedure request."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Related Observations - search on related-type and related-target together"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-date",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and date/time value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "patient",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The subject that the observation is about (if patient)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "specimen",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Specimen used for this observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The component code of the observation type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and quantity value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "context",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Healthcare event  (Episode-of-care or Encounter) related to the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and coded value parameter pair, including in components"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "string",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a string, and also searches in CodeableConcept.text"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "identifier",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The unique id for a particular observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "performer",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Who performed the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-code",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The code of the observation type or component type"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "method",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The method used for the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "data-absent-reason",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The reason why the expected value in the element Observation.value[x] is missing."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-value-quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "quantity",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "encounter",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Encounter related to the observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related-type",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "related-target",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Resource that is related to this one"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Code and coded value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-code-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "composite",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Component code and component coded value parameter pair"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "component-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value of the component observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "category",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The classification of the type of observation"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "device",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "reference",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The Device that generated the observation data."
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "combo-value-concept",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The value or component value of the observation, if the value is a CodeableConcept"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "status",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "The status of the observation"
-            }
-          ]
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html",
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
@@ -1002,7 +476,7 @@
         },
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "QuestionnaireResponse",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html",
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
@@ -1107,7 +581,7 @@
         },
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "DeviceUseStatement",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html",
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
@@ -1254,7 +728,7 @@
       "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-plf.html",
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
@@ -1589,7 +1063,7 @@
       "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
+          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-fs.html",
           "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read",
@@ -1948,12 +1422,12 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 30, 2020 13:20-0500">2020-12-30</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare/"></a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 3, 2021 22:27-0800">2021-01-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" target="_blank" href="https://paciowg.github.io/functional-status-ig//history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="http://paciowg.github.io/functional-status-ig/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

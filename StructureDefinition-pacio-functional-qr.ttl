@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr> a fhir:StructureDefinition;
+<http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-functional-qr"];
   fhir:DomainResource.text [
@@ -21,28 +21,15 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-functional-qr"];
+  fhir:StructureDefinition.url [ fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "PACIOfunctionalQuestionnaireResponse"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Questionnaire Response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-12-30T13:20:04-05:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-03T22:27:53-08:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 Patient Care Work Group" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "PACIO  project" ];
+     fhir:ContactDetail.name [ fhir:value "PACIO project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
@@ -50,7 +37,7 @@
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
+       fhir:ContactPoint.value [ fhir:value "info@pacioproject.org" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A completed, or sections of a completed, CMS PAC assessment."];
@@ -1658,7 +1645,7 @@
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ];
-       fhir:ElementDefinition.contentReference [ fhir:value "#QuestionnaireResponse.item" ];
+       fhir:ElementDefinition.contentReference [ fhir:value "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1692,7 +1679,7 @@
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ];
-       fhir:ElementDefinition.contentReference [ fhir:value "#QuestionnaireResponse.item" ];
+       fhir:ElementDefinition.contentReference [ fhir:value "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1757,7 +1744,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr.ttl> a owl:Ontology;
+<http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

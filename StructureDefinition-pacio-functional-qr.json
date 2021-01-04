@@ -15,29 +15,15 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-functional-qr",
+  "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr",
   "version": "0.1.0",
   "name": "PACIOfunctionalQuestionnaireResponse",
   "title": "PACIO Questionnaire Response",
   "status": "active",
-  "date": "2020-12-30T13:20:04-05:00",
-  "publisher": "HL7 Patient Care Work Group",
+  "date": "2021-01-03T22:27:53-08:00",
   "contact": [
     {
-      "name": "HL7 Patient Care Work Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/patientcare"
-        },
-        {
-          "system": "email",
-          "value": "patientcare@lists.HL7.org"
-        }
-      ]
-    },
-    {
-      "name": "PACIO  project",
+      "name": "PACIO project",
       "telecom": [
         {
           "system": "url",
@@ -45,7 +31,7 @@
         },
         {
           "system": "email",
-          "value": "patientcare@lists.HL7.org"
+          "value": "info@pacioproject.org"
         }
       ]
     }
@@ -1517,7 +1503,7 @@
           "min": 0,
           "max": "*"
         },
-        "contentReference": "#QuestionnaireResponse.item",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item",
         "constraint": [
           {
             "key": "ele-1",
@@ -1550,7 +1536,7 @@
           "min": 0,
           "max": "*"
         },
-        "contentReference": "#QuestionnaireResponse.item",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item",
         "constraint": [
           {
             "key": "ele-1",
