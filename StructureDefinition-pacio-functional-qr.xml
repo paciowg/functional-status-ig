@@ -19,21 +19,33 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr"/>
+  <url value="https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-functional-qr"/>
   <version value="0.1.0"/>
   <name value="PACIOfunctionalQuestionnaireResponse"/>
   <title value="PACIO Questionnaire Response"/>
   <status value="active"/>
-  <date value="2021-01-05T09:50:27-08:00"/>
+  <date value="2021-02-18T20:32:56-05:00"/>
+  <publisher value="HL7 Patient Care Work Group"/>
   <contact>
-    <name value="PACIO project"/>
+    <name value="HL7 Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PACIO  project"/>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/patientcare/"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="info@pacioproject.org"/>
+      <value value="patientcare@lists.HL7.org"/>
     </telecom>
   </contact>
   <description value="A completed, or sections of a completed, CMS PAC assessment."/>

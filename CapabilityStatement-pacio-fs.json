@@ -3,7 +3,7 @@
   "id": "pacio-fs",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_FunctionalStatus_CapabilityStatement</h2><div><p>This Capability Statement defines the expected capabilities of a PACIO Functional Status FHIR server conforming to the PACIO functional Status Implementation Guide.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>Observation</td><td><a href=\"https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html\">https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>QuestionnaireResponse</td><td><a href=\"https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html\">https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>DeviceUseStatement</td><td><a href=\"https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html\">https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_FunctionalStatus_CapabilityStatement</h2><div><p>This Capability Statement defines the expected capabilities of a PACIO Functional Status FHIR server conforming to the PACIO functional Status Implementation Guide.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>Observation</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html\">https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Observation</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html\">https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>Observation</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html\">https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>QuestionnaireResponse</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html\">https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>DeviceUseStatement</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html\">https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr></table></div>"
   },
   "url": "/CapabilityStatement-pacio-fs.html",
   "version": "0.1.0",
@@ -11,9 +11,23 @@
   "title": "PACIO Functional Status Capability Statement",
   "status": "draft",
   "date": "2020-05-08T00:00:00+00:00",
+  "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
-      "name": "PACIO project",
+      "name": "HL7 Patient Care Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        },
+        {
+          "system": "email",
+          "value": "patientcare@lists.HL7.org"
+        }
+      ]
+    },
+    {
+      "name": "PACIO  project",
       "telecom": [
         {
           "system": "url",
@@ -21,7 +35,7 @@
         },
         {
           "system": "email",
-          "value": "info@pacioproject.org"
+          "value": "patientcare@lists.HL7.org"
         }
       ]
     }
@@ -44,7 +58,7 @@
     "json"
   ],
   "implementationGuide": [
-    "https://paciowg.github.io/functional-status-ig"
+    "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/index.html"
   ],
   "rest": [
     {
@@ -52,7 +66,503 @@
       "resource": [
         {
           "type": "Observation",
-          "profile": "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-bfs.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-bfs.html",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "vread",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "history-instance",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "history-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "conditionalDelete": "multiple",
+          "referencePolicy": [
+            "literal",
+            "logical"
+          ],
+          "searchInclude": [
+            "Observation.subject",
+            "Observation.based-on",
+            "Observation.patient",
+            "Observation.specimen",
+            "Observation.context",
+            "Observation.performer",
+            "Observation.encounter",
+            "Observation.related-target",
+            "Observation.device"
+          ],
+          "searchRevInclude": [
+            "ChargeItem.service",
+            "ClinicalImpression.finding-ref",
+            "ClinicalImpression.investigation",
+            "DiagnosticReport.result",
+            "Immunization.reaction",
+            "ImmunizationRecommendation.information",
+            "MedicationStatement.part-of",
+            "Observation.related-target",
+            "Procedure.part-of",
+            "QuestionnaireResponse.parent"
+          ],
+          "searchParam": [
+            {
+              "name": "date",
+              "type": "date",
+              "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+            },
+            {
+              "name": "combo-data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "The code of the observation type"
+            },
+            {
+              "name": "combo-code-value-quantity",
+              "type": "composite",
+              "documentation": "Code and quantity value parameter pair, including in components"
+            },
+            {
+              "name": "subject",
+              "type": "reference",
+              "documentation": "The subject that the observation is about"
+            },
+            {
+              "name": "component-data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.component.value[x] is missing."
+            },
+            {
+              "name": "value-concept",
+              "type": "token",
+              "documentation": "The value of the observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "value-date",
+              "type": "date",
+              "documentation": "The value of the observation, if the value is a date or period of time"
+            },
+            {
+              "name": "code-value-string",
+              "type": "composite",
+              "documentation": "Code and string value parameter pair"
+            },
+            {
+              "name": "component-code-value-quantity",
+              "type": "composite",
+              "documentation": "Component code and component quantity value parameter pair"
+            },
+            {
+              "name": "based-on",
+              "type": "reference",
+              "documentation": "Reference to the test or procedure request."
+            },
+            {
+              "name": "related",
+              "type": "composite",
+              "documentation": "Related Observations - search on related-type and related-target together"
+            },
+            {
+              "name": "code-value-date",
+              "type": "composite",
+              "documentation": "Code and date/time value parameter pair"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The subject that the observation is about (if patient)"
+            },
+            {
+              "name": "specimen",
+              "type": "reference",
+              "documentation": "Specimen used for this observation"
+            },
+            {
+              "name": "component-code",
+              "type": "token",
+              "documentation": "The component code of the observation type"
+            },
+            {
+              "name": "code-value-quantity",
+              "type": "composite",
+              "documentation": "Code and quantity value parameter pair"
+            },
+            {
+              "name": "context",
+              "type": "reference",
+              "documentation": "Healthcare event  (Episode-of-care or Encounter) related to the observation"
+            },
+            {
+              "name": "combo-code-value-concept",
+              "type": "composite",
+              "documentation": "Code and coded value parameter pair, including in components"
+            },
+            {
+              "name": "value-string",
+              "type": "string",
+              "documentation": "The value of the observation, if the value is a string, and also searches in CodeableConcept.text"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "The unique id for a particular observation"
+            },
+            {
+              "name": "performer",
+              "type": "reference",
+              "documentation": "Who performed the observation"
+            },
+            {
+              "name": "combo-code",
+              "type": "token",
+              "documentation": "The code of the observation type or component type"
+            },
+            {
+              "name": "method",
+              "type": "token",
+              "documentation": "The method used for the observation"
+            },
+            {
+              "name": "value-quantity",
+              "type": "quantity",
+              "documentation": "The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "component-value-quantity",
+              "type": "quantity",
+              "documentation": "The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.value[x] is missing."
+            },
+            {
+              "name": "combo-value-quantity",
+              "type": "quantity",
+              "documentation": "The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "encounter",
+              "type": "reference",
+              "documentation": "Encounter related to the observation"
+            },
+            {
+              "name": "related-type",
+              "type": "token",
+              "documentation": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"
+            },
+            {
+              "name": "related-target",
+              "type": "reference",
+              "documentation": "Resource that is related to this one"
+            },
+            {
+              "name": "code-value-concept",
+              "type": "composite",
+              "documentation": "Code and coded value parameter pair"
+            },
+            {
+              "name": "component-code-value-concept",
+              "type": "composite",
+              "documentation": "Component code and component coded value parameter pair"
+            },
+            {
+              "name": "component-value-concept",
+              "type": "token",
+              "documentation": "The value of the component observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "category",
+              "type": "token",
+              "documentation": "The classification of the type of observation"
+            },
+            {
+              "name": "device",
+              "type": "reference",
+              "documentation": "The Device that generated the observation data."
+            },
+            {
+              "name": "combo-value-concept",
+              "type": "token",
+              "documentation": "The value or component value of the observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "The status of the observation"
+            }
+          ]
+        },
+        {
+          "type": "Observation",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "vread",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "history-instance",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "history-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            },
+            {
+              "code": "search-type",
+              "documentation": "Implemented per the specification (or Insert other doco here)"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "conditionalDelete": "multiple",
+          "referencePolicy": [
+            "literal",
+            "logical"
+          ],
+          "searchInclude": [
+            "Observation.subject",
+            "Observation.based-on",
+            "Observation.patient",
+            "Observation.specimen",
+            "Observation.context",
+            "Observation.performer",
+            "Observation.encounter",
+            "Observation.related-target",
+            "Observation.device"
+          ],
+          "searchRevInclude": [
+            "ChargeItem.service",
+            "ClinicalImpression.finding-ref",
+            "ClinicalImpression.investigation",
+            "DiagnosticReport.result",
+            "Immunization.reaction",
+            "ImmunizationRecommendation.information",
+            "MedicationStatement.part-of",
+            "Observation.related-target",
+            "Procedure.part-of",
+            "QuestionnaireResponse.parent"
+          ],
+          "searchParam": [
+            {
+              "name": "date",
+              "type": "date",
+              "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+            },
+            {
+              "name": "combo-data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."
+            },
+            {
+              "name": "code",
+              "type": "token",
+              "documentation": "The code of the observation type"
+            },
+            {
+              "name": "combo-code-value-quantity",
+              "type": "composite",
+              "documentation": "Code and quantity value parameter pair, including in components"
+            },
+            {
+              "name": "subject",
+              "type": "reference",
+              "documentation": "The subject that the observation is about"
+            },
+            {
+              "name": "component-data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.component.value[x] is missing."
+            },
+            {
+              "name": "value-concept",
+              "type": "token",
+              "documentation": "The value of the observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "value-date",
+              "type": "date",
+              "documentation": "The value of the observation, if the value is a date or period of time"
+            },
+            {
+              "name": "code-value-string",
+              "type": "composite",
+              "documentation": "Code and string value parameter pair"
+            },
+            {
+              "name": "component-code-value-quantity",
+              "type": "composite",
+              "documentation": "Component code and component quantity value parameter pair"
+            },
+            {
+              "name": "based-on",
+              "type": "reference",
+              "documentation": "Reference to the test or procedure request."
+            },
+            {
+              "name": "related",
+              "type": "composite",
+              "documentation": "Related Observations - search on related-type and related-target together"
+            },
+            {
+              "name": "code-value-date",
+              "type": "composite",
+              "documentation": "Code and date/time value parameter pair"
+            },
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The subject that the observation is about (if patient)"
+            },
+            {
+              "name": "specimen",
+              "type": "reference",
+              "documentation": "Specimen used for this observation"
+            },
+            {
+              "name": "component-code",
+              "type": "token",
+              "documentation": "The component code of the observation type"
+            },
+            {
+              "name": "code-value-quantity",
+              "type": "composite",
+              "documentation": "Code and quantity value parameter pair"
+            },
+            {
+              "name": "context",
+              "type": "reference",
+              "documentation": "Healthcare event  (Episode-of-care or Encounter) related to the observation"
+            },
+            {
+              "name": "combo-code-value-concept",
+              "type": "composite",
+              "documentation": "Code and coded value parameter pair, including in components"
+            },
+            {
+              "name": "value-string",
+              "type": "string",
+              "documentation": "The value of the observation, if the value is a string, and also searches in CodeableConcept.text"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "The unique id for a particular observation"
+            },
+            {
+              "name": "performer",
+              "type": "reference",
+              "documentation": "Who performed the observation"
+            },
+            {
+              "name": "combo-code",
+              "type": "token",
+              "documentation": "The code of the observation type or component type"
+            },
+            {
+              "name": "method",
+              "type": "token",
+              "documentation": "The method used for the observation"
+            },
+            {
+              "name": "value-quantity",
+              "type": "quantity",
+              "documentation": "The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "component-value-quantity",
+              "type": "quantity",
+              "documentation": "The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "data-absent-reason",
+              "type": "token",
+              "documentation": "The reason why the expected value in the element Observation.value[x] is missing."
+            },
+            {
+              "name": "combo-value-quantity",
+              "type": "quantity",
+              "documentation": "The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"
+            },
+            {
+              "name": "encounter",
+              "type": "reference",
+              "documentation": "Encounter related to the observation"
+            },
+            {
+              "name": "related-type",
+              "type": "token",
+              "documentation": "has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"
+            },
+            {
+              "name": "related-target",
+              "type": "reference",
+              "documentation": "Resource that is related to this one"
+            },
+            {
+              "name": "code-value-concept",
+              "type": "composite",
+              "documentation": "Code and coded value parameter pair"
+            },
+            {
+              "name": "component-code-value-concept",
+              "type": "composite",
+              "documentation": "Component code and component coded value parameter pair"
+            },
+            {
+              "name": "component-value-concept",
+              "type": "token",
+              "documentation": "The value of the component observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "category",
+              "type": "token",
+              "documentation": "The classification of the type of observation"
+            },
+            {
+              "name": "device",
+              "type": "reference",
+              "documentation": "The Device that generated the observation data."
+            },
+            {
+              "name": "combo-value-concept",
+              "type": "token",
+              "documentation": "The value or component value of the observation, if the value is a CodeableConcept"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "The status of the observation"
+            }
+          ]
+        },
+        {
+          "type": "Observation",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-plf.html",
           "interaction": [
             {
               "code": "read",
@@ -300,7 +810,7 @@
         },
         {
           "type": "QuestionnaireResponse",
-          "profile": "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-functional-qr.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-functional-qr.html",
           "interaction": [
             {
               "code": "read",
@@ -405,7 +915,7 @@
         },
         {
           "type": "DeviceUseStatement",
-          "profile": "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-dev.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-dev.html",
           "interaction": [
             {
               "code": "read",
@@ -552,7 +1062,7 @@
       "resource": [
         {
           "type": "Observation",
-          "profile": "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-plf.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
           "interaction": [
             {
               "code": "read",
@@ -887,7 +1397,7 @@
       "resource": [
         {
           "type": "Observation",
-          "profile": "https://paciowg.github.io/functional-status-ig/StructureDefinition-pacio-fs.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/StructureDefinition-pacio-fs.html",
           "interaction": [
             {
               "code": "read",

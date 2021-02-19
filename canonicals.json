@@ -7,59 +7,80 @@
     "name": "PACIO_FunctionalStatus_CapabilityStatement"
   },
   {
+    "id": "assessment-label-code-system",
+    "type": "CodeSystem",
+    "url": "https://paciowg.github.io/functional-status-ig//CodeSystem/assessment-label-code-system",
+    "version": "0.1.0",
+    "name": "assessmentLabelCS"
+  },
+  {
     "id": "hl7.fhir.us.pacio-fs",
     "type": "ImplementationGuide",
-    "url": "http://paciowg.github.io/functional-status-ig/ImplementationGuide/hl7.fhir.us.pacio-fs",
+    "url": "https://paciowg.github.io/functional-status-ig//ImplementationGuide/hl7.fhir.us.pacio-fs",
     "version": "0.1.0",
     "name": "PACIOFunctionalStatusImplementationGuide"
   },
   {
+    "id": "assessment-label",
+    "type": "StructureDefinition",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/assessment-label",
+    "version": "0.1.0",
+    "name": "assessment_label"
+  },
+  {
     "id": "assistance-required",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/assistance-required",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/assistance-required",
     "version": "0.1.0",
     "name": "AssistanceRequired"
   },
   {
     "id": "device-patient-used",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/device-patient-used",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/device-patient-used",
     "version": "0.1.0",
     "name": "DevicePatientUsed"
   },
   {
     "id": "pacio-bfs",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-bfs",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-bfs",
     "version": "0.1.0",
     "name": "BundledFunctionalStatus"
   },
   {
     "id": "pacio-dev",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-dev",
     "version": "0.1.0",
     "name": "UseOfDevice"
   },
   {
     "id": "pacio-fs",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-fs",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-fs",
     "version": "0.1.0",
     "name": "FunctionalStatus"
   },
   {
     "id": "pacio-functional-qr",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-functional-qr",
     "version": "0.1.0",
     "name": "PACIOfunctionalQuestionnaireResponse"
   },
   {
     "id": "pacio-plf",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf",
+    "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-plf",
     "version": "0.1.0",
     "name": "PriorLevelOfFunction"
+  },
+  {
+    "id": "assessment-label-value-set",
+    "type": "ValueSet",
+    "url": "https://paciowg.github.io/functional-status-ig//ValueSet/assessment-label-value-set",
+    "version": "0.1.0",
+    "name": "assessmentLabelValueset"
   }
 ]

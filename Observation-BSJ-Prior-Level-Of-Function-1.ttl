@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/Observation/BSJ-Prior-Level-Of-Function-1> a fhir:Observation;
+<https://paciowg.github.io/functional-status-ig/Observation/BSJ-Prior-Level-Of-Function-1> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BSJ-Prior-Level-Of-Function-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf";
+       fhir:value "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-plf";
        fhir:index 0;
-       fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf>
+       fhir:link <https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-plf>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/assistance-required" ];
+     fhir:Extension.url [ fhir:value "https://paciowg.github.io/functional-status-ig//StructureDefinition/assistance-required" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.text [ fhir:value "Independent" ]
      ]
@@ -30,11 +30,19 @@
      fhir:index 1;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
      fhir:Extension.valueReference [
-       fhir:link <http://paciowg.github.io/functional-status-ig/Location/provider-org-loc-01>;
+       fhir:link <https://paciowg.github.io/functional-status-ig/Location/provider-org-loc-01>;
        fhir:Reference.reference [ fhir:value "Location/provider-org-loc-01" ]
      ]
   ];
   fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -45,7 +53,7 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://paciowg.github.io/functional-status-ig/Patient/patientBSJ1>;
+     fhir:link <https://paciowg.github.io/functional-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:Observation.effectivePeriod [
@@ -54,22 +62,29 @@
   ];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <http://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith>;
+     fhir:link <https://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-JohnSmith" ]
   ], [
      fhir:index 1;
-     fhir:link <http://paciowg.github.io/functional-status-ig/PractitionerRole/provider-role-pcp>;
+     fhir:link <https://paciowg.github.io/functional-status-ig/PractitionerRole/provider-role-pcp>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/provider-role-pcp" ]
   ], [
      fhir:index 2;
-     fhir:link <http://paciowg.github.io/functional-status-ig/Organization/provider-org-01>;
+     fhir:link <https://paciowg.github.io/functional-status-ig/Organization/provider-org-01>;
      fhir:Reference.reference [ fhir:value "Organization/provider-org-01" ];
      fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.dataAbsentReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/data-absent-reason" ];
+       fhir:Coding.code [ fhir:value "not-applicable" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/Observation/BSJ-Prior-Level-Of-Function-1.ttl> a owl:Ontology;
+<https://paciowg.github.io/functional-status-ig/Observation/BSJ-Prior-Level-Of-Function-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith> a fhir:Practitioner;
+<https://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Practitioner-JohnSmith"];
   fhir:DomainResource.text [
@@ -26,7 +26,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith.ttl> a owl:Ontology;
+<https://paciowg.github.io/functional-status-ig/Practitioner/Practitioner-JohnSmith.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

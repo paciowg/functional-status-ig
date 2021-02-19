@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev> a fhir:StructureDefinition;
+<https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-dev"];
   fhir:DomainResource.text [
@@ -21,15 +21,28 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev"];
+  fhir:StructureDefinition.url [ fhir:value "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-dev"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "UseOfDevice"];
   fhir:StructureDefinition.title [ fhir:value "UseOfDevice"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-05T09:50:27-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-02-18T20:32:56-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "PACIO project" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Care Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "PACIO  project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
@@ -37,7 +50,7 @@
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "info@pacioproject.org" ]
+       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A device used by a Patient during a functional status assessment."];
@@ -1220,7 +1233,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev.ttl> a owl:Ontology;
+<https://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
