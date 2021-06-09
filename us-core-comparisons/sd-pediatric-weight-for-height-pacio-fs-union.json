@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7fc2d0eb-5a93-48f3-a4a9-86e55b0b662e-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7fc2d0eb-5a93-48f3-a4a9-86e55b0b662e-65",
+  "id" : "5306a0c1-4e68-499a-be63-da475dc780b7-65",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5306a0c1-4e68-499a-be63-da475dc780b7-65",
   "name" : "UnionUSCorePediatricWeightForHeightObservationProfileAndFunctionalStatus",
   "title" : "Union of US Core Pediatric Weight for Height Observation Profile And Functional Status",
   "status" : "active",
-  "date" : "2021-02-24T09:36:58-05:00",
+  "date" : "2021-06-09T08:31:58-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7fc2d0eb-5a93-48f3-a4a9-86e55b0b662e-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5306a0c1-4e68-499a-be63-da475dc780b7-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -877,7 +877,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Common UCUM units for recording Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7fc2d0eb-5a93-48f3-a4a9-86e55b0b662e-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5306a0c1-4e68-499a-be63-da475dc780b7-59"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1536,7 +1536,7 @@
     },
     {
       "path" : "Observation.derivedFrom",
-      "short" : "Related measurements the observation is made from",
+      "short" : "left: Related measurements the observation is made from; right: Currently not used in FunctionalStatus.",
       "definition" : "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.",
       "comment" : "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.",
       "min" : 0,
@@ -1730,7 +1730,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7fc2d0eb-5a93-48f3-a4a9-86e55b0b662e-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5306a0c1-4e68-499a-be63-da475dc780b7-5"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -3,7 +3,7 @@
   "id": "BSJ-Prior-Level-Of-Function-1",
   "meta": {
     "profile": [
-      "https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-plf"
+      "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf"
     ]
   },
   "text": {
@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "https://paciowg.github.io/functional-status-ig//StructureDefinition/assistance-required",
+      "url": "http://paciowg.github.io/functional-status-ig/StructureDefinition/assistance-required",
       "valueCodeableConcept": {
         "text": "Independent"
       }
@@ -25,16 +25,6 @@
     }
   ],
   "status": "final",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory"
-        }
-      ]
-    }
-  ],
   "code": {
     "coding": [
       {
@@ -62,13 +52,5 @@
       "reference": "Organization/provider-org-01",
       "display": "Organization"
     }
-  ],
-  "dataAbsentReason": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "code": "not-applicable"
-      }
-    ]
-  }
+  ]
 }

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -62,7 +61,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - STU Ballot</p>
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Functional Status Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -83,37 +82,21 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml -->
-
 <ul class="nav navbar-nav">
-  <li>
-    <a href="index.html">IG Home</a>
-  </li>
-  <li>
-    <a href="toc.html">Table Of Contents</a>
-  </li>
-  <li>
-    <a href="underlying_technologies.html">Underlying Technologies</a>
-  </li>
-  <li>
-    <a href="functional_status_use_case.html">Use Case Example</a>
-  </li>
-  <li>
-    <a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a>
-  </li>
-  <li>
-    <a href="artifacts.html">Artifacts Summary</a>
-  </li>
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="functional_status_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
-      <b class="caret"></b>
-    </a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
-      </li>
+      <li><a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
     </ul>
   </li>
 </ul>
+
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -121,21 +104,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Bundled Functional Status</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="https://paciowg.github.io/functional-status-ig//history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">PACIO Functional Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://paciowg.github.io/functional-status-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -295,7 +281,7 @@ A human language.
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="http://hl7.org/fhir/R4/extension-event-location.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/event-location]]">location</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>))</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td>Comments</td><td><p><a name="2441275d-519a-49c3-8ae6-36ab8779da65">​</a>May reference only <em>Provenance</em> resources deemed “relevant” or important. This element does not point to the Provenance associated with the current version of the resource - as it would be created after this version existed. The Provenance for the current version can be retrieved with a <a href="search.html#revinclude"><code>_revinclude</code></a>.</p>
+  <tr><td>Comments</td><td><p><a name="af772950-d927-444d-9411-f33fb47b92df">​</a>May reference only <em>Provenance</em> resources deemed “relevant” or important. This element does not point to the Provenance associated with the current version of the resource - as it would be created after this version existed. The Provenance for the current version can be retrieved with a <a href="search.html#revinclude"><code>_revinclude</code></a>.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -304,7 +290,7 @@ A human language.
   <tr><td>Definition</td><td><p>A device used by a patient during a functional status assessment.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-device-patient-used.html" title="[CanonicalType[https://paciowg.github.io/functional-status-ig//StructureDefinition/device-patient-used]]">DevicePatientUsed</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-pacio-dev.html" title="https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-dev">UseOfDevice</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-device-patient-used.html" title="[CanonicalType[http://paciowg.github.io/functional-status-ig/StructureDefinition/device-patient-used]]">DevicePatientUsed</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-pacio-dev.html" title="http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev">UseOfDevice</a>))</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -398,7 +384,7 @@ Codes for high level observation categories.
   <tr><td>Definition</td><td><p>The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the <code>focus</code> element or the <code>code</code> itself specifies the actual focus of the observation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/R4/group.html" title="http://hl7.org/fhir/StructureDefinition/Group">Group</a> | <a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">USCorePatientProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Observations have no value if you don't know who or what they're about.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.</p>
@@ -418,7 +404,7 @@ Codes for high level observation categories.
   <tr><td>Definition</td><td><p>The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-encounter.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter">USCoreEncounterProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>For some observations it may be important to know the link between an observation and a particular encounter.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Context</td></tr>
@@ -452,7 +438,7 @@ Codes for high level observation categories.
   <tr><td>Definition</td><td><p>Who was responsible for asserting the observed value as "true".</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a> | <a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a> | <a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a> | <a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitioner.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner">USCorePractitionerProfile</a> | <a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-practitionerrole.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole">USCorePractitionerRoleProfile</a> | <a href="http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-organization.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">USCoreOrganizationProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -826,16 +812,20 @@ Codes identifying interpretations of observations.
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 24, 2021 09:36-0500">2021-02-24</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare/"></a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 9, 2021 08:31-0700">2021-06-09</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" href="https://paciowg.github.io/functional-status-ig//history.html" target="_blank">Version History  |
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://paciowg.github.io/functional-status-ig/history.html" target="_blank">Version History  |
                <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
@@ -862,8 +852,16 @@ Codes identifying interpretations of observations.
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   
 
-</a></a></span></p></div></div></div></body></html>
+
+</a></a></p></div></div></div></body></html>

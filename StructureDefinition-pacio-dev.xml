@@ -14,33 +14,21 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://paciowg.github.io/functional-status-ig//StructureDefinition/pacio-dev"/>
+  <url value="http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-dev"/>
   <version value="0.1.0"/>
   <name value="UseOfDevice"/>
   <title value="UseOfDevice"/>
   <status value="active"/>
-  <date value="2021-02-24T09:36:30-05:00"/>
-  <publisher value="HL7 Patient Care Work Group"/>
+  <date value="2021-06-09T08:31:53-07:00"/>
   <contact>
-    <name value="HL7 Patient Care Work Group"/>
-    <telecom>
-      <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/patientcare"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="patientcare@lists.HL7.org"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="PACIO  project"/>
+    <name value="PACIO project"/>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/patientcare/"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="patientcare@lists.HL7.org"/>
+      <value value="info@pacioproject.org"/>
     </telecom>
   </contact>
   <description value="A device used by a Patient during a functional status assessment."/>
