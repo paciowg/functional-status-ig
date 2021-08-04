@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOFunctionalStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Functional Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-30T14:57:56-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-04T16:11:48-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "PACIO project" ];
@@ -334,11 +334,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-functional-qr" ]
+         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-nhfs>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-nhfs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Questionnaire Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A completed, or sections of a completed, CMS PAC assessment." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Narrative History of Functional Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of summary observation regarding the most recent prior level of function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of function assessments. For formal assessments conducted with for example, an assessment instructment, use the Functional Status Collecction and Functional Status profiles to capture assessment data." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -348,11 +348,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-plf" ]
+         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-functional-qr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-functional-qr" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Prior Level Of Function" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of summary observation regarding the most recent prior level of function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of function assessments. For formal assessments conducted with for example, an assessment instructment, use the Functional Status Collecction and Functional Status profiles to capture assessment data." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Questionnaire Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A completed, or sections of a completed, CMS PAC assessment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -366,7 +366,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-dev" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "UseOfDevice" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A device used by a Patient during a functional status assessment." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A record of an assistive device–e.g. walker or wheelchair, being used by a patient during a functional status assessment. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -380,7 +380,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/assistance-required" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssistanceRequired" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with prior level of function to provide a high-level indication of assistance required for the person’s baseline ability (physical function immediately preceding the current admission, illness, or exacerbation for a patient) to answer functional related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with the Narrative History of Functional Status profile to provide a high-level indication of assistance required for the person’s baseline ability (physical function immediately preceding the current admission, illness, or exacerbation for a patient) to perform everyday activities. The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -394,7 +394,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/device-patient-used" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DevicePatientUsed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A device used by a patient during a functional status assessment." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with the Funcational Status Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during a functional status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -4092,13 +4092,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://paciowg.github.io/functional-status-ig/Observation/BSJ-Prior-Level-Of-Function-1>;
-         fhir:Reference.reference [ fhir:value "Observation/BSJ-Prior-Level-Of-Function-1" ]
+         fhir:link <http://paciowg.github.io/functional-status-ig/Observation/BSJ-Narrative-History-Functional-Status-1>;
+         fhir:Reference.reference [ fhir:value "Observation/BSJ-Narrative-History-Functional-Status-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BSJ-Prior-Level-Of-Function-1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BSJ-Narrative-History-Functional-Status-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf";
-         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf>
+         fhir:value "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-nhfs";
+         fhir:link <http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-nhfs>
        ]
      ], [
        fhir:index 226;

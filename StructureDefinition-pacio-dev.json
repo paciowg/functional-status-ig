@@ -20,7 +20,7 @@
   "name": "UseOfDevice",
   "title": "UseOfDevice",
   "status": "active",
-  "date": "2021-07-30T14:57:56-07:00",
+  "date": "2021-08-04T16:11:48-07:00",
   "contact": [
     {
       "name": "PACIO project",
@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "description": "A device used by a Patient during a functional status assessment.",
+  "description": "A record of an assistive device–e.g. walker or wheelchair, being used by a patient during a functional status assessment. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment.",
   "jurisdiction": [
     {
       "coding": [

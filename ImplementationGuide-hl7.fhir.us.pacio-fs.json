@@ -10,7 +10,7 @@
   "name": "PACIOFunctionalStatusImplementationGuide",
   "title": "PACIO Functional Status Implementation Guide",
   "status": "active",
-  "date": "2021-07-30T14:57:56-07:00",
+  "date": "2021-08-04T16:11:48-07:00",
   "contact": [
     {
       "name": "PACIO project",
@@ -350,6 +350,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/pacio-nhfs"
+        },
+        "name": "PACIO Narrative History of Functional Status",
+        "description": "An exchange of summary observation regarding the most recent prior level of function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of function assessments. For formal assessments conducted with for example, an assessment instructment, use the Functional Status Collecction and Functional Status profiles to capture assessment data.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/pacio-functional-qr"
         },
         "name": "PACIO Questionnaire Response",
@@ -364,24 +378,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pacio-plf"
-        },
-        "name": "PACIO Prior Level Of Function",
-        "description": "An exchange of summary observation regarding the most recent prior level of function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of function assessments. For formal assessments conducted with for example, an assessment instructment, use the Functional Status Collecction and Functional Status profiles to capture assessment data.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/pacio-dev"
         },
         "name": "UseOfDevice",
-        "description": "A device used by a Patient during a functional status assessment.",
+        "description": "A record of an assistive device–e.g. walker or wheelchair, being used by a patient during a functional status assessment. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment.",
         "exampleBoolean": false
       },
       {
@@ -395,7 +395,7 @@
           "reference": "StructureDefinition/assistance-required"
         },
         "name": "AssistanceRequired",
-        "description": "Associated with prior level of function to provide a high-level indication of assistance required for the person’s baseline ability (physical function immediately preceding the current admission, illness, or exacerbation for a patient) to answer functional related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
+        "description": "Associated with the Narrative History of Functional Status profile to provide a high-level indication of assistance required for the person’s baseline ability (physical function immediately preceding the current admission, illness, or exacerbation for a patient) to perform everyday activities. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
         "exampleBoolean": false
       },
       {
@@ -409,7 +409,7 @@
           "reference": "StructureDefinition/device-patient-used"
         },
         "name": "DevicePatientUsed",
-        "description": "A device used by a patient during a functional status assessment.",
+        "description": "Associated with the Funcational Status Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during a functional status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.",
         "exampleBoolean": false
       },
       {
@@ -3454,10 +3454,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/BSJ-Prior-Level-Of-Function-1"
+          "reference": "Observation/BSJ-Narrative-History-Functional-Status-1"
         },
-        "name": "BSJ-Prior-Level-Of-Function-1",
-        "exampleCanonical": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-plf"
+        "name": "BSJ-Narrative-History-Functional-Status-1",
+        "exampleCanonical": "http://paciowg.github.io/functional-status-ig/StructureDefinition/pacio-nhfs"
       },
       {
         "extension": [

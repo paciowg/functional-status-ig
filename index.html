@@ -81,8 +81,7 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
-<ul class="nav navbar-nav">
+              <ul class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
@@ -143,17 +142,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#functional-status" id="markdown-toc-functional-status">Functional Status</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
   <li><a href="#the-pacio-project" id="markdown-toc-the-pacio-project">The PACIO Project</a></li>
-  <li><a href="#functional-status-1" id="markdown-toc-functional-status-1">Functional Status</a></li>
+  <li><a href="#functional-status" id="markdown-toc-functional-status">Functional Status</a></li>
   <li><a href="#content-and-organization" id="markdown-toc-content-and-organization">Content and Organization</a></li>
   <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
   <li><a href="#downloads" id="markdown-toc-downloads">Downloads</a></li>
 </ul>
 
 </div>
-  <!-- index.md -->
-<h3 id="functional-status">Functional Status</h3>
+<h3 id="background">Background</h3>
 
 <p>An individual’s mobility, self-care, and domestic life functioning is crucial information to communicate for successful care coordination at transition of care and for on-going shared care. Care coordination – when a person transitions between healthcare settings, including ambulatory care, acute care, long-term post-acute care (LTPAC), and home- and community-based services (HCBS) – is often fragmented and can lead to poor health outcomes, increased burden, and increased costs. Interoperable health information exchange has the potential to improve patient and provider communications and supports access to longitudinal health information that enables improved efficiencies, improved quality of care, and improved health outcomes. Data should be usable across the continuum of care, and beyond the traditional healthcare system – into the community.</p>
 
@@ -161,14 +159,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Poor quality discharge information is a major barrier to safe and effective transitions. With 45% of Medicare beneficiaries requiring post-acute care (PAC) services after hospitalization, the need for a seamless exchange of health information is great. The findings from a 2020 study highlight the significant gap in sharing information at transition.  The survey assessed continuity between hospitals and skilled nursing facilities (SNF) and found that at transition of care observational information about mobility, self-care and domestic life was received by the SNF only  60% of the time. [<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2775075">JAMA Network Open. 2021;4(1):e2033980. doi: 10.1001/jamanetworkopen.2020.33980</a>].</p>
 
-<p>The scope of this Functional Status Implementation Guide (IG) focuses on exchanging mobility, self-care, and domestic life observations primarily involving PAC transitions with various care settings and HCBS. While this is the start, the IG is intended to expand over time and include functioning observations not limited to PAC. The impetus for this initial focus is the amendment to the Social Security Act in 2014 to include the Improving Medicare Post-Acute Care Transformation (IMPACT) Act.  IMPACT required the standardization and interoperability of patient assessment in specific categories for PAC settings, including long-term care hospitals (LTCHs), home health agencies (HHAs), SNFs, and inpatient rehabilitation facilities (IRFs). It focuses on standardizing data elements in specified quality measure domains and patient assessment domains for cross setting comparison and clinical information exchange, respectively.
-The Act requires:</p>
+<p>The scope of this Functional Status Implementation Guide (IG) focuses on exchanging mobility, self-care, and domestic life observations primarily involving PAC transitions with various care settings and HCBS. While this is the start, the IG is intended to expand over time and include functioning observations not limited to PAC. The impetus for this initial focus is the amendment to the Social Security Act in 2014 to include the Improving Medicare Post-Acute Care Transformation (IMPACT) Act.  IMPACT required the standardization and interoperability of patient assessment in specific categories for PAC settings, including long-term care hospitals (LTCHs), home health agencies (HHAs), SNFs, and inpatient rehabilitation facilities (IRFs). It focuses on standardizing data elements in specified quality measure domains and patient assessment domains for cross setting comparison and clinical information exchange, respectively.</p>
 
 <p>The Act requires:</p>
 <ul>
   <li>Reporting of standardized patient assessment data through commonly used CMS assessment instruments for LTCHs, SNFs, HHAs, IRFs, home and community-based services (HCBS), and Hospice Care:
     <ul>
-      <li>Minimum Data Set (MDS)for SNFs</li>
+      <li>Minimum Data Set (MDS) for SNFs</li>
       <li>Inpatient Rehabilitation Facility – Patient Assessment Information (IRF – PAI) for IRFs</li>
       <li>LTCH Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS) for LTCHs</li>
       <li>Outcome and Assessment Information Set (OASIS) for HHAs</li>
@@ -188,7 +185,7 @@ The Act requires:</p>
 
 <p>The primary goal of the PACIO Project is to establish a framework for the development of Fast Healthcare Interoperability Resource (FHIR) technical implementation guides and reference implementations that will facilitate health data exchange through standards-based use case-driven application programming interfaces (APIs).</p>
 
-<h3 id="functional-status-1">Functional Status</h3>
+<h3 id="functional-status">Functional Status</h3>
 
 <p>Functioning observations related to mobility, self-care and domestic life are often used to describe how a person is able to interact with their environment and is a foundation to patient centered care. It is used in reporting outcomes for clinical care, quality improvement activities, quality measure reporting, and research. Identifying a decline in functioning has been shown to be a first sign in declining health for individuals with chronic conditions and indicative of the severity of an acute illness. Observations related to functioning are often used as a risk factor assessment tool; prognostic indicator hospital readmission; and predictor of morbidity and mortality. Information related to these observations are often a major focus for seeking healthcare and making end of life decisions. There has been discussion to include functioning as the sixth vital sign.</p>
 
@@ -212,7 +209,7 @@ The Act requires:</p>
 <p>This implementation guide relies on the following other specifications:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/R4/">FHIR R4</a> - The ‘current’ official version of FHIR as of the time this implementation guide was published.  See the <a href="underlying_technologies.html">background page</a> for key pieces of this specification implementers should be familiar with.</li>
-  <li><a name="6acfcabf-7690-488c-ac27-7010a0d7aedd">​</a><a href="http://hl7.org/fhir/us/core/">US Core STU3</a> - The version of US Core based on FHIR R4.</li>
+  <li><a name="3eefd81e-845d-438d-b8e9-9012b74c0794">​</a><a href="http://hl7.org/fhir/us/core/">US Core STU3</a> - The version of US Core based on FHIR R4.</li>
 </ul>
 
 <p>This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.</p>
@@ -248,7 +245,7 @@ The Act requires:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare/"></a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 30, 2021 14:57-0700">2021-07-30</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare/"></a>.  Package hl7.fhir.us.pacio-fs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 4, 2021 16:11-0700">2021-08-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
